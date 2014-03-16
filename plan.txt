@@ -1,0 +1,37 @@
+Plan for website:
+
+-Name at the top, other interesting biographical information?
+
+
+Sections for:
+-teaching
+	-AA
+	-UIC
+	-Pomona
+	-MSI?
+-research
+	-math
+		-academic article
+	-chemistry
+-education
+	-UIC
+	-Pomona
+-other?
+could include:
+	-SOA exam
+	-software experience?  It's just been so long...
+
+-things I like (at the bottom of the page?)
+	-mickey
+	-blogs/websites
+		-serious eats
+		-oh fransson
+		-maru
+		-xkcd
+		-vongsa?
+	-foods I like
+		-cheese
+		-chocolate
+		-chop't salads!
+		-steak
+-favorite recipe of the week?
