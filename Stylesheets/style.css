@@ -1,0 +1,160 @@
+body {
+	font-family: gafata;
+	max-width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+h1 {
+	font-size: 3em;
+	text-align: center;
+	color: white;
+	width: 100%;
+	display: block;
+	margin: auto;
+	background-color: #476bb2;
+	border-radius: 0 0 0.2em 0.2em;
+}
+
+h2 {
+	font-size: 1.8em;
+	color: #85a366;
+	margin: 0.1em 0.2em 0.5em 0.2em;
+}
+
+h3 {
+	font-size: 1.1em;
+	color: #476bb2;
+	margin: 0.5em 0 0 0.5em;
+	font-weight: bold;
+}
+
+h4 {
+	font-size: 0.9em;
+	margin: 0.1em 0 0 0.5em;
+	font-style: italic;
+}
+
+img {
+	border: 0.2em solid #476bb2;
+	border-radius: 1em;
+	width: 65%;
+	margin-left: 17%;
+	margin-top: 1em;
+	margin-bottom: 1em
+}
+
+p {
+	margin: 0 0.5em 0.5em 0.5em;
+	text-align: justify;
+}
+
+ul {
+	list-style-type: circle;
+	margin-left: 2em;
+	margin-bottom: 1em;
+}
+
+a:link {
+	color: #476bb2;
+}
+
+a:visited {
+	color: #85a366;
+}
+a:hover {
+	color: white;
+	background-color: #476bb2;
+}
+
+section {
+	margin: 1em 1em 1em 0;
+	/*border: 1px solid black;*/
+	background-color: #D0DBE3;
+	vertical-align: top;
+	border-radius: 5px;
+	padding: 0.5em 0 1em 0;
+
+}
+
+section#about {
+	width: 25%;
+	height: 543px;
+	display: inline-block;
+}
+
+div#else {
+	width: 73%;
+	display: inline-block;
+}
+section#teaching {
+	width: 100%;
+}
+
+section#research {
+	width: 100%;
+}
+section#education {
+	width: 100%;
+}
+
+section#favorites {
+	display: block;
+	width: 100%;
+
+}
+
+section#favorites div {
+	width: 30%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+@media (max-width: 1000px){
+	body {
+		width: 100%;
+	}
+
+	section#about{
+		width: 73%;
+		height: 100%;
+	}
+	section#favorites {
+		width: 73%;
+	}
+
+	img {
+		display: inline-block;
+	}
+
+	div#bio {
+		margin: 0;
+		display: inline-block;
+		width: 47%;
+	}
+
+	div#pic {
+		display: inline-block;
+		width: 47%;
+		vertical-align: top;
+	}
+
+
+	section#favorites div {
+		width: 100%;
+	}
+}
+
+@media (max-width: 650px) {
+	div#bio {
+		margin: 0;
+		display: block;
+		width: 90%;
+	}
+
+	div#pic {
+		display: block;
+		width: 90%;
+
+	}
+}
