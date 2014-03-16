@@ -83,6 +83,13 @@ section#about {
 	display: inline-block;
 }
 
+
+div.post{
+	background-color: #D0DBE3;
+	padding: 1em;
+	border-radius: 0.5em;
+}
+
 div#else {
 	width: 73%;
 	display: inline-block;
