@@ -1,0 +1,53 @@
+body {
+	margin-left: auto;
+	margin-right: auto;
+	width: 1000px;
+}
+
+span {
+	border: 2px solid black;
+	margin: 5px;
+}
+
+div {
+	border: 2px solid black;
+	margin: 5px;
+	width: 100%;
+	padding: 5px;
+}
+
+div#content {
+	width: 80%;
+	height: 300px;
+	float: right;
+}
+
+div#sidebar {
+	width: 15%;
+	height: 300px;
+	float: left;
+}
+
+div#footer {
+	clear: left;
+}
+
+a:link {
+	color: #476bb2;
+}
+
+a:visited {
+	color: #85a366;
+}
+a:hover {
+	color: white;
+	background-color: #476bb2;
+}
+
+img {
+	width: 25%;
+}
+
+div#img {
+	border: none;
+}
