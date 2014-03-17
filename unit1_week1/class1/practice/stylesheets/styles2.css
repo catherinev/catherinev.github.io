@@ -1,0 +1,258 @@
+/* General Styles */
+body {
+  background-color: rgb(241, 241, 241);
+  font-size: 1em;
+  font-weight: 300;
+  line-height: 1.2em;
+  margin: 0px auto;
+  width: 100%;
+  font-family: Gafata;
+  max-width: 1400px;
+}
+
+
+p {
+  margin: 1em;
+  font-size: 1em;
+}
+
+a {
+  color: #1D766F;
+  text-decoration: none;
+}
+
+a:hover{
+  color: #123d39;
+}
+
+h1 {
+  font-size: 2.2em;
+  float: left;
+  line-height: 2.34375em;
+  font-family: Gafata;
+}
+
+h2 {
+  background-color: rgb(60, 60, 60);
+  color: #FFF;
+  font-size: 2.4em;
+  font-weight: 400;
+  line-height: 2.2em;
+  margin: 0 0 0.5em 0;
+  text-align: center;
+}
+
+h3 {
+  font-size: 1.4em;
+  font-weight: 700;
+  margin: 0 0 0.3em 0;
+  text-align: center;
+}
+
+h4 {
+  color: rgb(120, 120, 120);
+  font-size: 1em;
+  text-align: center;
+}
+
+/* Navigation */
+nav li {
+  float: left;
+}
+nav li a {
+  color: #fff;
+  margin: 0 10px;
+  padding: 5px 10px;
+  text-decoration: none;
+}
+
+.jump {
+  color: #565656;
+  font-size: 70px;
+  line-height: 80px;
+  position: absolute;
+  text-decoration: none;
+  top: 0;
+}
+.jump.up {
+  left: 15px;
+}
+.jump.down {
+  right: 15px;
+}
+
+
+/* Header */
+header {
+  background-color: #009D92;
+  padding: 1.0416666%; /*10 px*/
+  max-width: 1400px;
+  margin: 0 auto;
+}
+header h1 {
+  color: #FFEECC;
+  background: url('../images/icons/it.png') no-repeat 0 50%;
+  padding-left: 4.1666666666%; /*40px*/
+}
+header nav {
+  float: right;
+  font-size: 1.2em;
+  margin-left: 2.0833333%px; /*20px*/
+  text-align: center;
+}
+header nav li {
+  line-height: 75px; /*75px*/
+}
+
+header:after {
+  /* clearfix hack */
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* Main */
+#main div {
+  margin-bottom: 1em;
+  position: relative;
+  width: 100%;
+}
+#main div.wrapper{
+    width: 100%;
+    max-width:1400px;
+    margin: 0 auto;
+}
+
+#main section:after {
+  /* clearfix hack */
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* Famous Women */
+#famous div.woman {
+  background-color: white;
+  float: center;
+  display: inline-block;
+  min-height: 250px;
+  margin: 1%;
+  padding: 1%;
+  width: 27.33%;
+}
+
+/*#famous div.break {
+  clear: both;
+}*/
+
+#famous div img {
+  display: block;
+  margin: 1em auto;
+  width: 100%;
+}
+
+
+/* Organizations */
+#organizations {
+  clear: both;
+}
+
+#organizations ul {
+  margin: 50px;
+  position: relative;
+}
+#organizations ul li {
+  font-size: 1.2em;
+  line-height: 1.3em;
+  margin-bottom: 1em;
+  padding-left: 1%; /*5px*/
+  max-width: 50%;
+}
+#organizations img {
+  position: absolute;
+  right: 2%; /*20px*/
+  top: 0;
+  display: none;
+  max-width: 40%;
+}
+#organizations li:hover img {
+  display: block;
+}
+
+/* Fun Facts */
+#facts ul {
+  margin: 50px;
+}
+#facts ul li {
+  font-size: 1.2em;
+  line-height: 1.3em;
+  margin-bottom: 1em;
+  padding-left: 0.35714%; /*5px*/
+}
+
+
+
+/* Footer */
+footer {
+  background-color: #00665F;
+}
+
+footer nav {
+  float: left;
+  font-size: 1.1em;
+  margin: 1%; /*10px*/
+}
+
+footer:after {
+  /* clearfix hack */
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media (max-width: 1024px) {
+  #famous div.woman {
+  width: 40%;
+  }
+
+  h1 {
+    width: 90%;
+    text-align: center;
+    margin: auto;
+  }
+  nav {
+    width: 80%;
+    text-align: left;
+    margin: 0;
+  }
+
+}
+
+
+/*  nav {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+  }*/
+
+
+@media (max-width: 705px) {
+  #famous div.woman {
+  width: 90%;
+  padding: 4%;
+}
+
+
+  #famous div img {
+    width: 70%;
+  }
+
+  h1 {
+    width: 90%;
+    text-align: center;
+    margin: auto;
+  }
+
+}

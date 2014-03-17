@@ -1,0 +1,20 @@
+*{
+	font-family: Georgia;
+}
+h1 {
+	font-family: helvetica;
+	color: #988898;
+}
+
+a:link{
+	color: #39aaa9;
+
+}
+
+a:hover{
+	color: #d38202;
+}
+
+#email {
+	font-size: 10px;
+}
