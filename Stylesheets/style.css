@@ -1,6 +1,6 @@
 body {
 	font-family: gafata;
-	max-width: 1000px;
+	width: 900px;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -14,6 +14,7 @@ h1 {
 	margin: auto;
 	background-color: #476bb2;
 	border-radius: 0 0 0.2em 0.2em;
+	margin-bottom: 0.4em;
 }
 
 h2 {
@@ -38,10 +39,8 @@ h4 {
 img {
 	border: 0.2em solid #476bb2;
 	border-radius: 1em;
-	width: 65%;
-	margin-left: 17%;
-	margin-top: 1em;
-	margin-bottom: 1em
+	width: 70%;
+	margin: 1em 15% 1em 15%;
 }
 
 p {
@@ -54,6 +53,29 @@ ul {
 	margin-left: 2em;
 	margin-bottom: 1em;
 }
+
+#firstrow {
+	font-weight: bold;
+	text-decoration: underline;
+	font-size: 1.1em;
+	border-bottom: none;
+}
+
+table {
+	margin: auto;
+	border-spacing: 10px;
+	table-layout: fixed;
+
+}
+td:nth-child(2){
+	text-align: center;
+	width: 9em;
+}
+
+tr {
+	border-bottom: 1pt solid #B0B0B0;
+}
+
 
 a:link {
 	color: #476bb2;
@@ -68,21 +90,13 @@ a:hover {
 }
 
 section {
-	margin: 1em 1em 1em 0;
+	margin: 0;
 	/*border: 1px solid black;*/
 	background-color: #D0DBE3;
 	vertical-align: top;
 	border-radius: 5px;
 	padding: 0.5em 0 1em 0;
-
 }
-
-section#about {
-	width: 25%;
-	height: 543px;
-	display: inline-block;
-}
-
 
 div.post{
 	background-color: #D0DBE3;
@@ -91,78 +105,116 @@ div.post{
 	margin-bottom: 2em;
 }
 
+#about {
+	width: 25%;
+	height: 650px;
+	display: inline-block;
+	float: left;
+	padding-bottom: 0.5em;
+	margin-bottom: 1em;
+}
+
 div#else {
 	width: 73%;
+	height: 650px;
 	display: inline-block;
+	float: right;
+	padding-bottom: 0.5em;
 }
-section#teaching {
+.right {
 	width: 100%;
+	padding-bottom: 1em;
+	margin-bottom: 2em; 
 }
 
-section#research {
-	width: 100%;
-}
-section#education {
-	width: 100%;
-}
 
-section#favorites {
+#favorites {
 	display: block;
 	width: 100%;
-
+	clear: both;
+	margin-bottom: 2em;
 }
 
-section#favorites div {
-	width: 30%;
+ #favorites section div {
+	width: 31%;
 	display: inline-block;
 	vertical-align: top;
 }
 
-@media (max-width: 1000px){
-	body {
-		width: 100%;
-	}
+ol {
+	list-style-type: decimal;
+	margin: 0.5em 0em 0.5em 2em;
+}
 
-	section#about{
-		width: 73%;
-		height: 100%;
-	}
-	section#favorites {
-		width: 73%;
+em {
+	font-style: italic;
+}
+
+b {
+	font-weight: bolder;
+}
+
+.indent {
+	width: 90%;
+	margin: auto;
+}
+
+@media (max-width: 1024px){
+	body {
+		width:95%;
 	}
 
 	img {
-		display: inline-block;
+		display: block;
+		margin: auto;
+	}
+	#about {
+		height: 100%;
 	}
 
-	div#bio {
-		margin: 0;
-		display: inline-block;
-		width: 47%;
+	#else {
+		height: 100%;
+		margin-bottom: -2em;
+	}
+
+	.right {
+		width: 100%;
+		padding-bottom: 1em;
+		margin-bottom: 0.8em; 
 	}
 
 	div#pic {
-		display: inline-block;
-		width: 47%;
+		display: block;
+		margin: auto;
+		width: 70%;
 		vertical-align: top;
+		margin-bottom: 1em;
 	}
 
-
-	section#favorites div {
-		width: 100%;
+	p{
+		text-align: left;
 	}
 }
 
-@media (max-width: 650px) {
-	div#bio {
+@media (max-width: 800px) {
+	#about {
+		margin: 0;
+		height: 100%;
+		display: block;
+		width: 100%;
+	}
+
+	div#else {
 		margin: 0;
 		display: block;
-		width: 90%;
+		width: 100%;
 	}
 
-	div#pic {
-		display: block;
-		width: 90%;
-
+	#favorites {
+		clear: both;
 	}
+
+	.right {
+	margin-bottom: 0.3em; 
+}
 }
