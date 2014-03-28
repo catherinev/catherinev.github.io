@@ -36,6 +36,15 @@
 
 						<p><codein>while</codein> and <codein>until</codein> loops can be thought of as two sides of the same coin.  In fact <codein>while true == until false</codein>, so the two looping constructs are effectively equivalent; anytime you can use one, you can just as easily use the other.</p>
 						<p>It's fairly easy to create infinite loops with <codein>while</codein> and <codein>until</codein>, so be careful!  Make sure that your conditional statements will eventually evaluate to false/true for <codein>while/until</codein>, respectively.</p>
+						<p>Note that <codein>while</codein> and <codein>until</codein> are not methods, which means that any variable defined within <codein><grn>[some code]</grn></codein> is <em>not</em> defined locally within a method.  What does that mean?  Run the following code to find out:</p>
+						<code> i = 0<br/> 
+							while i < 5<br/>
+							&emsp;&emsp; puts "Hello!"<br/>
+							&emsp;&emsp; i += 1<br/>
+							end<br/>
+							puts i
+						</code>
+						<p>Notice how <codein>i</codein> changed?</p>
 					</li>
 
 					<li><codein>#upto</codein> and <codein>#downto </codein>
@@ -49,7 +58,8 @@
 						<code>for i in <grn>[range]</grn> <br/>
 						&emsp;&emsp;<grn>[some code]</grn><br/>
 						end</code>
-						<p>Usually you can use <codein>#each</codein> instead of a <codein>for</codein> loop.  <codein>#each</codein> is a better option in Ruby because <codein>for</codein> loops will store the iterator variable after the loop is done.  For example, if you execute <codein>for i in 1..10{puts "Hello!"}</codein>, then after that loop has completed you will have <codein>i = 10</codein>, the last value that <codein>i</codein> took on in the <codein>for</codein> loop.  This isn't necessarily a disaster, but it's important to be aware of, especially if you have previously defined the variable you use to iterate.</p>
+						<p>Usually you can use <codein>#each</codein> instead of a <codein>for</codein> loop.  <codein>#each</codein> is a better option in Ruby because, like <codein>while</codein> loop and <codein>until</codein> loops, <codein>for</codein> loops will store the iterator variable after the loop is done.  </p>
+						<p>For example, if you execute <codein>for i in 1..10{puts "Hello!"}</codein>, then after that loop has completed you will have <codein>i = 10</codein>, the last value that <codein>i</codein> took on in the <codein>for</codein> loop.  This isn't necessarily a disaster, but it's important to be aware of, especially if you have previously defined the variable you use to iterate.</p>
 					</li>
 					<li><codein>#loop</codein>
 						<code>loop do <br/>&emsp;&emsp;<grn>[some code]</grn><br/>end</code>
