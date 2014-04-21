@@ -156,6 +156,7 @@ section {
 	margin: auto;
 }
 
+
 #firstrow {
 	font-weight: bold;
 	text-decoration: underline;
@@ -192,12 +193,16 @@ code {
 	width: 90%;
 	border: 1px solid gray;
 	display: block;
-	margin: 1em auto 0 auto;
+	margin: 1em auto 1em auto;
 	padding: 4px;
 }
 codein {
 	font-family: monospace;
 	font-style: normal;
+}
+
+.grey {
+	color: gray;
 }
 
 grn {
