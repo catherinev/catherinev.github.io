@@ -24,7 +24,7 @@ h1 {
 h2 {
 	font-size: 1.8em;
 	color: #85a366;
-	margin: 0.5% 1% 2.5% 2.5%;
+	margin: 0.5% 1% 1.5% 2.5%;
 	/*margin: 0.1em 0.2em 0.5em 0.2em;*/
 }
 
@@ -111,44 +111,21 @@ a:hover {
 	background-color: #476bb2;
 }
 
-/*nav*/
-.nav ul {
-	list-style-type: none;
-/*	padding: 0.5em 0 0.5em 0;
-	margin: -0.5em 0 0.5em 0;*/
-	padding: 1% 0 -0.5% 0;
-	margin: -1% 0 2% 0;
-	background-color: hsl(100, 25%, 60%);
-	border-radius: 0.2em;
-	color: white;
-	font-size: 1.3em;
-	height: 100%;
-}
-
-.nav ul li {
-	display: inline;
-	text-align: center;
-/*	padding: 0.5em 0 0.5em 0;*/
-	padding: 1% 0 1% 0;
-
-}
-.nav ul li a {
-	display: inline-block;
-	color: white;
-	text-decoration: none;
-	width: 17%;
-/*	margin: -0.5em 0 -0.5em 0;
-	padding: 0.5em 0 0.5em 0;*/
-	padding: 1% 0 1% 0;
-	border: 1px solid black;
-}
-
-.nav ul li a:hover {
+.current {
 	background-color: hsl(100, 25%, 50%);
-	/*margin: -0.5em 0 -0.5em 0;
-	padding: 0.5em 0 0.5em 0;*/
-	padding: 1% 0 1% 0;
 }
+
+
+.block {
+	margin: 0.5em 0 0.5em 0;
+	margin: 2% 0 2% 0;
+	background-color: #D0DBE3;
+	vertical-align: top;
+	border-radius: 5px;
+	padding: 2em 0.5em 2em 0.5em;
+}
+
+/*nav*/
 
 .nav {
 /*	padding: 2% 0 -0.5% 0;*/
@@ -174,44 +151,18 @@ a:hover {
 	background-color: hsl(100, 25%, 50%);
 }
 
-.current {
-	background-color: hsl(100, 25%, 50%);
-}
-
-
-.block {
-	margin: 0.5em 0 0.5em 0;
-	margin: 2% 0 2% 0;
-	background-color: #D0DBE3;
-	vertical-align: top;
-	border-radius: 5px;
-	padding: 2em 0.5em 2em 0.5em;
-}
-
-
 /* index */
-
-#favorites {
-	float: right;
-	width: 47%;
-	height: 30em;
-}
-
-#me {
-	float: left;
-	width: 47%;
-	height: 30em;
-}
 
 #name {
 	font-size: 2.2em;
 	text-align: center;
 	color: white;
 	width: 80%;
-	height: 5em;
+	height: 25%;
 	display: block;
 	margin: auto;
-	padding: 5.5em 2em 0em 2em;
+	/*padding: 6em 2em 0em 2em;*/
+	padding: 25% 10% 7% 10%;
 	background-color: #476bb2;
 	border-radius: 0 0 0.2em 0.2em;
 	margin-bottom: 0.4em;
@@ -234,12 +185,8 @@ a:hover {
 	padding: 2em;
 	margin-bottom: 0.4em;
 	font-weight: 100;
-
 }
-
 /*about*/
-
-
 #pic {
 	display: inline-block;
 	width: 40%;
@@ -255,9 +202,28 @@ a:hover {
 	margin-left: 4em;
 }
 
+
+/*Links*/
+#favorites {
+	float: right;
+	width: 47%;
+	height: 30em;
+	margin: 0;
+}
+
+#me {
+	float: left;
+	width: 47%;
+	height: 30em;
+	margin: 0;
+}
+
+
+
+/* blog posts */
 #sp {
 	padding-bottom: 1.5em;
-	width: 12em;
+	width:20%;
 	display: inline-block;
 	float: right;
 	/*background-color: #85a366;*/
@@ -265,10 +231,12 @@ a:hover {
 	margin: 2em 0.5em 0 0;
 	padding-top: 0.5em;
 	height: 95%;
-	line-height: 1.2em;
+/*	line-height: 1.5em;*/
 }
 
-/* blog posts */
+#sp ul li {
+	margin-bottom: 5%;
+}
 
 /*#blog {
 	width: 25%;
@@ -317,7 +285,16 @@ div.post{
 	margin-bottom: 2em;
 	line-height: 1.2em;
 	display: inline-block;
-	width: 40em;
+}
+
+div.minipost{
+	background-color: #D0DBE3;
+	padding: 1em;
+	border-radius: 0.5em;
+	margin-bottom: 2em;
+	line-height: 1.2em;
+	display: inline-block;
+	width: 70%;
 }
 
 code {
@@ -346,13 +323,11 @@ grn {
 
 @media (max-width: 1024px){
 	html, body {
-		width:95%;
+		width:98%;
 	}
 
-	img {
-		display: block;
-		margin: auto;
-	}
+	
+
 	#blog {
 		height: 150%;
 		min-height: 1050px;
@@ -370,20 +345,7 @@ grn {
 		margin-bottom: 0.8em; 
 	}
 
-	div#pic {
-		display: block;
-		margin: auto;
-		width: 60%;
-		vertical-align: top;
-		margin-bottom: 1em;
-	}
-	div#about{
-		display: block;
-		margin: auto;
-		width: 95%;
-		vertical-align: top;
-		margin-bottom: 1em;
-	}
+
 
 	p{
 		text-align: left;
@@ -395,6 +357,30 @@ grn {
 		width: 100%;
 		font-size: 125%;
 	}
+	/*img {
+		display: block;
+		margin: auto;
+	}*/
+
+	div#pic {
+		display: block;
+		margin: auto;
+		width: 60%;
+		vertical-align: top;
+		margin-bottom: 1em;
+	}
+	#about{
+		display: block;
+		margin: auto;
+		width: 95%;
+		vertical-align: top;
+		margin-bottom: 1em;
+	}
+/*	#about {
+		display: block;
+		width: 80%;
+	}
+*/
 	#blog {
 		margin: 0 0 1em 0;
 		height: auto;
