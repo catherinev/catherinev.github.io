@@ -4,9 +4,10 @@ html, body {
 	width: 900px;
 	margin-left: auto;
 	margin-right: auto;
-	height: 100%;
-	font-size: 1em;
+	/*height: 100%;*/
+	font-size: 100%;
 }
+
 
 h1 {
 	font-size: 3em;
@@ -17,53 +18,77 @@ h1 {
 	margin: auto;
 	background-color: #476bb2;
 	border-radius: 0 0 0.2em 0.2em;
-	margin-bottom: 0.4em;
+	margin-bottom: 2%;
 }
 
 h2 {
 	font-size: 1.8em;
 	color: #85a366;
-	margin: 0.1em 0.2em 0.5em 0.2em;
+	margin: 0.5% 1% 2.5% 2.5%;
+	/*margin: 0.1em 0.2em 0.5em 0.2em;*/
 }
 
 h3 {
 	font-size: 1.1em;
 	color: #476bb2;
-	margin: 0.5em 0 0 0.5em;
+	margin: 2.5% 0 0 2.5%;
+	/*margin: 0.5em 0 0 0.5em;*/
 	font-weight: bold;
 }
 
 h4 {
 	font-size: 0.9em;
-	margin: 0.4em 0 0.5em 0.5em;
+	margin: 1% 0 2.5% 2.5%;
+	/*margin: 0.4em 0 0.5em 0.5em;*/
 	font-style: italic;
+}
+
+footer {
+	clear: both;
+	/*background-color: hsl(100, 25%, 60%);*/
+	/*background-color: hsl(89, 25%, 60%);*/
+	/*margin: 0.5em 0 1em 0;*/
+	margin: 2% 0 2% 0.5%;
+	padding: 1%;
+	/*padding: 0.5em;*/
+/*	color: white;*/
+	border-radius: 0.5em;
 }
 
 img {
 	border: 0.2em solid #476bb2;
-	border-radius: 1em;
-	width: 70%;
-	margin: 1em 15% 1em 15%;
+	border-radius: 20em;
+	width: 90%;
+	margin: 5% 0 5% 5%;
+	/*margin: 1em 0 1em 5%;*/
 }
 
 p {
-	margin: 0 0.5em 0.5em 0.5em;
+	/*margin: 0 0.5em 0.5em 0.5em;*/
+	margin: 0 2.5% 2.5% 2.5%;
 	text-align: justify;
+	font-size: 1.1em;
+	line-height: 1.5em;
+	font-family: 'Roboto', 'sans-serif';
 }
 
 ul {
 	list-style-type: circle;
-	margin-left: 2em;
-	margin-bottom: 1em;
+/*	margin-left: 2em;*/
+/*	margin-bottom: 1em;*/
+	margin: 0 2.5% 2.5% 6%;
 }
 
 ol {
 	list-style-type: decimal;
-	margin: 0.5em 0em 0.5em 2em;
+/*	margin: 0.5em 0em 0.5em 2em;*/
+	margin: 0 2.5% 2.5% 6%;
 }
 
 li {
-	margin: 0.5em;
+	/*	margin: 0.5em;*/
+	margin: 1%;
+	line-height: 1.2em;
 }
 
 em {
@@ -71,7 +96,7 @@ em {
 }
 
 b {
-	font-weight: bolder;
+	font-weight: 900;
 }
 
 a:link {
@@ -86,18 +111,166 @@ a:hover {
 	background-color: #476bb2;
 }
 
-/* index */
+/*nav*/
+.nav ul {
+	list-style-type: none;
+/*	padding: 0.5em 0 0.5em 0;
+	margin: -0.5em 0 0.5em 0;*/
+	padding: 1% 0 -0.5% 0;
+	margin: -1% 0 2% 0;
+	background-color: hsl(100, 25%, 60%);
+	border-radius: 0.2em;
+	color: white;
+	font-size: 1.3em;
+	height: 100%;
+}
 
-section {
-	margin: 0;
-	background-color: #D0DBE3;
-	vertical-align: top;
-	border-radius: 5px;
-	padding: 0.2em 0 0.2em 0;
+.nav ul li {
+	display: inline;
+	text-align: center;
+/*	padding: 0.5em 0 0.5em 0;*/
+	padding: 1% 0 1% 0;
+
+}
+.nav ul li a {
+	display: inline-block;
+	color: white;
+	text-decoration: none;
+	width: 17%;
+/*	margin: -0.5em 0 -0.5em 0;
+	padding: 0.5em 0 0.5em 0;*/
+	padding: 1% 0 1% 0;
+	border: 1px solid black;
+}
+
+.nav ul li a:hover {
+	background-color: hsl(100, 25%, 50%);
+	/*margin: -0.5em 0 -0.5em 0;
+	padding: 0.5em 0 0.5em 0;*/
+	padding: 1% 0 1% 0;
+}
+
+.nav {
+/*	padding: 2% 0 -0.5% 0;*/
+	margin: -1% 0 2% 0;
+	background-color: hsl(100, 25%, 60%);
+	border-radius: 0.2em;
+	color: white;
+	font-size: 1.3em;
+	overflow: hidden;
+}
+
+.nav div a {
+	width: 20%;
+	padding: 1% 0 1% 0;
+	display: inline-block;
+	text-align: center;
+	float: left;
+	color: white;
+	text-decoration: none;
+}
+
+.nav div a:hover {
+	background-color: hsl(100, 25%, 50%);
+}
+
+.current {
+	background-color: hsl(100, 25%, 50%);
 }
 
 
-#blog {
+.block {
+	margin: 0.5em 0 0.5em 0;
+	margin: 2% 0 2% 0;
+	background-color: #D0DBE3;
+	vertical-align: top;
+	border-radius: 5px;
+	padding: 2em 0.5em 2em 0.5em;
+}
+
+
+/* index */
+
+#favorites {
+	float: right;
+	width: 47%;
+	height: 30em;
+}
+
+#me {
+	float: left;
+	width: 47%;
+	height: 30em;
+}
+
+#name {
+	font-size: 2.2em;
+	text-align: center;
+	color: white;
+	width: 80%;
+	height: 5em;
+	display: block;
+	margin: auto;
+	padding: 5.5em 2em 0em 2em;
+	background-color: #476bb2;
+	border-radius: 0 0 0.2em 0.2em;
+	margin-bottom: 0.4em;
+	font-weight: 100;
+	text-decoration: none;
+}
+
+#big {
+	font-size: 1.3em;
+	font-weight: 800;
+}
+
+#hello {
+	font-size: 1.25em;
+	text-align: center;
+	width: 80%;
+	height: 2em;
+	display: block;
+	margin: auto;
+	padding: 2em;
+	margin-bottom: 0.4em;
+	font-weight: 100;
+
+}
+
+/*about*/
+
+
+#pic {
+	display: inline-block;
+	width: 40%;
+	height: 100%;
+}
+
+#about {
+	display: inline-block;
+	width: 45%;
+	height: 100%;
+	vertical-align: top;
+	margin-right: 2em;
+	margin-left: 4em;
+}
+
+#sp {
+	padding-bottom: 1.5em;
+	width: 12em;
+	display: inline-block;
+	float: right;
+	/*background-color: #85a366;*/
+	border-radius: 0.5em;
+	margin: 2em 0.5em 0 0;
+	padding-top: 0.5em;
+	height: 95%;
+	line-height: 1.2em;
+}
+
+/* blog posts */
+
+/*#blog {
 	width: 25%;
 	display: inline-block;
 	float: right;
@@ -107,52 +280,8 @@ section {
 }
 #blog section {
 	height: 100%;
-}
+}*/
 
-#else {
-	width: 73%;
-	display: inline-block;
-	float: left;
-	padding-bottom: 0.5em;
-}
-.right {
-	width: 100%;
-	padding-bottom: 0.5em;
-}
-
-
-#favorites {
-	display: block;
-	width: 100%;
-	clear: both;
-	margin-bottom: 1em;
-}
-
- #favorites section div {
-	width: 31%;
-	display: inline-block;
-	vertical-align: top;
-}
-
-
-#pic {
-	display: inline-block;
-	width: 30%;
-	height: 100%;
-}
-
-#about {
-	display: inline-block;
-	width: 65%;
-	vertical-align: top;
-
-}
-
-#sp {
-	padding-bottom: 1.5em;
-}
-
-/* blog posts */
 .indent {
 	width: 90%;
 	margin: auto;
@@ -187,6 +316,8 @@ div.post{
 	border-radius: 0.5em;
 	margin-bottom: 2em;
 	line-height: 1.2em;
+	display: inline-block;
+	width: 40em;
 }
 
 code {
@@ -229,7 +360,7 @@ grn {
 
 	#else {
 		height: 100%;
-		min-height: 1100px;
+		/*min-height: 1100px;*/
 		margin-bottom: -2em;
 	}
 
@@ -260,6 +391,10 @@ grn {
 }
 
 @media (max-width: 800px) {
+	body {
+		width: 100%;
+		font-size: 125%;
+	}
 	#blog {
 		margin: 0 0 1em 0;
 		height: auto;
@@ -285,8 +420,13 @@ grn {
 }
 
 @media (max-width: 500px) {
+
 	#favorites section div {
 		display: block;
 		width: 100%;
+	}
+
+	.nav {
+		display: none;
 	}
 }
