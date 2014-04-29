@@ -43,8 +43,7 @@
 			<h3>SQL versus NoSQL</h3>
 			<h4>Relational Databases</h4>
 			<p>SQL has been around since the 1970s and is the language used to communicate with <em>relational databases</em>.  In a relational database, data is stored in tables that may be linked to each other. Each row (or record) of a table contains a data set representing a single item, and each column (or attribute) is a category that labels the elements in the rows.  SQL is used to update and retrieve data in relational databases.</p>
-			<p>There are many advantages to using a relational database to store data.  For one, relational databases and SQL have been around for decades, so the technology is mature and many people have significant experience working with them.  They are also great for working with structured data (meaning that the attributes, or columns, being recorded aren't going to change) and datasets that aren't likely to suddenly expand. For instance, a patient or client management database, an HR database, and a library catalog can all be managed easily and effectively with a relational database.</p>
-			<p>However, relational databases are not well-suited to</p>
+			<p>There are many advantages to using a relational database to store data.  For one, relational databases and SQL have been around for decades, so the technology is mature and many people have significant experience working with them.  They are also great for working with structured data (meaning that the attributes, or columns, being recorded aren't going to change) and datasets that aren't likely to suddenly expand. For instance, a patient or client management database, an HR database, and a library catalog can all be managed easily and effectively with a relational database. &nbsp;&nbsp; <a href = "posts/week7_technical.html" class = "rm"> read more&nbsp;&raquo; </a></p>
 		</div>
 
 		<h2>Tuesday, April 22, 2014</h2>
@@ -52,8 +51,7 @@
 			<h3>Affirmation and Stereotype Threat</h3>
 
 			<p>One reason I haven't felt particularly threatened by stereotypes is that I value personal achievement, improvement, and challenge above what other people think of me.  Thus, it's easy to disregard stereotypes in favor of more objective measures of my ability and potential.  </p>
-			<p>I also strongly value the close relationships I have with others.  During times of stress, I find comfort in such relationships not because of any encouraging words or favorable opinions but rather because of the shared experiences, closeness, and comfort they provide.  I have been able to work through some of my most trying moments by helping others work through their own challenges and achieve their own successes.</p>
-			<p>In moments of doubt at DBC, I think it will be important for me to focus on a few things.  First, I shouldn't compare myself to others: I have my own standards for myself, and everyone at DBC has a different background and different goals. Instead of focusing on other people, I should focus on achieving</p>
+			<p>I also strongly value the close relationships I have with others.  During times of stress, I find comfort in such relationships not because of any encouraging words or favorable opinions but rather because of the shared experiences, closeness, and comfort they provide.  I have been able to work through some of my most trying moments by helping others work through their own challenges and achieve their own successes.&nbsp;&nbsp; <a href = "posts/week7_cultural_blog.html" class = "rm"> read more&nbsp;&raquo; </a></p>
 		</div>
 
 		<h2>Sunday, April 20, 2014</h2>
@@ -71,14 +69,43 @@
 						<span class = "grey">5</span>  &nbsp;&nbsp;&nbsp;end<br/>
 
 						<span class = "grey">6</span>	&nbsp;&nbsp;&nbsp;def perimeter<br/>
+						<span class = "grey">7</span>	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2 * @width + 2 * @length<br/>
+						<span class = "grey">8</span>	&nbsp;&nbsp;&nbsp;end<br/>
+						<span class = "grey">9</span> &nbsp;end<br/><br/>
+						<span class = "grey">10</span> class Circle<br/>
+						<span class = "grey">11</span>	&nbsp;&nbsp;def initialize(radius)<br/>
+						<span class = "grey">12</span>	&nbsp;&nbsp;&nbsp;&nbsp;@radius = radius<br/>
+						<span class = "grey">13</span>	&nbsp;&nbsp;end<br/>
+
+						<span class = "grey">14</span>	&nbsp;&nbsp;def perimeter<br/>
+						<span class = "grey">15</span>		&nbsp;&nbsp;&nbsp;&nbsp;2 * 3.14 * @radius<br/>
+						<span class = "grey">16</span>	&nbsp;&nbsp;end<br/>
+						<span class = "grey">17</span> end<br/><br/>
+						<span class = "grey">18</span> class Triangle<br/>
+						<span class = "grey">19</span>	&nbsp;&nbsp;def initialize(side1, side2, side3)<br/>
+						<span class = "grey">20</span>		&nbsp;&nbsp;&nbsp;&nbsp;@side1 = side1<br/>
+						<span class = "grey">21</span>		&nbsp;&nbsp;&nbsp;&nbsp;@side2 = side2<br/>
+						<span class = "grey">22</span>		&nbsp;&nbsp;&nbsp;&nbsp;@side3 = side3<br/>
+						<span class = "grey">23</span>	&nbsp;&nbsp;end<br/>
+
+						<span class = "grey">24</span>	&nbsp;&nbsp;def perimeter<br/>
+						<span class = "grey">25</span>		&nbsp;&nbsp;&nbsp;&nbsp;@side1 + @side2 + @side3<br/>
+						<span class = "grey">26</span>	&nbsp;&nbsp;end<br/>
+						<span class = "grey">27</span> end<br/><br/>
+						<span class = "grey">28</span> rect = Rectangle.new(2, 4) <br/>
+						<span class = "grey">29</span> circ = Circle.new(3)<br/>
+						<span class = "grey">30</span> tri = Triangle.new(1, 2, 3)<br/><br/>
+						<span class = "grey">31</span> rect.perimeter<br/>
+						<span class = "grey">32</span> circ.perimeter<br/>
+						<span class = "grey">33</span> tri.perimeter<br/>
 					</code>
-				</div>
+				</div><p>&nbsp;&nbsp; <a href = "posts/week6_technical.html" class = "rm"> read more&nbsp;&raquo; </a></p>
 		</div>
 
 		<h2>Sunday, April 20, 2014</h2>
 		<div class = "minipost">
 			<h3>Stereotype Threat</h3>
-			<p>As a girl who is (and always has been) reasonably good at math and science, I have always been aware of the corresponding stereotype.  However, I can't think of a time it has affected my achievement, which may be one of the primary reasons I was able to earn undergraduate and graduate degrees in math.  Throughout my schooling, it did upset me if someone prejudged my abilities because of my gender, but I've always  focused on my own standards for myself and have been able to find people (both guys and girls) who were eager to work with me.  I think I have a pretty good grasp of my own strengths and weaknesses, so I generally disregard someone's opinion of me unless they know me pretty well or have seen examples of my work.</p>
+			<p>As a girl who is (and always has been) reasonably good at math and science, I have always been aware of the corresponding stereotype.  However, I can't think of a time it has affected my achievement, which may be one of the primary reasons I was able to earn undergraduate and graduate degrees in math.  Throughout my schooling, it did upset me if someone prejudged my abilities because of my gender, but I've always  focused on my own standards for myself and have been able to find people (both guys and girls) who were eager to work with me.  I think I have a pretty good grasp of my own strengths and weaknesses, so I generally disregard someone's opinion of me unless they know me pretty well or have seen examples of my work.&nbsp;&nbsp; <a href = "posts/week6_cultural_blog.html" class = "rm"> read more&nbsp;&raquo; </a></p>
 		</div>
 
 		<h2>Sunday, April 13, 2014</h2>
@@ -93,117 +120,10 @@
 				</code>
 			<codein>arr_1</codein> has been defined using constructor notation and <codein>arr_2</codein> has been defined using literal notation, but both are the same type of object.  <codein>arr_1</codein> and <codein>arr_2</codein> are called <em>instances</em> of the class <codein>Array</codein>.  So a class is a category, and an instance is a particular object that falls into that category.  Other examples of classes are <codein>String, Fixnum, Float,</codein> and <codein>Hash</codein>.  </p> 
 
-			<p>So why are classes helpful? </p>
+			<p>So why are classes helpful?  Because we often want to know similar things or perform similar tasks on objects in the same class.  Each class has associated <em>methods</em> that do something to an instance of the class. For example, <codein>#length, #each,</codein> and <codein>#sort</codein> are all methods associated with the class <codein>Array</codein>.  Similarly, <codein>#length, #downcase,</codein> and <codein>#each_char</codein> are all methods associated with the class <codein>String</codein>.  Each of these methods can be called on any instance of the associated class.  (Note that some methods are associated with more than one class.)&nbsp;&nbsp; <a href = "posts/week5_technical.html" class = "rm"> read more&nbsp;&raquo; </a></p>
 		</div>
 
-		<h2>Sunday, April 13, 2014</h2>
-		<div class = "minipost">
-			<h3>Computer Science Education</h3>
-			<p>It is not an exaggeration to say that the state of computer science and technology in K-12 education is somewhat alarming.  As more jobs are created and exciting innovations are made in computer science and technology, surprisingly few states are providing an adequate education for their students.  Only 17 states and the District of Columbia allow computer science courses to count towards core graduation requirements in either math or science.  NPR reports that only 10% of K-12 schools teach computer science.  And yet, ACM chair of Education Policy Committee Bobby Schnabel reports that by 2020, half of the jobs in STEM (science, technology, engineering, and mathematics) disciplines will be in computing. It is predicted that within the next 10 years there will be approximately 1 million more jobs in the technology sector than there are computer science graduates.   How is that possible?  What is being done to address this  gap?</p>
-
-			<p>There are programs throughout the country that aim to address this problem, but the change needs to come at a state and national level.  Current state standards are unacceptably lax.  While some states do have standards related explicitly to computer science, most have either too few or none at all. </p>
-		</div>
-
-		<h2>Sunday, April 6, 2014</h2>
-		<div class = "minipost">
-			<h3>Dealing with Conflict</h3>
-			<p>I have been a tutor for many years.  A few years ago, there was an  emotional conflict between me and a parent of one of my students.  We will call the student Russell and the parent Jason.</p>
-			<p>I had a regular weekly tutoring appointment with Russell.  However, one week he had a scheduling conflict so we rescheduled.  That week, I arrived at the family's home at the time Jason and I had discussed.  Upon arrival, it quickly became clear that Jason had forgotten about our appointment and that Russell was not home.  I waited in the hallway for 15-20 minutes while Jason tried to get in touch with Russell.  Eventually, Jason determined that Russell was still at school taking a history test, so he would not be able to meet for tutoring.  Jason then asked if he would be charged for the tutoring session, and I told them they would be. Jason became extremely upset.  I reminded him that that the office I work for has a 24-hour cancelation policy and that he was welcome to discuss any questions he had about the policy with the directors at the office.  Jason was still upset and said something to the effect of "If I have to pay for your time, then I'm going to use that time.  Teach me the lesson you had planned for Russell." So I did.  About 45 minutes later, Russell got home and I spent the remaining part of our session teaching Russell.</p>
-			<p>The situation made me feel upset because Jason did not act as if my time was valuable.  It also made me feel uncomfortable because I was asked to teach a lesson that had been designed for a high school student to an adult.</p>
-			<p>I did not show my emotions during the exchange, and I think that prevented the situation from escalating even more than it did. However, in some ways my actions exacerbated the situation -- I could have chosen to not bill for the session.  But the only reason to take that avenue would have been to avoid emotional conflict, and it would have set a precedent that I may have regretted.  Taking actions just to avoid emotional conflict is not always the best choice, especially when the conflict involves people with whom you have a long-term relationship.</p>
-			<p>Because of the emotional toll the conflict took on me, I spent time talking to my superiors</p>
-		</div>
-
-		<h2>Wednesday, April 2, 2014</h2>
-		<div class = "minipost">
-			<h3><codein>#map</codein> in Ruby</h3>
-			<p>The <codein>#map</codein> method in Ruby can used to transform arrays, hashes, and ranges by calling a block of code on each element and pushing each result to a new array.  So, regardless of the class of the input (array, hash, or range), the output is a new array.  
-			</p>
-
-			<code>
-				input.map { |item| block } <em>=> output_array</em>
-			</code>
-			<p>You can interpret this syntax as follows.</p>
-			<ul>
-				<li><codein>input</codein> is an array, hash, or range.</li>
-				<li><codein>item</codein> represents the elements in <codein>input</codein> that are being iterated over.  In an array/range, <codein>item</codein> represents each element; in a hash, <codein>item</codein> represents the key/value pair.</li>
-				<li><codein>block</codein> is the block of code that will be performed on each element in <codein>input</codein>.  The result of this block is pushed to the <codein>output_array</codein>.</li>
-				<li><codein>output_array</codein> is an array that contains the values returned by the block for each of the elements in <codein>input</codein>.</li>
-			</ul>
-
-			<p>Let's look at some examples.  Suppose you have an array of numbers and want to convert them all to strings.  You can use #map: </p>
-			<code>
-				[1,2,3,4,5].map {|element| element.to_s} <em>=> ["1", "2", "3", "4", "5"]</em>
-			</code>
-		</div>
-
-
-
-		<h2>Friday, March 28, 2014</h2>
-		<div class = "minipost">
-			<h3>Pairing and Group Work</h3>
-			<p>Sophomore year of college, I took a math class called "Analysis".  I had already taken a course called "Intro to Analysis", but even so Analysis basically killed me.  The problem sets were designed to be particularly challenging, so most of the class would gather in the math building several times a week to try to solve the problems together.  It was pretty intense.  One night we all brought sleeping bags (and donuts) and spent the night.  Our professor found us all happily snuggled up on the classroom floor the following morning.  It was actually pretty awesome.  Don't lie; I know you are secretly jealous.
-			</p>
-			<p>Ever since that class, I have loved solving problems in a group.  It is truly remarkable how far beyond my comfort zone I can be pushed when put under pressure with other people who are equally motivated to solve problems.  I have found that discussing problems with people who approach them in completely different ways than I do is one of the most productive ways to make progress.  Moreover, the moments of success are magnified because I get to share them with other people.  Basically, everything about it rocks.</p>
-
-			<p>Now, before DBC most of the group work I've participated</p>
-		</div>
-
-		<h2>Thursday, March 27, 2014</h2>
-		<div class = "minipost">
-			<h3>What are the various ways to loop in Ruby and how can you decide which is best to use?</h3>
-			<p>There are many ways to loop in Ruby.  Below are some of the more common options.</p>
-				<ol>
-					<li><codein>#each</codein>
-						<code><grn>[collection]</grn>.each do |element| <br/>&emsp;&emsp;<grn>[some code]</grn><br/>end</code>
-						<p>The <codein><grn>[collection]</grn></codein> is often an array but can also be a range, e.g. (1..100), or a hash.</p>
-						<p><codein>#each</codein> is one of the most common ways to loop in Ruby.  In fact, if you can think of a way to execute your loop using <codein>#each</codein>, then <codein>#each</codein> is probably a pretty good option.  It's pretty versatile since it can be called on arrays, hashes, and ranges.</p>
-						<p>Some related iterators are <codein>#each_index, #each_key,</codein> and <codein>#each_value,</codein> which loop over the indices of an array, the keys of a hash, and the values of a hash, respectively. </p>
-					</li>
-					<li><codein>#times</codein>
-						<code><grn>[integer]</grn>.times do <br/><grn>&emsp;&emsp;[some code]</grn><br/>end</code><br/>
-						<code><grn>[integer]</grn>.times do |index| <br/>&emsp;&emsp;<grn>[some code]</grn><br/>end</code>
-						<codein>#times</codein> is a good option if you are trying to repeat the same block of code a set number of times.  For example, for a particular <codein>array</codein> you may want to execute the same block of code <codein>array.length</codein> number of times.
-					</li>
-				</ol>
-		</div>
-
-		<h2>Sunday, March 23, 2014</h2>
-		<div class = "minipost">
-			<h3>Why is JavaScript so popular in web development?</h3>
-			<p>Before we talk about JavaScript, consider the following two questions.</p>
-			<div class = "indent">
-				<h4><b>Who are web developers these days?</b></h4>
-				<p>Web developers can be, and are, just about anyone.  Many are people who have simply had an idea for an application or website and are trying implement it.  Such people come from an enormous variety of backgrounds.  Some may have programming experience, but many don't.  </p>
-				<h4><b>What are web developers developing?</b></h4>
-				<p>In the past, websites were largely static--they just presented information.  Not so anymore.  Think about smartphones, tablets, and how you interact with the web from your computer these days.  You can check the weather, play games, see how much money you have in your checking account, pay a bill, track your calorie intake, find out how soon the bus will arrive, buy a book, book a flight...</p>
-				<p>There are some common features among these examples.  Information on websites and in web apps often changes frequently--the weather ... read more </p>
-			</div>
-		</div>			
-		<h2>Thursday, March 20, 2014</h2>
-		<div class = "minipost">
-			<h3>Some of my values</h3>
-			<p>Some of my values are shown below with a corresponding value representing how strong I agree with the statement "I try to live up to these values" (1 is disagree, 5 is agree).
-			<table>
-			<tr id = "firstrow"><td>Value</td><td>Do I try to live up to this value?</td></tr>
-			<tr><td>Accomplishment</td><td>4</td></tr>
-			<tr><td>Achievement</td><td>4</td></tr>
-			<tr><td>Affection</td><td>5</td></tr>
-			<tr><td>Autonomy</td><td>5</td></tr>
-			<tr><td>Challenge</td><td>4</td></tr>
-			<tr><td>Close relationships</td><td>5</td></tr>
-			<tr><td>Commitment</td><td>5</td></tr>
-		</table><p>...read more</p>
-	</div>
-		<h2>Sunday, March 16, 2014</h2>
-		<div class = "minipost">
-			<h3>Serious Eats</h3>
-			<p><a href = "http://www.seriouseats.com" target = "_blank">Serious Eats</a> is one of my favorite websites.  Like so many other websites, it has an excellent assortment of delicious recipes and reviews of restaurants all over the world. What sets it apart from other websites for me is primarily Kenji, one of the blog writers who has a background in science and writes excellent (and sometimes surprising) articles on the science behind his recipes.  There are other fantastic contributors to the website, but I especially enjoy reading about Kenji's experimental process and, at the same time, learning some food science.  Who doesn't want to know why their food tastes good?
-			</p>
-			<p>I find the user-experience to be quite enjoyable and the design to be streamlined and easy to look at.  Like any good food website, the homepage is full of photos of food, to which a user's eyes are immediately drawn.  The colors are light and undistracting, and there is an appropriate amount of contrast between text and backgrounds.  The website is set up like a blog, with the most recent posts first.  </p>
-
-			<p>Moreover, the use of tags makes it easier to navigate such a large website; whenever I want to find Kenji's latest posts, I check to see if he's posted anything on ... <a href = "">read more</a></p>
-		</div>
-		<p>Older posts</p>
+		<div style = "margin: 0 0 5% 30%"><a href = "blog2.html">Older posts&nbsp;&raquo;</a></div>
+		<!-- break this up into a few pages -->
 	</body>
 </html>

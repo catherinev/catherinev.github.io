@@ -221,6 +221,14 @@ a:hover {
 
 
 /* blog posts */
+.rm {
+	font-family: sans-serif;
+	font-variant: small-caps;
+	color: #476bb2;
+	text-decoration: underline;
+	font-size: 1.2em;
+}
+
 #sp {
 	padding-bottom: 1.5em;
 	width:20%;
