@@ -336,7 +336,7 @@ grn {
 
 	
 
-	#blog {
+/*	#blog {
 		height: 150%;
 		min-height: 1050px;
 	}
@@ -351,7 +351,7 @@ grn {
 		width: 100%;
 		padding-bottom: 1em;
 		margin-bottom: 0.8em; 
-	}
+	}*/
 
 
 
@@ -389,15 +389,15 @@ grn {
 		width: 80%;
 	}
 */
-	#blog {
+/*	#blog {
 		margin: 0 0 1em 0;
 		height: auto;
 		display: block;
 		width: 100%;
 		min-height: 0;
 	}
-
-	div#else {
+*/
+/*	div#else {
 		margin: 0;
 		padding: 0;
 		display: block;
@@ -410,15 +410,15 @@ grn {
 
 	.right {
 	margin-bottom: 0.3em; 
-	}
+	}*/
 }
 
 @media (max-width: 500px) {
-
+/*
 	#favorites section div {
 		display: block;
 		width: 100%;
-	}
+	}*/
 
 	.nav {
 		display: none;
