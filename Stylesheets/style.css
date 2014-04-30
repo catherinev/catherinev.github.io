@@ -25,33 +25,25 @@ h2 {
 	font-size: 1.8em;
 	color: #85a366;
 	margin: 0.5% 1% 1.5% 2.5%;
-	/*margin: 0.1em 0.2em 0.5em 0.2em;*/
 }
 
 h3 {
 	font-size: 1.1em;
 	color: #476bb2;
 	margin: 2.5% 0 0 2.5%;
-	/*margin: 0.5em 0 0 0.5em;*/
 	font-weight: bold;
 }
 
 h4 {
 	font-size: 0.9em;
 	margin: 1% 0 2.5% 2.5%;
-	/*margin: 0.4em 0 0.5em 0.5em;*/
 	font-style: italic;
 }
 
 footer {
 	clear: both;
-	/*background-color: hsl(100, 25%, 60%);*/
-	/*background-color: hsl(89, 25%, 60%);*/
-	/*margin: 0.5em 0 1em 0;*/
 	margin: 2% 0 2% 0.5%;
 	padding: 1%;
-	/*padding: 0.5em;*/
-/*	color: white;*/
 	border-radius: 0.5em;
 }
 
@@ -60,11 +52,9 @@ img {
 	border-radius: 20em;
 	width: 90%;
 	margin: 5% 0 5% 5%;
-	/*margin: 1em 0 1em 5%;*/
 }
 
 p {
-	/*margin: 0 0.5em 0.5em 0.5em;*/
 	margin: 0 2.5% 2.5% 2.5%;
 	text-align: justify;
 	font-size: 1.1em;
@@ -74,19 +64,15 @@ p {
 
 ul {
 	list-style-type: circle;
-/*	margin-left: 2em;*/
-/*	margin-bottom: 1em;*/
 	margin: 0 2.5% 2.5% 6%;
 }
 
 ol {
 	list-style-type: decimal;
-/*	margin: 0.5em 0em 0.5em 2em;*/
 	margin: 0 2.5% 2.5% 6%;
 }
 
 li {
-	/*	margin: 0.5em;*/
 	margin: 1%;
 	line-height: 1.2em;
 }
@@ -128,7 +114,6 @@ a:hover {
 /*nav*/
 
 .nav {
-/*	padding: 2% 0 -0.5% 0;*/
 	margin: -1% 0 2% 0;
 	background-color: hsl(100, 25%, 60%);
 	border-radius: 0.2em;
@@ -161,7 +146,6 @@ a:hover {
 	height: 25%;
 	display: block;
 	margin: auto;
-	/*padding: 6em 2em 0em 2em;*/
 	padding: 25% 10% 7% 10%;
 	background-color: #476bb2;
 	border-radius: 0 0 0.2em 0.2em;
@@ -234,29 +218,15 @@ a:hover {
 	width:20%;
 	display: inline-block;
 	float: right;
-	/*background-color: #85a366;*/
 	border-radius: 0.5em;
 	margin: 2em 0.5em 0 0;
 	padding-top: 0.5em;
 	height: 95%;
-/*	line-height: 1.5em;*/
 }
 
 #sp ul li {
 	margin-bottom: 5%;
 }
-
-/*#blog {
-	width: 25%;
-	display: inline-block;
-	float: right;
-	padding-bottom: 0.5em;
-	margin-bottom: 1em;
-	height: 798px;
-}
-#blog section {
-	height: 100%;
-}*/
 
 .indent {
 	width: 90%;
@@ -327,6 +297,13 @@ grn {
 	color: #6A8252;
 }
 
+#menu-icon {
+	border: none;
+	display: none;
+/*	width: 40px;
+	height: 40px;*/
+}
+
 /* responsive */
 
 @media (max-width: 1024px){
@@ -335,17 +312,6 @@ grn {
 	}
 
 	
-
-/*	#blog {
-		height: 150%;
-		min-height: 1050px;
-	}
-
-	#else {
-		height: 100%;
-		/*min-height: 1100px;*/
-		margin-bottom: -2em;
-	}
 
 	.right {
 		width: 100%;
@@ -365,10 +331,6 @@ grn {
 		width: 100%;
 		font-size: 125%;
 	}
-	/*img {
-		display: block;
-		margin: auto;
-	}*/
 
 	div#pic {
 		display: block;
@@ -384,43 +346,74 @@ grn {
 		vertical-align: top;
 		margin-bottom: 1em;
 	}
-/*	#about {
-		display: block;
-		width: 80%;
-	}
-*/
-/*	#blog {
-		margin: 0 0 1em 0;
-		height: auto;
-		display: block;
-		width: 100%;
-		min-height: 0;
-	}
-*/
-/*	div#else {
-		margin: 0;
-		padding: 0;
-		display: block;
-		width: 100%;
-		clear: both;
-		height: auto;
-		min-height: 0;
-	}
 
 
-	.right {
-	margin-bottom: 0.3em; 
-	}*/
+
 }
 
 @media (max-width: 500px) {
-/*
-	#favorites section div {
-		display: block;
-		width: 100%;
-	}*/
 
-	.nav {
-		display: none;
+	h1 {
+		position: relative;
+		padding-top: 20px;
 	}
+	#menu-icon {
+		display:inline-block;
+		background-color: hsl(100, 25%, 60%);
+		font-size: 0.8em;
+		font-family: 'gafata';
+		color: white; 
+		width: 120px;
+		height: 30px;
+		position: fixed;
+		top: 0px;
+		right: 1%;
+		border-radius: 0 0 0 0.2em;
+	}
+
+
+	.nav:hover, .nav:active {
+		/*position: absolute;*/
+		position: fixed;
+		top: 0px;
+		right: 1%;
+		width: 120px;
+		border-radius: 0 0 0.2em 0.2em;
+		height: 200px;
+		/*width: 200px;*/
+	}
+
+	.nav div{
+		display: none;
+		/*position: absolute;*/
+		/*padding: 20px;*/
+/*		background: #fff;
+		border: 5px solid #444;*/
+		/*right: 20px;/**/
+		/*top: 60px;*/
+		/*width: 50%;*/
+		/*border-radius: 4px 0 4px 4px;*/
+	}
+
+
+	.nav:hover div {
+		display: block;
+		position: relative;
+		text-align: center;
+		width: 100%;
+		padding: 5px 0;
+		margin: 0;
+		clear: both;
+		/*height: 40px;*/
+	}
+	.nav:hover div:nth-child(2) {
+		margin-top: 30px;
+	}
+
+	
+
+	.nav div a {
+		width: 100%;
+	}
+
 }
