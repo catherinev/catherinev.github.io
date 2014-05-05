@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="initial-scale=1">
+		<title>Blog Post</title>
+		<link rel="stylesheet" type="text/css" href="../Stylesheets/reset.css" charset="utf-8"/>
+		<link rel="stylesheet" type="text/css" href="../Stylesheets/style.css" charset="utf-8"/>
+		<link href='http://fonts.googleapis.com/css?family=Gafata' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Roboto:900,300,100italic' rel='stylesheet' type='text/css'>
+	</head>
+
+	<body>
+		<h1>Catherine Vongsathorn</h1>
+		<div class = "nav">
+			<div><a href = "../index.html">Home</a></div>
+			<div><a href = "../about.html">About</a></div>
+			<div><a href = "../blog.html" class = "current">Blog</a></div>
+			<div><a href = "../experience.html">Experience</a></div>
+			<div><a href = "../links.html">Links</a></div>
+		</div>
+		<h2>Sunday, May 4, 2014</h2>
+		<div class = "post">
+			<h3>Sorting</h3>
+			<p>Sorting is the ability to take a list (e.g., array, hash, database) and put the elements in order.  While it is a simple concept, there are many different ways to go about doing it.  What if you were asked to manually order a list of randomly generated numbers? How would you do it?  Perhaps you'd consider doing something like this:</p>
+			<ol>
+				<li>Look at the first number.  Since it's first, it is the smallest number so far.  Remember this number and move to the next number in your list.</li>
+				<li>Is this number smaller than the number you have remembered?  If so, this number is now the smallest; forget the number that used to be smallest and remember this number instead.  Otherwise, just keep going.</li>
+				<li>Move to the next element in your list and repeat step 2. Continue until you reach the end of the list.  By this time, you will have found the smallest number in your list.</li>
+				<li>Take the smallest number out of the list and add it to a new, ordered list.</li>
+				<li>Repeat steps 1-4 until your unordered list is empty.</li>
+			</ol>
+			<p>This will certainly work, but it's <em>really inefficient</em>.  For each number in your list, you have to go through the entire list and then add it to the new list.  Let's say you have a list of 10 numbers and it takes you 1 second to look at each element in the list (and decide if you should "remember" it).  Then, this algorithm will take you 10 seconds to find the smallest number, 9 seconds to find the next smallest, 8 seconds to find the next...for a total of 10+9+8+7+6+5+4+3+2+1 = 55 seconds to put that list in order.  (Note: this assumes that step 4 takes 0 seconds.)</p>
+
+			<p>But what if your list has 100 elements in it?  Then it will take you 100+99+98+...+2+1 = 5050 seconds to order this list!  If this doesn't upset you, it should: we multiplied the number of elements in our list by 10, but it took almost 100 times as long to run the algorithm.  This is bad.  It's slow.  Even if the list is already in order, it will take 5500 seconds to "order" a list with 100 elements. Surely we can do better.</p>
+
+			<h4>Merge Sort</h4>
+			<p>Suppose we want to sort the following list of numbers: 5, 3, 54, 2, 44, 16, 0, 23, 3, 43</p>
+			<ol>
+				<li>Split the list in to lists of two elements.<br/>
+					 <div class = "box">5, 3</div> <div class = "box">54, 2</div> <div class = "box">44, 16</div> <div class = "box">0, 23</div> <div class = "box">3, 43</div>
+				</li>
+				<li>For each list of 2, switch if the second is smaller than the first.  This has the effect of ordering each of the lists.<br/>
+				 <div class = "box">3, 5</div> <div class = "box">2, 54</div> <div class = "box">16, 44</div> <div class = "box">0, 23</div> <div class = "box">3, 43</div>
+				</li>
+				<li>Combine the lists of 2 into lists of 4 (until it isn't possible to make any more lists of 4) as follows :
+					<ol>
+						<li>Compare the first two elements in the two lists.  In our example, two of our lists of two are <div class = "box">3, 5</div> and <div class = "box">2, 54</div>.  Comparing the first elements of each, we see that 2 is smaller than 3. Take out the 2 and put it in a new list.</li>
+						<li>Compare the first two elements (of those remaining) in the two lists.  In our example, the 2 has already been removed from the first list, so we are left with <div class = "box">54</div> to <div class = "box">3, 5</div>.  Thus, we compare 54 to 3.  Since 3 is smaller, we remove it and add it to our new list (which already contains 2).</li>
+						<li>Compare the remaining two elements in the lists and add them, in order, to our new list.</li>
+					</ol>
+				</li>
+				<li>Combine lists of four into lists of 8.</li>
+				<li>Continue until all lists have been combined into one.</li>
+			</ol>
+
+			<h4>Quick Sort</h4>
+
+			<h4>Bubble Sort</h4>
+			<ol>
+				<li>Look at first two elements.  Swap if they aren't ordered properly.</li>
+				<li>Look at the next two elements.  Swap if they aren't ordered properly.</li>
+				<li>Continue until the end of the list.</li>
+				<li>Go back to the beginning of the list and repeat steps 1-3.</li>
+				<li>Repeat step 4 until steps 1-3 do not result in any swaps.  This means the list is in order.</li>
+			</ol>
+			<p>This is not particularly efficient, but it's still better than our very first example: at least if the list is already in order, it won't take very much time.</p>
+			<h4>A final note</h4>
+			<p>All these examples are done with numbers, but any type of elements can be sorted with these algorithms as long as there is a way to <em>compare</em> them.  For example, it makes sense to say that "a" < "b" (and similarly for other elements in the alphabet), so we can apply the same sorting algorithms to strings.
+		</div>
+
+		<footer>
+			<div id = "left">Contact me: <a href="mailto:cvong47@gmail.com">Email</a></div>
+			<div id = "right">&copy;2014 Catherine Vongsathorn</div>
+		</footer>
+	</body>
+</html>

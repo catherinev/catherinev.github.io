@@ -336,6 +336,14 @@ grn {
 	color: #6A8252;
 }
 
+.box {
+	border: 1px black solid;
+	display: inline-block;
+}
+
+ol ol {
+	list-style-type: lower-alpha;
+}
 
 
 /* responsive */
