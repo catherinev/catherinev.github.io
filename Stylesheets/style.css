@@ -269,7 +269,8 @@ footer #right{float:right;}
 
 .indent {
 	width: 90%;
-	margin: auto;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 
