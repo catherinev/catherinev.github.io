@@ -1,6 +1,6 @@
 /* general */
 html, body {
-	font-family: gafata;
+	font-family: 'Roboto', sans-serif;
 	width: 900px;
 	margin-left: auto;
 	margin-right: auto;
@@ -18,6 +18,7 @@ h1 {
 	background-color: #476bb2;
 	border-radius: 0 0 0.2em 0.2em;
 	margin-bottom: 2%;
+	font-family: gafata;
 }
 
 h2 {
@@ -25,6 +26,7 @@ h2 {
 	color: #85a366;
 	margin: 0.5% 1% 1.5% 2.5%;
 	padding-top: 0.5%;
+	font-family: gafata;
 }
 
 h3 {
@@ -32,12 +34,14 @@ h3 {
 	color: #476bb2;
 	margin: 2.5% 0 0 2.5%;
 	font-weight: bold;
+	font-family: gafata;
 }
 
 h4 {
 	font-size: 0.9em;
-	margin: 1% 0 2.5% 2.5%;
+	margin: 1% 0 1% 2.5%;
 	font-style: italic;
+	font-family: gafata;
 }
 
 footer {
@@ -45,6 +49,7 @@ footer {
 	margin: 2% 0 2% 0.5%;
 	padding: 1%;
 	border-radius: 0.5em;
+	font-family: gafata;
 }
 
 img {
@@ -60,7 +65,6 @@ p {
 	text-align: justify;
 	font-size: 1.1em;
 	line-height: 1.5em;
-	font-family: 'Roboto', 'sans-serif';
 }
 
 ul {
@@ -120,6 +124,7 @@ a:hover {
 	color: white;
 	font-size: 1.3em;
 	overflow: hidden;
+	font-family: gafata;
 }
 
 .nav div a {
@@ -192,10 +197,12 @@ footer #right{float:right;}
 	padding: 5%;
 	/*margin-bottom: 0.4em;*/
 	font-weight: 100;
+	font-family: gafata;
 }
 
 #name div{
 	margin-bottom: 1.5%;
+	font-family: gafata;
 }
 
 /*about*/
@@ -209,13 +216,17 @@ footer #right{float:right;}
 
 #about {
 	display: inline-block;
-	width: 50%;
+	width: 54%;
 	height: 100%;
 	vertical-align: top;
 	margin-right: 2.5%;
 	margin-left: 2.5%;
+	text-align: justify;
 }
 
+#about p {
+		text-align: justify;
+	}
 
 /*Links*/
 #favorites {
@@ -236,12 +247,16 @@ footer #right{float:right;}
 .date {
 	float: right;
 	margin-right: 2.5%;
+	margin-bottom: 0;
+	vertical-align: top;
+	/*border: 1px black solid;*/
+	margin-top: -2.5em;
 }
 
 .re {
 	margin-right: 12%;
-	margin-top: -1%;
 }
+
 
 /* blog posts */
 .rm {
@@ -261,6 +276,10 @@ footer #right{float:right;}
 	margin: 2em 0.5em 0 0;
 	padding-top: 0.5em;
 	height: 95%;
+	font-family: gafata;
+}
+#sp ul {
+	margin-top: 1em;
 }
 
 #sp ul li {
@@ -272,6 +291,7 @@ footer #right{float:right;}
 	margin-left: auto;
 	margin-right: auto;
 }
+
 
 
 #firstrow {
@@ -347,6 +367,8 @@ ol ol {
 }
 
 
+
+
 /* responsive */
 
 @media (max-width: 1024px){
@@ -388,7 +410,9 @@ ol ol {
 		width: 95%;
 		vertical-align: top;
 		margin-bottom: 1em;
+
 	}
+
 
 	#name div{
 		margin-bottom: 5%;
