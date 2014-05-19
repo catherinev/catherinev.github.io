@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="initial-scale=1">
+		<title>Blog Post</title>
+		<link rel="stylesheet" type="text/css" href="../Stylesheets/reset.css" charset="utf-8"/>
+		<link rel="stylesheet" type="text/css" href="../Stylesheets/style.css" charset="utf-8"/>
+		<link href='http://fonts.googleapis.com/css?family=Gafata' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Roboto:300italic,300,500' rel='stylesheet' type='text/css'>
+	</head>
+
+	<body>
+		<h1>Catherine Vongsathorn</h1>
+		<div class = "nav">
+			<div><a href = "../index.html">Home</a></div>
+			<div><a href = "../about.html">About</a></div>
+			<div><a href = "../blog.html" class = "current">Blog</a></div>
+			<div><a href = "../experience.html">Experience</a></div>
+			<div><a href = "../links.html">Links</a></div>
+		</div>
+		<h2>Sunday, May 18, 2014</h2>
+		<div class = "post">
+			<h3>More Reflections on Week 1</h3>
+			<h4>10 topics I learned about this week</h4>
+			<ul>
+				<li>Regular Expressions</li>
+				<li>Iteration</li>
+				<li>Recursion</li>
+				<li>Memoization</li>
+				<li>RSpec</li>
+				<li>Writing Readable Code: Style in Ruby</li>
+				<li>Variable Scope</li>
+				<li>Nested Arrays, the Object Heap, and Shallow Copies</li>
+				<li>Debugging Tools (for example, Pry, which is awesome)</li>
+				<li>Enumerable Methods</li>
+			</ul>
+
+			<h4>Regular Expressions</h4>
+			<p>I wrote an earlier post on regular expressions that can be found <a href = "week9_technical.html">here</a>.  This week, I learned much more about the <codein>#gsub</codein> method and how to use it.  The website <a href = "http://rubular.com/">Rubular</a> is a great tool for testing regular expressions in Ruby.</p>
+			<p><codein>#gsub</codein> is used to find and replace text using regular expressions.  For example, suppose you have decided you want to change the format of all dates from MM-DD-YYYY to YYYY-MM-DD.  The following code can be implemented on your text to make that substitution.</p>
+			<code>
+				text.gsub(/(\d{2})-(\d{2})-(\d{4})/,'\3-\1-\2')
+			</code>
+			<p>The three sets of parentheses in the example above are called capture groups.  Unless you give them a different name, they are numbered by default.  Each group can be referred to in the substitution statement, as demonstrated in the example above (the \1, \2, and \3 are referring to (\d{2}), (\d{2)), and (\d{4}), respectively).</p>
+
+			<h4>Recursion and Memoization</h4>
+			<p>Recursion is pretty cool and is best presented in the context of an example.  Consider the method defined below, which yields the <em>nth</em>  <a href ="http://en.wikipedia.org/wiki/Fibonacci_number" >Fibonacci number</a>.</p>
+			<code>
+				def fibonacci_recursive(n)</br>
+  				&nbsp;&nbsp;if n == 0</br>
+  				&nbsp;&nbsp;&nbsp;&nbsp;return 0</br>
+  				&nbsp;&nbsp;elsif n == 1</br>
+  				&nbsp;&nbsp;&nbsp;&nbsp;return 1</br>
+  				&nbsp;&nbsp;end</br>
+  				&nbsp;&nbsp;fibonacci_recursive(n-2) + fibonacci_recursive(n-1)</br>
+				end
+			</code>
+			<p>So what's happening here?  If we are looking for the Fibonacci number at index 0 or 1, the method excilitly gives it to us.  Otherwise, we call the method within itself to find the Fibonacci number we're looking for.  The method will continue calling itself until it reaches the "base cases" of <em> n</em> = 0 and <em>n</em> = 1.</p>
+			<p>What's interesting about this example is that the recursive method is called <em>twice</em> inside of itself. As a result, many calculations have to be made multiple times.  For example, suppose we are trying to calculate the 7th Fibonacci number.  If we use the naive recursive method (shown above), then all the Fibonacci numbers in this tree must be separately computed:</p>
+			<div align = "center"><img src = "http://www.introprogramming.info/wp-content/uploads/2013/07/clip_image00525.png"></img></div>
+			<p>Look at how many times we have to caluclate each Fibonacci number with index < 7!  This is incredibly inefficient and gets more inefficent for larger values of <em>n</em>.</p>
+			<p>Luckily, there is something called memoization that allows us to store values once they are computed.  So, anytime we need to know the 3rd Fibonacci number, for example, the computer will first check to see if it has already calculated that number and only calculate it if it hasn't yet.  Below is a recursive method that uses memoization.</p>
+			<code>
+				def fibonacci_recursive(n, fib_array = [0, 1])</br>
+  				<div class = "indent">if n == 0</br>
+  				&nbsp;&nbsp;&nbsp;&nbsp;return 0</br>
+  				end</br>
+  				(fib_array[n-2] ||= fibonacci_recursive(n-2, fib_array)) + (fib_array[n-1] ||= fibonacci_recursive(n-1, fib_array))</div>
+				end
+			</code>
+			<p>Without memoization, the recusive Fibonacci method runs in exponential time; with memoization, the method runs in linear time, which is an excellent improvement.</p>
+		</div>
+
+		<footer>
+			<div id = "left">Contact me: <a href="mailto:cvong47@gmail.com">Email</a></div>
+			<div id = "right">&copy;2014 Catherine Vongsathorn</div>
+		</footer>
+	</body>
+</html>
