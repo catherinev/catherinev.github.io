@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="initial-scale=1">
+		<title>Blog Post</title>
+		<link rel="stylesheet" type="text/css" href="../Stylesheets/reset.css" charset="utf-8"/>
+		<link rel="stylesheet" type="text/css" href="../Stylesheets/style.css" charset="utf-8"/>
+		<link href='http://fonts.googleapis.com/css?family=Gafata' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Roboto:300italic,300,500' rel='stylesheet' type='text/css'>
+	</head>
+
+	<body>
+		<h1>Catherine Vongsathorn</h1>
+		<div class = "nav">
+			<div><a href = "../index.html">Home</a></div>
+			<div><a href = "../about.html">About</a></div>
+			<div><a href = "../blog.html" class = "current">Blog</a></div>
+			<div><a href = "../experience.html">Experience</a></div>
+			<div><a href = "../links.html">Links</a></div>
+		</div>
+		<h2>Sunday, May 25, 2014</h2>
+		<div class = "post">
+			<h3>Reflections on Week 2</h3>
+			<h4>Topics I learned about this week</h4>
+			<ul>
+				<li>Object Oriented Programming
+					<ul>
+						<li>Single Responsibility Classes and Methods</li>
+						<li>Encapsulation</li>
+						<li>Inheritance</li>
+						<li>Composition</li>
+						<li>Mixins/Modules</li>
+						<li>Loose Coupling</li>
+						<li>Law of Demeter</li>
+						<li>Attribute Readers and Writers</li>
+						<li>Dependency Injection</li>
+					</ul>
+				</li>
+				<li>Nokogiri</li>
+				<li>More on RSpec</li>
+				<li>Model View Controller</li>
+			</ul>
+
+			<h4>A few thoughts on object oriented programming</h4>
+			<p>We spent all of Monday and Tuesday covering object oriented programming and good design principles.  It was a lot to take in over the course of just two days, and by Tuesday night I was pretty exhausted. There's no way that I'll be able to cover everything in this blog post, so I'll just mention some highlights.</p>
+			<p>First, <a href = "http://www.poodr.com/">POODR</a> is amazing, and Sandi Metz is a fantastic writer.  If you don't have time to read the whole book, check out the <a href = "http://www.confreaks.com/videos/3358-railsconf-all-the-little-things">talk</a> she gave at RailsConf earlier this year.</p>
+
+			<p>The following quote from POODR really resonated with me this week: </p>
+			<p class = "indent" style = "text-align: center">"[An object-oriented application] is <em>made up of classes</em> but <em>defined</em> by messages."  </p>
+			<p>The objects are essential, but they exist because of the behaviors. This insight was a turning point for me and clarified some initial confusion I had about overall design.</p>
+
+			<p>One of the examples we went over was a <a href = "http://en.wikipedia.org/wiki/Rube_Goldberg_machine">Rube Goldberg Machine</a>.  Our machine was made up of Dominos, a ToyCar, Scissors, String, a Hammer, and a Gong.  Each of these was represented as a class that inherited from the parent class PartOfMachine.  All of this made perfect sense to me.</p>
+
+			<p>There was also a RubeGoldbergMachine class, but PartOfMachine did not inherit from the RubeGoldbergMachine class.  At first, this didn't make sense to me.  After all, each of the parts is a part of the machine, so it seems as if the parts should inherit from the machine.  However, that assumes that the machine is defined by its parts (classes).  As previously mentioned, this is not the case: the machine is defined by its behaviors.  So what behaviors does the machine have?  As it turns out, it really only has one behavior: to start the chain of events.  The machine itself doesn't even need to be aware of all of its parts; it's only needs to be capable of getting things going.</p>
+
+			<p>Another way to think of this is <u>is a</u> versus <u>has a</u>.  A Hammer <u>is a</u> PartofMachine, so it makes sense for the Hammer class to inherit from the PartOfMachine class.  However, a RubeGoldbergMachine <u>has a</u> Hammer. When the relationship between classes is <u>has a</u>, the classes should not be related via inheritance but rather via composition.</p> 
+		
+		</div>
+
+		<footer>
+			<div id = "left">Contact me: <a href="mailto:cvong47@gmail.com">Email</a></div>
+			<div id = "right">&copy;2014 Catherine Vongsathorn</div>
+		</footer>
+	</body>
+</html>
