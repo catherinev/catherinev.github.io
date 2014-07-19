@@ -9,6 +9,6 @@ function highlightCurrentPage(){
   var baseUrl = currentUrl.replace(regex, "$2")
   console.log('base')
   console.log(baseUrl)
-  $('a[href="' + baseUrl + '"]').addClass("current")
+  $('a[href="/' + baseUrl + '"]').addClass("current")
 }
 ;
