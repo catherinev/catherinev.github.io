@@ -19,10 +19,10 @@
 <div class = "nav">
   <button id = "menu-icon">menu</button>
   <div><a href="/">Home</a></div>
-  <div><a href="/about.html/">About</a></div>
-  <div><a href="/blog.html/">Blog</a></div>
-  <div><a href="/experience.html/">Experience</a></div>
-  <div><a href="/links.html/">Links</a></div>
+  <div><a href="/about/">About</a></div>
+  <div><a href="/blog/">Blog</a></div>
+  <div><a href="/experience/">Experience</a></div>
+  <div><a href="/links/">Links</a></div>
 </div>
     
     <div id = "sp">
@@ -128,7 +128,7 @@
 			<p><codein>#gsub</codein> is used to find and replace text using regular expressions.  For example, suppose you have decided you want to change the format of all dates from MM-DD-YYYY to YYYY-MM-DD.  The following code can be implemented on your text to make that substitution.  &nbsp;&nbsp;<a class="rm" href="/blog/8/">read more&nbsp;&raquo;</a></p>
   </div>
 
-<div class="pagination"><span class="previous_page disabled">&#8592; Previous</span> <em class="current">1</em> <a rel="next" href="/blog.html/?page=2">2</a> <a href="/blog.html/?page=3">3</a> <a href="/blog.html/?page=4">4</a> <a href="/blog.html/?page=5">5</a> <a class="next_page" rel="next" href="/blog.html/?page=2">Next &#8594;</a></div>
+<div class="pagination"><span class="previous_page disabled">&#8592; Previous</span> <em class="current">1</em> <a rel="next" href="/blog/?page=2">2</a> <a href="/blog/?page=3">3</a> <a href="/blog/?page=4">4</a> <a href="/blog/?page=5">5</a> <a class="next_page" rel="next" href="/blog/?page=2">Next &#8594;</a></div>
 
     <footer>
   <div id = "left">Contact me: <a href="mailto:cvong47@gmail.com">Email</a></div>
