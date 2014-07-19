@@ -2,20 +2,20 @@
 <html>
   <head>
     <title>Catheine V</title>
-    <link data-turbolinks-track="true" href="/assets/reset.css?body=1" media="all" rel="stylesheet" />
-<link data-turbolinks-track="true" href="/assets/style.css?body=1" media="all" rel="stylesheet" />
-<link data-turbolinks-track="true" href="/assets/application.css?body=1" media="all" rel="stylesheet" />
+    <link data-turbolinks-track="true" href="/assets/reset.css" media="all" rel="stylesheet" />
+<link data-turbolinks-track="true" href="/assets/style.css" media="all" rel="stylesheet" />
+<link data-turbolinks-track="true" href="/assets/application.css" media="all" rel="stylesheet" />
     <link href='http://fonts.googleapis.com/css?family=Gafata' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Roboto:300italic,300,500' rel='stylesheet' type='text/css'>
   </head>
 
   <body>
     <h1>Catherine Vongsathorn</h1>
-    <script src="/assets/jquery.js?body=1"></script>
-<script src="/assets/jquery_ujs.js?body=1"></script>
-<script src="/assets/turbolinks.js?body=1"></script>
-<script src="/assets/highlightNav.js?body=1"></script>
-<script src="/assets/application.js?body=1"></script>
+    <script src="/assets/jquery.js"></script>
+<script src="/assets/jquery_ujs.js"></script>
+<script src="/assets/turbolinks.js"></script>
+<script src="/assets/highlightNav.js"></script>
+<script src="/assets/application.js"></script>
 <div class = "nav">
   <button id = "menu-icon">menu</button>
   <div><a href="/">Home</a></div>
@@ -24,6 +24,7 @@
   <div><a href="/experience/">Experience</a></div>
   <div><a href="/links/">Links</a></div>
 </div>
+
     
     <div id = "sp">
   <h4>Recent Posts</h4>
@@ -54,6 +55,7 @@
     <li><a href="/blog/1/">Amazon</a></li>
   </ul>
 </div>
+
 
   <h2>Saturday, July 19, 2014</h2>
   <div class = "minipost">
@@ -102,10 +104,12 @@
 
 <div class="pagination"><a class="previous_page" rel="prev" href="/blog/?page=2">&#8592; Previous</a> <a rel="start" href="/blog/?page=1">1</a> <a rel="prev" href="/blog/?page=2">2</a> <em class="current">3</em> <a rel="next" href="/blog/?page=4">4</a> <a href="/blog/?page=5">5</a> <a class="next_page" rel="next" href="/blog/?page=4">Next &#8594;</a></div>
 
+
     <footer>
   <div id = "left">Contact me: <a href="mailto:cvong47@gmail.com">Email</a></div>
   <div id = "right">&copy;2014 Catherine Vongsathorn</div>
 </footer>
+
 
   </body>
 </html>
