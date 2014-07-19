@@ -2,20 +2,20 @@
 <html>
   <head>
     <title>Catheine V</title>
-    <link data-turbolinks-track="true" href="/assets/reset.css" media="all" rel="stylesheet" />
-<link data-turbolinks-track="true" href="/assets/style.css" media="all" rel="stylesheet" />
-<link data-turbolinks-track="true" href="/assets/application.css" media="all" rel="stylesheet" />
+    <link data-turbolinks-track="true" href="/assets/reset.css?body=1" media="all" rel="stylesheet" />
+<link data-turbolinks-track="true" href="/assets/style.css?body=1" media="all" rel="stylesheet" />
+<link data-turbolinks-track="true" href="/assets/application.css?body=1" media="all" rel="stylesheet" />
     <link href='http://fonts.googleapis.com/css?family=Gafata' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Roboto:300italic,300,500' rel='stylesheet' type='text/css'>
   </head>
 
   <body>
     <h1>Catherine Vongsathorn</h1>
-    <script src="/assets/jquery.js"></script>
-<script src="/assets/jquery_ujs.js"></script>
-<script src="/assets/turbolinks.js"></script>
-<script src="/assets/highlightNav.js"></script>
-<script src="/assets/application.js"></script>
+    <script src="/assets/jquery.js?body=1"></script>
+<script src="/assets/jquery_ujs.js?body=1"></script>
+<script src="/assets/turbolinks.js?body=1"></script>
+<script src="/assets/highlightNav.js?body=1"></script>
+<script src="/assets/application.js?body=1"></script>
 <div class = "nav">
   <button id = "menu-icon">menu</button>
   <div><a href="/">Home</a></div>
@@ -28,82 +28,59 @@
     <div id = "sp">
   <h4>Recent Posts</h4>
   <ul>
-    <li><a href="/blog/5/">My First Rails App!</a></li>
-    <li><a href="/blog/6/">Group Projects</a></li>
-    <li><a href="/blog/7/">Some reflections on Phase 2</a></li>
-    <li><a href="/blog/9/">Reflections on Week 2</a></li>
-    <li><a href="/blog/8/">More Reflections on Week 1</a></li>
-    <li><a href="/blog/4/">Day 5</a></li>
-    <li><a href="/blog/3/">Day 1</a></li>
-    <li><a href="/blog/25/">Regular Expressions</a></li>
-    <li><a href="/blog/24/">Reflections on Feedback</a></li>
-    <li><a href="/blog/23/">Sorting</a></li>
-    <li><a href="/blog/22/">Chefs in the Kitchen</a></li>
-    <li><a href="/blog/21/">SQL versus NoSQL</a></li>
-    <li><a href="/blog/20/">Affirmation and Stereotype Threat</a></li>
-    <li><a href="/blog/18/">Stereotype Threat</a></li>
-    <li><a href="/blog/19/">Object-Oriented Programming versus Functional Programming</a></li>
-    <li><a href="/blog/17/">Classes in Ruby</a></li>
-    <li><a href="/blog/16/">Computer Science Education</a></li>
-    <li><a href="/blog/14/">Dealing with Conflict</a></li>
-    <li><a href="/blog/15/">&lt;codein&gt;#map&lt;/codein&gt; in Ruby</a></li>
-    <li><a href="/blog/12/">Giving and Receiving Feedback</a></li>
-    <li><a href="/blog/13/">What are the various ways to loop in Ruby and how can you decide which is best to use?</a></li>
-    <li><a href="/blog/11/">Why is JavaScript so popular in web development?</a></li>
-    <li><a href="/blog/10/">Advice</a></li>
-    <li><a href="/blog/2/">Amazon</a></li>
+    <li><a href="/blog/24/">Regular Expressions</a></li>
+    <li><a href="/blog/23/">Reflections on Feedback</a></li>
+    <li><a href="/blog/22/">Sorting</a></li>
+    <li><a href="/blog/21/">Chefs in the Kitchen</a></li>
+    <li><a href="/blog/20/">SQL versus NoSQL</a></li>
+    <li><a href="/blog/19/">Affirmation and Stereotype Threat</a></li>
+    <li><a href="/blog/18/">Object-Oriented Programming versus Functional Programming</a></li>
+    <li><a href="/blog/17/">Stereotype Threat</a></li>
+    <li><a href="/blog/16/">Classes in Ruby</a></li>
+    <li><a href="/blog/15/">Computer Science Education</a></li>
+    <li><a href="/blog/14/"></a></li>
+    <li><a href="/blog/13/">Dealing with Conflict</a></li>
+    <li><a href="/blog/12/">What are the various ways to loop in Ruby and how can you decide which is best to use?</a></li>
+    <li><a href="/blog/11/">Giving and Receiving Feedback</a></li>
+    <li><a href="/blog/10/">Why is JavaScript so popular in web development?</a></li>
+    <li><a href="/blog/9/">Advice</a></li>
+    <li><a href="/blog/8/">Reflections on Week 2</a></li>
+    <li><a href="/blog/7/">More Reflections on Week 1</a></li>
+    <li><a href="/blog/6/">Some reflections on Phase 2</a></li>
+    <li><a href="/blog/5/">Group Projects</a></li>
+    <li><a href="/blog/4/">My First Rails App!</a></li>
+    <li><a href="/blog/3/">Day 5</a></li>
+    <li><a href="/blog/2/">Day 1</a></li>
+    <li><a href="/blog/1/">Amazon</a></li>
   </ul>
 </div>
 
-  <h2>Thursday, March 27, 2014</h2>
+  <h2>Saturday, July 19, 2014</h2>
   <div class = "minipost">
-    <h3><a href="/blog/13/">What are the various ways to loop in Ruby and how can you decide which is best to use?</a></h3>
-    <p>There are many ways to loop in Ruby.  Below are some of the more common options.</p>
-				<ol>
-					<li><codein>#each</codein>
-						<code><grn>[collection]</grn>.each do |element| <br/>&emsp;&emsp;<grn>[some code]</grn><br/>end</code>
-						<p>The <codein><grn>[collection]</grn></codein> is often an array but can also be a range, e.g. (1..100), or a hash.  &nbsp;&nbsp;<a class="rm" href="/blog/13/">read more&nbsp;&raquo;</a></p>
+    <h3><a href="/blog/4/">My First Rails App!</a></h3>
+    <p>During phase 2, we used a framework called <a href="http://en.wikipedia.org/wiki/Sinatra_(software)">Sinatra</a>, which is a lightweight version of Rails. Since it doesn't handle as many of the details as Rails does, it's a great way to get familiar with what is happening behind the scenes before jumping into Rails.</p>
+
+    <p>I'm starting Phase 3 next week, so in preparation we learned Rails this weekend. The core assignment was to build a blog application. This is what I ended up with: <a href="http://theawesomeblogger.herokuapp.com/">The Awesome Blogger</a>. If you want to see a blog without logging in, check out <a href="http://theawesomeblogger.herokuapp.com/users/1/articles">this link</a>. You'll find the posts to be thrilling. If you are interested in the source code for the site, you can find it <a href="https://github.com/catherinev/blog-app">here</a>.  &nbsp;&nbsp;<a class="rm" href="/blog/4/">read more&nbsp;&raquo;</a></p>
   </div>
-  <h2>Sunday, March 23, 2014</h2>
+  <h2>Saturday, July 19, 2014</h2>
   <div class = "minipost">
-    <h3><a href="/blog/11/">Why is JavaScript so popular in web development?</a></h3>
-    <p>Before we talk about JavaScript, consider the following two questions.</p>
-			<div class = "indent">
-				<h4><b>Who are web developers these days?</b></h4>
-				<p>Web developers can be, and are, just about anyone.  Many are people who have simply had an idea for an application or website and are trying implement it.  Such people come from an enormous variety of backgrounds.  Some may have programming experience, but many don't.  </p></div>  &nbsp;&nbsp;<a class="rm" href="/blog/11/">read more&nbsp;&raquo;</a></p>
+    <h3><a href="/blog/3/">Day 5</a></h3>
+    <p>It's the end of the first week, and I made it through! The week has been a bit of a roller coaster. It started out great, but I got really stuck on Wednesday night and had a hard time getting started on Thursday morning. On Thursday I also spent a large portion of the day working on projects independently--this is unusual for DBC since all other days of the week we are required to pair program on all challenges. The independent work was pretty good, but we had some tough problems to work on in the afternoon and I got stuck. To give my mind a break, I walked around to see what other people were working on, which was incredibly helpful and gave me the opportunity to talk with some of the members of my cohort I haven't worked with yet. For the rest of the night, I worked with Tyler on the remaining projects, and I think we did an awesome job.</p>
+    <p>We started really diving into rspec this week, which is a powerful tool but I don't feel that I have a full grasp on its capabilities. We also covered recursion on Wednesday, which was totally awesome and super fun. Today we are writing a program to solve Sudoku. All the more advanced cohorts have warned us we'll be working on it for pretty much the whole weekend.  &nbsp;&nbsp;<a class="rm" href="/blog/3/">read more&nbsp;&raquo;</a></p>
   </div>
-  <h2>Thursday, March 20, 2014</h2>
+  <h2>Saturday, July 19, 2014</h2>
   <div class = "minipost">
-    <h3><a href="/blog/10/">Advice</a></h3>
-    <p>Some of my values are shown below with a corresponding value representing how strong I agree with the statement "I try to live up to these values" (1 is disagree, 5 is agree).
-			<table>
-			<tr id = "firstrow"><td>Value</td><td>Do I try to live up to this value?</td></tr>
-			<tr><td>Accomplishment</td><td>4</td></tr>
-			<tr><td>Achievement</td><td>4</td></tr>
-			<tr><td>Affection</td><td>5</td></tr>
-			<tr><td>Autonomy</td><td>5</td></tr>
-			<tr><td>Challenge</td><td>4</td></tr>
-			<tr><td>Close relationships</td><td>5</td></tr>
-			<tr><td>Commitment</td><td>5</td></tr>
-			<tr><td>Confidence</td><td>4</td></tr>
-			<tr><td>Enthusiasm</td><td>5</td></tr>
-			<tr><td>Excellence</td><td>5</td></tr>
-			<tr><td>Excitement</td><td>5</td></tr>
-			<tr><td>Helping other people</td><td>4</td></tr>
-			<tr><td>Meaningful work</td><td>4</td></tr>
-			<tr><td>Mentorship</td><td>4</td></tr>
-			<tr><td>Personal development</td><td>4</td></tr>
-			<tr><td>Quality</td><td>5</td></tr>
-			</table>
-			<p>Because many of my values are tightly connected to one another, I had a hard time picking just one word for this response.  I settled on "commitment" because ultimately, my sense of accomplishment, pride, enthusiasm, and excitment are always a result of just how committed I have been to begin with.  Commitment is important to me because of the sense of connection it implies.  I have been committed to other people through friendship and love; I have been committed to solving tough problems; I have been committed to achieving excellent results at work.  For all of these examples, there is a deep sense of connection and engagement either with other people, problems, or goals.  No matter the context, my sense of achievement and pride is a direct result of how invested I've been rather than the outcome itself. </p>
-			<p>While commitment is one of the foremost qualities that comes to mind when considering my happiest and proudest moments, it is also a word that comes to mind when I considering my most frustrating and unhappy moments.  It is extremely discouraging, and sometimes downright miserable, when you are committed to a person, a problem, or a challenge that for whatever reason things don't work out as you are hoping or expecting.  &nbsp;&nbsp;<a class="rm" href="/blog/10/">read more&nbsp;&raquo;</a></p>
+    <h3><a href="/blog/2/">Day 1</a></h3>
+    <p>Great first day at DBC. Here's a highlight. High five Lana!</p>
+    <img src="/assets/day1.png" style="width: 100%">
+  &nbsp;&nbsp;<a class="rm" href="/blog/2/">read more&nbsp;&raquo;</a></p>
   </div>
-  <h2>Sunday, March 16, 2014</h2>
+  <h2>Saturday, July 19, 2014</h2>
   <div class = "minipost">
-    <h3><a href="/blog/2/">Amazon</a></h3>
-    <p><a href = "http://www.seriouseats.com" target = "_blank">Serious Eats</a> is one of my favorite websites.  Like so many other websites, it has an excellent assortment of delicious recipes and reviews of restaurants all over the world. What sets it apart from other websites for me is primarily Kenji, one of the blog writers who has a background in science and writes excellent (and sometimes surprising) articles on the science behind his recipes.  There are other fantastic contributors to the website, but I especially enjoy reading about Kenji's experimental process and, at the same time, learning some food science.  Who doesn't want to know why their food tastes good?
-			</p>
-			<p>I find the user-experience to be quite enjoyable and the design to be streamlined and easy to look at.  Like any good food website, the homepage is full of photos of food, to which a user's eyes are immediately drawn.  The colors are light and undistracting, and there is an appropriate amount of contrast between text and backgrounds.  The website is set up like a blog, with the most recent posts first.    &nbsp;&nbsp;<a class="rm" href="/blog/2/">read more&nbsp;&raquo;</a></p>
+    <h3><a href="/blog/1/">Amazon</a></h3>
+    <p><a href="http://www.seriouseats.com" target="_blank">Serious Eats</a> is one of my favorite websites. Like so many other websites, it has an excellent assortment of delicious recipes and reviews of restaurants all over the world. What sets it apart from other websites for me is primarily Kenji, one of the blog writers who has a background in science and writes excellent (and sometimes surprising) articles on the science behind his recipes. There are other fantastic contributors to the website, but I especially enjoy reading about Kenji's experimental process and, at the same time, learning some food science. Who doesn't want to know why their food tastes good?
+    </p>
+    <p>I find the user-experience to be quite enjoyable and the design to be streamlined and easy to look at. Like any good food website, the homepage is full of photos of food, to which a user's eyes are immediately drawn. The colors are light and undistracting, and there is an appropriate amount of contrast between text and backgrounds. The website is set up like a blog, with the most recent posts first.  &nbsp;&nbsp;<a class="rm" href="/blog/1/">read more&nbsp;&raquo;</a></p>
   </div>
 
 <div class="pagination"><a class="previous_page" rel="prev" href="/blog/?page=4">&#8592; Previous</a> <a rel="start" href="/blog/?page=1">1</a> <a href="/blog/?page=2">2</a> <a href="/blog/?page=3">3</a> <a rel="prev" href="/blog/?page=4">4</a> <em class="current">5</em> <span class="next_page disabled">Next &#8594;</span></div>

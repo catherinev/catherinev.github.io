@@ -2,20 +2,20 @@
 <html>
   <head>
     <title>Catheine V</title>
-    <link data-turbolinks-track="true" href="/assets/reset.css" media="all" rel="stylesheet" />
-<link data-turbolinks-track="true" href="/assets/style.css" media="all" rel="stylesheet" />
-<link data-turbolinks-track="true" href="/assets/application.css" media="all" rel="stylesheet" />
+    <link data-turbolinks-track="true" href="/assets/reset.css?body=1" media="all" rel="stylesheet" />
+<link data-turbolinks-track="true" href="/assets/style.css?body=1" media="all" rel="stylesheet" />
+<link data-turbolinks-track="true" href="/assets/application.css?body=1" media="all" rel="stylesheet" />
     <link href='http://fonts.googleapis.com/css?family=Gafata' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Roboto:300italic,300,500' rel='stylesheet' type='text/css'>
   </head>
 
   <body>
     <h1>Catherine Vongsathorn</h1>
-    <script src="/assets/jquery.js"></script>
-<script src="/assets/jquery_ujs.js"></script>
-<script src="/assets/turbolinks.js"></script>
-<script src="/assets/highlightNav.js"></script>
-<script src="/assets/application.js"></script>
+    <script src="/assets/jquery.js?body=1"></script>
+<script src="/assets/jquery_ujs.js?body=1"></script>
+<script src="/assets/turbolinks.js?body=1"></script>
+<script src="/assets/highlightNav.js?body=1"></script>
+<script src="/assets/application.js?body=1"></script>
 <div class = "nav">
   <button id = "menu-icon">menu</button>
   <div><a href="/">Home</a></div>
@@ -25,17 +25,91 @@
   <div><a href="/links/">Links</a></div>
 </div>
     
-    <h2>Sunday, April 13, 2014</h2>
+    <h2>Saturday, July 19, 2014</h2>
 <div class = "post">
-  <h3>Computer Science Education</h3>
-  <p>It is not an exaggeration to say that the state of computer science and technology in K-12 education is somewhat alarming.  As more jobs are created and exciting innovations are made in computer science and technology, surprisingly few states are providing an adequate education for their students.  Only 17 states and the District of Columbia allow computer science courses to count towards core graduation requirements in either math or science.  NPR reports that only 10% of K-12 schools teach computer science.  And yet, ACM chair of Education Policy Committee Bobby Schnabel reports that by 2020, half of the jobs in STEM (science, technology, engineering, and mathematics) disciplines will be in computing. It is predicted that within the next 10 years there will be approximately 1 million more jobs in the technology sector than there are computer science graduates.   How is that possible?  What is being done to address this  gap?</p>
+  <h3>Classes in Ruby</h3>
+  <p>
+        <em>Classes</em>are a natural way to group similar types of objects in Ruby. For example,
+        <codein>Array</codein>is a class. There are two ways to define a new object in the class
+        <codein>Array</codein>:
+        <code>
+            arr_1 = Array.new</br>
+            arr_1[0] = "Hello"</br>
+            arr_1[1] = "world"</br>
+            arr_2 = [1, 2, 3, 4]
+        </code>
+        <codein>arr_1</codein>has been defined using constructor notation and
+        <codein>arr_2</codein>has been defined using literal notation, but both are the same type of object.
+        <codein>arr_1</codein>and
+        <codein>arr_2</codein>are called
+        <em>instances</em>of the class
+        <codein>Array</codein>. So a class is a category, and an instance is a particular object that falls into that category. Other examples of classes are
+        <codein>String, Fixnum, Float,</codein>and
+        <codein>Hash</codein>.</p>
 
-			<p>There are programs throughout the country that aim to address this problem, but the change needs to come at a state and national level.  Current state standards are unacceptably lax.  While some states do have standards related explicitly to computer science, most have either too few or none at all.  And no state requires a computer science course as a condition of graduation.</p>
+    <p>So why are classes helpful? Because we often want to know similar things or perform similar tasks on objects in the same class. Each class has associated
+        <em>methods</em>that do something to an instance of the class. For example,
+        <codein>#length, #each,</codein>and
+        <codein>#sort</codein>are all methods associated with the class
+        <codein>Array</codein>. Similarly,
+        <codein>#length, #downcase,</codein>and
+        <codein>#each_char</codein>are all methods associated with the class
+        <codein>String</codein>. Each of these methods can be called on any instance of the associated class. (Note that some methods are associated with more than one class.)</p>
 
-			<p>It's not an easy problem to solve.  Change is never easy, and schools legitimately complain of lack of resources--computer are expensive, and so are teachers who are equipped to teach computer programming.  So what can be done?  First, there needs to be adequate funding available to provide the necessary resources.  Some computer science education can be done without a computer, but schools will still need computers and teachers who are well trained.  To that end, states also need to provide teacher certification programs with reasonable standards.  And finally, states should incorporate computer science classes into their core standards, allowing them to count for graduation credit in either mathematics or science.</p>
 
-			<p>For further reading, check out this report: <a href = "http://pathways.acm.org/index.html">Rebooting the Pathway to Success</a></p>
-		
+    <p>All the above examples of classes come with Ruby. But it is also possible to define your own classes and associated methods. It is a good idea to create a new class of objects any time you think you will be creating multiple
+        <em>instances</em>of that object and may want to perform the same tasks (i.e. call the same method) on those instances.</p>
+
+    <p>For example, you may want to define the class
+        <codein>Rectangle</codein>:</p>
+    <code>
+        class Rectangle</br>
+        &nbsp;&nbsp;def initialize(width, height)</br>
+        &nbsp;&nbsp;&nbsp;&nbsp;@width = width</br>
+        &nbsp;&nbsp;&nbsp;&nbsp;@height = height</br>
+        &nbsp;&nbsp;end</br>
+        </br>
+
+        &nbsp;&nbsp;def perimeter</br>
+        &nbsp;&nbsp;&nbsp;&nbsp;2 * @width + 2 * @height</br>
+        &nbsp;&nbsp;end</br>
+        </br>
+
+        &nbsp;&nbsp;def area</br>
+        &nbsp;&nbsp;&nbsp;&nbsp;@width * @height</br>
+        &nbsp;&nbsp;end</br>
+        end</br>
+        </br>
+        rec = Rectangle.new(3, 4)
+    </code>
+    <p>Above,
+        <codein>rec</codein>is an instance of the class
+        <codein>Rectangle</codein>.
+        <p>It is natural to create a class for
+            <codein>Rectangle</codein>because there are many possible instances of the class that can now all use the same methods.</p>
+        <p>The first method we have is
+            <codein>#initialize</codein>. This method is run automatically every time you create a new instance of the class. In our
+            <codein>Rectangle</codein>example, all that the initialize method is doing is defining the
+            <em>instance variables</em>
+            <codein>@width</codein>and
+            <codein>@height</codein>. An instance variable is a variable associated with an instance of the object and always begins with
+            <codein>@</codein>. Instance variables can be used in any method within the class in which they are defined. In
+            <codein>rec, @width = 3</codein>and
+            <codein>@height = 4</codein>, so any
+            <codein>Rectangle</codein>method that we call on
+            <codein>rec</codein>will use the values 3 and 4 for
+            <codein>@width</codein>and
+            <codein>@height</codein>, respectively.</p>
+
+        <p>After
+            <codein>#initialize</codein>, we defined methods to find the perimeter and area of a rectangle. They can be called as follows:</p>
+        <code>rec.perimeter
+            <em>=> 14</em>
+            </br>rec.area
+            <em>=> 12</em>
+        </code>
+        <p>This is a brief introduction to classes set in the context of a fairly simple example, but hopefully it gives you a sense of what classes are and when they should be used.</p>
+
 </div>
 
 

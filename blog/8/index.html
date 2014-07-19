@@ -2,20 +2,20 @@
 <html>
   <head>
     <title>Catheine V</title>
-    <link data-turbolinks-track="true" href="/assets/reset.css" media="all" rel="stylesheet" />
-<link data-turbolinks-track="true" href="/assets/style.css" media="all" rel="stylesheet" />
-<link data-turbolinks-track="true" href="/assets/application.css" media="all" rel="stylesheet" />
+    <link data-turbolinks-track="true" href="/assets/reset.css?body=1" media="all" rel="stylesheet" />
+<link data-turbolinks-track="true" href="/assets/style.css?body=1" media="all" rel="stylesheet" />
+<link data-turbolinks-track="true" href="/assets/application.css?body=1" media="all" rel="stylesheet" />
     <link href='http://fonts.googleapis.com/css?family=Gafata' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Roboto:300italic,300,500' rel='stylesheet' type='text/css'>
   </head>
 
   <body>
     <h1>Catherine Vongsathorn</h1>
-    <script src="/assets/jquery.js"></script>
-<script src="/assets/jquery_ujs.js"></script>
-<script src="/assets/turbolinks.js"></script>
-<script src="/assets/highlightNav.js"></script>
-<script src="/assets/application.js"></script>
+    <script src="/assets/jquery.js?body=1"></script>
+<script src="/assets/jquery_ujs.js?body=1"></script>
+<script src="/assets/turbolinks.js?body=1"></script>
+<script src="/assets/highlightNav.js?body=1"></script>
+<script src="/assets/application.js?body=1"></script>
 <div class = "nav">
   <button id = "menu-icon">menu</button>
   <div><a href="/">Home</a></div>
@@ -25,58 +25,46 @@
   <div><a href="/links/">Links</a></div>
 </div>
     
-    <h2>Sunday, May 18, 2014</h2>
+    <h2>Saturday, July 19, 2014</h2>
 <div class = "post">
-  <h3>More Reflections on Week 1</h3>
-  <h4>10 topics I learned about this week</h4>
-			<ul>
-				<li>Regular Expressions</li>
-				<li>Iteration</li>
-				<li>Recursion</li>
-				<li>Memoization</li>
-				<li>RSpec</li>
-				<li>Writing Readable Code: Style in Ruby</li>
-				<li>Variable Scope</li>
-				<li>Nested Arrays, the Object Heap, and Shallow Copies</li>
-				<li>Debugging Tools (for example, Pry, which is awesome)</li>
-				<li>Enumerable Methods</li>
-			</ul>
+  <h3>Reflections on Week 2</h3>
+  <h4>Topics I learned about this week</h4>
+    <ul>
+        <li>Object Oriented Programming
+            <ul>
+                <li>Single Responsibility Classes and Methods</li>
+                <li>Encapsulation</li>
+                <li>Inheritance</li>
+                <li>Composition</li>
+                <li>Mixins/Modules</li>
+                <li>Loose Coupling</li>
+                <li>Law of Demeter</li>
+                <li>Attribute Readers and Writers</li>
+                <li>Dependency Injection</li>
+            </ul>
+        </li>
+        <li>Nokogiri</li>
+        <li>More on RSpec</li>
+        <li>Model View Controller</li>
+    </ul>
 
-			<h4>Regular Expressions</h4>
-			<p>I wrote an earlier post on regular expressions that can be found <a href = "week9_technical.html">here</a>.  This week, I learned much more about the <codein>#gsub</codein> method and how to use it.  The website <a href = "http://rubular.com/">Rubular</a> is a great tool for testing regular expressions in Ruby.</p>
-			<p><codein>#gsub</codein> is used to find and replace text using regular expressions.  For example, suppose you have decided you want to change the format of all dates from MM-DD-YYYY to YYYY-MM-DD.  The following code can be implemented on your text to make that substitution.</p>
-			<code>
-				text.gsub(/(\d{2})-(\d{2})-(\d{4})/,'\3-\1-\2')
-			</code>
-			<p>The three sets of parentheses in the example above are called capture groups.  Unless you give them a different name, they are numbered by default.  Each group can be referred to in the substitution statement, as demonstrated in the example above (the \1, \2, and \3 are referring to (\d{2}), (\d{2)), and (\d{4}), respectively).</p>
+    <h4>A few thoughts on object oriented programming</h4>
+    <p>We spent all of Monday and Tuesday covering object oriented programming and good design principles. It was a lot to take in over the course of just two days, and by Tuesday night I was pretty exhausted. There's no way that I'll be able to cover everything in this blog post, so I'll just mention some highlights.</p>
+    <p>First, <a href="http://www.poodr.com/">POODR</a> is amazing, and Sandi Metz is a fantastic writer. If you don't have time to read the whole book, check out the <a href="http://www.confreaks.com/videos/3358-railsconf-all-the-little-things">talk</a> she gave at RailsConf earlier this year.</p>
 
-			<h4>Recursion and Memoization</h4>
-			<p>Recursion is pretty cool and is best presented in the context of an example.  Consider the method defined below, which yields the <em>nth</em>  <a href ="http://en.wikipedia.org/wiki/Fibonacci_number" >Fibonacci number</a>.</p>
-			<code>
-				def fibonacci_recursive(n)</br>
-  				&nbsp;&nbsp;if n == 0</br>
-  				&nbsp;&nbsp;&nbsp;&nbsp;return 0</br>
-  				&nbsp;&nbsp;elsif n == 1</br>
-  				&nbsp;&nbsp;&nbsp;&nbsp;return 1</br>
-  				&nbsp;&nbsp;end</br>
-  				&nbsp;&nbsp;fibonacci_recursive(n-2) + fibonacci_recursive(n-1)</br>
-				end
-			</code>
-			<p>So what's happening here?  If we are looking for the Fibonacci number at index 0 or 1, the method excilitly gives it to us.  Otherwise, we call the method within itself to find the Fibonacci number we're looking for.  The method will continue calling itself until it reaches the "base cases" of <em> n</em> = 0 and <em>n</em> = 1.</p>
-			<p>What's interesting about this example is that the recursive method is called <em>twice</em> inside of itself. As a result, many calculations have to be made multiple times.  For example, suppose we are trying to calculate the 7th Fibonacci number.  If we use the naive recursive method (shown above), then all the Fibonacci numbers in this tree must be separately computed:</p>
-			<div align = "center"><img src = "http://www.introprogramming.info/wp-content/uploads/2013/07/clip_image00525.png"></img></div>
-			<p>Look at how many times we have to caluclate each Fibonacci number with index < 7!  This is incredibly inefficient and gets more inefficent for larger values of <em>n</em>.</p>
-			<p>Luckily, there is something called memoization that allows us to store values once they are computed.  So, anytime we need to know the 3rd Fibonacci number, for example, the computer will first check to see if it has already calculated that number and only calculate it if it hasn't yet.  Below is a recursive method that uses memoization.</p>
-			<code>
-				def fibonacci_recursive(n, fib_array = [0, 1])</br>
-  				<div class = "indent">if n == 0</br>
-  				&nbsp;&nbsp;&nbsp;&nbsp;return 0</br>
-  				end</br>
-  				(fib_array[n-2] ||= fibonacci_recursive(n-2, fib_array)) + (fib_array[n-1] ||= fibonacci_recursive(n-1, fib_array))</div>
-				end
-			</code>
-			<p>Without memoization, the recusive Fibonacci method runs in exponential time; with memoization, the method runs in linear time, which is an excellent improvement.</p>
-		
+    <p>The following quote from POODR really resonated with me this week:</p>
+    <p class="indent" style="text-align: center">"[An object-oriented application] is
+        <em>made up of classes</em>but
+        <em>defined</em>by messages."</p>
+    <p>The objects are essential, but they exist because of the behaviors. This insight was a turning point for me and clarified some initial confusion I had about overall design.</p>
+
+    <p>One of the examples we went over was a <a href="http://en.wikipedia.org/wiki/Rube_Goldberg_machine">Rube Goldberg Machine</a>. Our machine was made up of Dominos, a ToyCar, Scissors, String, a Hammer, and a Gong. Each of these was represented as a class that inherited from the parent class PartOfMachine. All of this made perfect sense to me.</p>
+
+    <p>There was also a RubeGoldbergMachine class, but PartOfMachine did not inherit from the RubeGoldbergMachine class. At first, this didn't make sense to me. After all, each of the parts is a part of the machine, so it seems as if the parts should inherit from the machine. However, that assumes that the machine is defined by its parts (classes). As previously mentioned, this is not the case: the machine is defined by its behaviors. So what behaviors does the machine have? As it turns out, it really only has one behavior: to start the chain of events. The machine itself doesn't even need to be aware of all of its parts; it's only needs to be capable of getting things going.</p>
+
+    <p>Another way to think of this is <u>is a</u> versus <u>has a</u>. A Hammer <u>is a</u> PartofMachine, so it makes sense for the Hammer class to inherit from the PartOfMachine class. However, a RubeGoldbergMachine <u>has a</u> Hammer. When the relationship between classes is <u>has a</u>, the classes should not be related via inheritance but rather via composition.</p>
+
+
 </div>
 
 
