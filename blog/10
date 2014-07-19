@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Catheine V</title>
+    <link data-turbolinks-track="true" href="/assets/reset.css?body=1" media="all" rel="stylesheet" />
+<link data-turbolinks-track="true" href="/assets/style.css?body=1" media="all" rel="stylesheet" />
+<link data-turbolinks-track="true" href="/assets/application.css?body=1" media="all" rel="stylesheet" />
+    <link href='http://fonts.googleapis.com/css?family=Gafata' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:300italic,300,500' rel='stylesheet' type='text/css'>
+  </head>
+
+  <body>
+    <h1>Catherine Vongsathorn</h1>
+    <script src="/assets/jquery.js?body=1"></script>
+<script src="/assets/jquery_ujs.js?body=1"></script>
+<script src="/assets/turbolinks.js?body=1"></script>
+<script src="/assets/highlightNav.js?body=1"></script>
+<script src="/assets/application.js?body=1"></script>
+<div class = "nav">
+  <button id = "menu-icon">menu</button>
+  <div><a href="http://localhost:3000/">Home</a></div>
+  <div><a href="http://localhost:3000/about.html">About</a></div>
+  <div><a href="http://localhost:3000/blog.html">Blog</a></div>
+  <div><a href="http://localhost:3000/experience.html">Experience</a></div>
+  <div><a href="http://localhost:3000/links.html">Links</a></div>
+</div>
+    
+    <h2>Thursday, March 20, 2014</h2>
+<div class = "post">
+  <h3>Advice</h3>
+  <p>Some of my values are shown below with a corresponding value representing how strong I agree with the statement "I try to live up to these values" (1 is disagree, 5 is agree).
+			<table>
+			<tr id = "firstrow"><td>Value</td><td>Do I try to live up to this value?</td></tr>
+			<tr><td>Accomplishment</td><td>4</td></tr>
+			<tr><td>Achievement</td><td>4</td></tr>
+			<tr><td>Affection</td><td>5</td></tr>
+			<tr><td>Autonomy</td><td>5</td></tr>
+			<tr><td>Challenge</td><td>4</td></tr>
+			<tr><td>Close relationships</td><td>5</td></tr>
+			<tr><td>Commitment</td><td>5</td></tr>
+			<tr><td>Confidence</td><td>4</td></tr>
+			<tr><td>Enthusiasm</td><td>5</td></tr>
+			<tr><td>Excellence</td><td>5</td></tr>
+			<tr><td>Excitement</td><td>5</td></tr>
+			<tr><td>Helping other people</td><td>4</td></tr>
+			<tr><td>Meaningful work</td><td>4</td></tr>
+			<tr><td>Mentorship</td><td>4</td></tr>
+			<tr><td>Personal development</td><td>4</td></tr>
+			<tr><td>Quality</td><td>5</td></tr>
+			</table>
+			<p>Because many of my values are tightly connected to one another, I had a hard time picking just one word for this response.  I settled on "commitment" because ultimately, my sense of accomplishment, pride, enthusiasm, and excitment are always a result of just how committed I have been to begin with.  Commitment is important to me because of the sense of connection it implies.  I have been committed to other people through friendship and love; I have been committed to solving tough problems; I have been committed to achieving excellent results at work.  For all of these examples, there is a deep sense of connection and engagement either with other people, problems, or goals.  No matter the context, my sense of achievement and pride is a direct result of how invested I've been rather than the outcome itself. </p>
+			<p>While commitment is one of the foremost qualities that comes to mind when considering my happiest and proudest moments, it is also a word that comes to mind when I considering my most frustrating and unhappy moments.  It is extremely discouraging, and sometimes downright miserable, when you are committed to a person, a problem, or a challenge that for whatever reason things don't work out as you are hoping or expecting.</p>
+
+			<p>The last real topic that someone asked for my advice on was about how to be creative and productive in an unsupportive work environment.</p>
+		
+</div>
+
+
+    <footer>
+  <div id = "left">Contact me: <a href="mailto:cvong47@gmail.com">Email</a></div>
+  <div id = "right">&copy;2014 Catherine Vongsathorn</div>
+</footer>
+
+  </body>
+</html>
