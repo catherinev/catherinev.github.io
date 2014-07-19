@@ -51,14 +51,14 @@
         <li>Regular expressions open and close with a forward slash, /</li>
         <li>In regular expressions, alphanumeric characters represent themselves (unless they are preceeded by a backslash or a metacharacter*).</li>
         <li>The operator
-            <codein>=~</codein>is used to search a string for a regular expression and returns the index of the first match it finds in the string (if it doesn't find a match, it returns
-            <codein>nil</codein>).</li>
+            <codein>=~</codein> is used to search a string for a regular expression and returns the index of the first match it finds in the string (if it doesn't find a match, it returns
+            <codein>nil</codein> ).</li>
         <li>When using the
-            <codein>=~</codein>operator, the order of the string and the regular expression doesn't matter.
+            <codein>=~</codein> operator, the order of the string and the regular expression doesn't matter.
             <li>Regular expressions are case sensitive.</li>
     </ul>
     <p style="font-size: 0.8em">*The following are metacharacters:
-        <codein style="font-size: 1.25em">(, ), [, ], {, }, ., ?, +, *</codein>
+        <codein style="font-size: 1.25em">(, ), [, ], {, }, ., ?, +, *</codein> 
     </p>
     <h4>An example using metacharacters</h4>
     <p>Now let's look at a more complex example.</p>
@@ -82,35 +82,35 @@
     <p>Although this regular expression looks a lot more complicated than the one in the previous example, it's not too hard to understand if you break it down. First, let's figure out what all the different characters in the regular expression are doing:</p>
     <ul>
         <li>Square brackets mean "or". So
-            <codein>[01]</codein>searches for
-            <codein>"0"</codein>or
+            <codein>[01]</codein> searches for
+            <codein>"0"</codein> or
             <codein>"1"</codein>.</li>
         <li>
-            <codein>\d</codein>means any digit,
+            <codein>\d</codein> means any digit,
             <codein>0-9</codein>.</li>
         <li>
-            <codein>{n}</codein>means
-            <codein>n</codein>times. So
-            <codein>\d{4}</codein>searches for 4 digits in a row.</li>
+            <codein>{n}</codein> means
+            <codein>n</codein> times. So
+            <codein>\d{4}</codein> searches for 4 digits in a row.</li>
         <li>
-            <codein>[a-z]</codein>: square brackets still mean "or", but this time there is a range inside the brackets. So
-            <codein>[a-z]</codein>searches for any lowercase letter.</li>
+            <codein>[a-z]</codein> : square brackets still mean "or", but this time there is a range inside the brackets. So
+            <codein>[a-z]</codein> searches for any lowercase letter.</li>
         <li>
-            <codein>+</codein>means "at least one time", so
-            <codein>[a-z]+</codein>searches for at least one lowercase letter.</li>
+            <codein>+</codein> means "at least one time", so
+            <codein>[a-z]+</codein> searches for at least one lowercase letter.</li>
     </ul>
     <p>This example hints at some of the more powerful functionalities provided by regular expressions. For a full explanation of how to use all the metacharacters, see the resources linked below.</p>
 
     <h4>What else can you do with RegExp in Ruby?</h4>
     <p>In the examples above, the regular expressions were used to search a string for a pattern of characters. Ruby also allows us to replace patterns within a string (see the
         <a href="http://www.ruby-doc.org/core-2.1.1/String.html#method-i-gsub">
-            <codein>#gsub</codein>
+            <codein>#gsub</codein> 
         </a>method). It is also possible to collect all regex matches in a string using
         <a href="http://www.ruby-doc.org/core-2.1.1/String.html#method-i-scan">
-            <codein>#scan</codein>
+            <codein>#scan</codein> 
         </a>(or to collect anything that doesn't match using
         <a href="http://www.ruby-doc.org/core-2.1.1/String.html#method-i-split">
-            <codein>#split</codein>
+            <codein>#split</codein> 
         </a>).</p>
 
     <h4>Useful Resources</h4>

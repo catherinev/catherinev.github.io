@@ -46,12 +46,12 @@
     <li><a href="/blog/8/">Classes in Ruby</a></li>
     <li><a href="/blog/7/">Computer Science Education</a></li>
     <li><a href="/blog/6/">Dealing with Conflict</a></li>
-    <li><a href="/blog/5/"></a></li>
-    <li><a href="/blog/4/">Giving and Receiving Feedback</a></li>
+    <li><a href="/blog/5/"><codein>#map</codein> in Ruby</a></li>
+    <li><a href="/blog/4/">Pairing and Group Work</a></li>
     <li><a href="/blog/3/">What are the various ways to loop in Ruby and how can you decide which is best to use?</a></li>
     <li><a href="/blog/19/">Why is JavaScript so popular in web development?</a></li>
-    <li><a href="/blog/2/">Advice</a></li>
-    <li><a href="/blog/1/">Amazon</a></li>
+    <li><a href="/blog/2/">Some of my values</a></li>
+    <li><a href="/blog/1/">Serious Eats</a></li>
   </ul>
 </div>
 
@@ -67,7 +67,7 @@
   </div>
   <h2>Thursday, March 20, 2014</h2>
   <div class = "minipost">
-    <h3><a href="/blog/2/">Advice</a></h3>
+    <h3><a href="/blog/2/">Some of my values</a></h3>
     <p>Some of my values are shown below with a corresponding value representing how strong I agree with the statement "I try to live up to these values" (1 is disagree, 5 is agree).
         <table>
             <tr id="firstrow">
@@ -144,13 +144,13 @@
   </div>
   <h2>Sunday, March 16, 2014</h2>
   <div class = "minipost">
-    <h3><a href="/blog/1/">Amazon</a></h3>
+    <h3><a href="/blog/1/">Serious Eats</a></h3>
     <p><a href="http://www.seriouseats.com" target="_blank">Serious Eats</a> is one of my favorite websites. Like so many other websites, it has an excellent assortment of delicious recipes and reviews of restaurants all over the world. What sets it apart from other websites for me is primarily Kenji, one of the blog writers who has a background in science and writes excellent (and sometimes surprising) articles on the science behind his recipes. There are other fantastic contributors to the website, but I especially enjoy reading about Kenji's experimental process and, at the same time, learning some food science. Who doesn't want to know why their food tastes good?
     </p>
     <p>I find the user-experience to be quite enjoyable and the design to be streamlined and easy to look at. Like any good food website, the homepage is full of photos of food, to which a user's eyes are immediately drawn. The colors are light and undistracting, and there is an appropriate amount of contrast between text and backgrounds. The website is set up like a blog, with the most recent posts first.  &nbsp;&nbsp;<a class="rm" href="/blog/1/">read more&nbsp;&raquo;</a></p>
   </div>
 
-<div class="pagination"><a class="previous_page" rel="prev" href="/blog/?page=4">&#8592; Previous</a> <a rel="start" href="/blog/?page=1">1</a> <a href="/blog/?page=2">2</a> <a href="/blog/?page=3">3</a> <a rel="prev" href="/blog/?page=4">4</a> <em class="current">5</em> <span class="next_page disabled">Next &#8594;</span></div>
+<div class="pagination"><a class="previous_page" rel="prev" href="/blog/?page=4">&#8592; Previous</a> <span class="next_page disabled">Next &#8594;</span></div>
 
 
     <footer>

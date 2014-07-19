@@ -46,12 +46,12 @@
     <li><a href="/blog/8/">Classes in Ruby</a></li>
     <li><a href="/blog/7/">Computer Science Education</a></li>
     <li><a href="/blog/6/">Dealing with Conflict</a></li>
-    <li><a href="/blog/5/"></a></li>
-    <li><a href="/blog/4/">Giving and Receiving Feedback</a></li>
+    <li><a href="/blog/5/"><codein>#map</codein> in Ruby</a></li>
+    <li><a href="/blog/4/">Pairing and Group Work</a></li>
     <li><a href="/blog/3/">What are the various ways to loop in Ruby and how can you decide which is best to use?</a></li>
     <li><a href="/blog/19/">Why is JavaScript so popular in web development?</a></li>
-    <li><a href="/blog/2/">Advice</a></li>
-    <li><a href="/blog/1/">Amazon</a></li>
+    <li><a href="/blog/2/">Some of my values</a></li>
+    <li><a href="/blog/1/">Serious Eats</a></li>
   </ul>
 </div>
 
@@ -71,12 +71,19 @@
   </div>
   <h2>Wednesday, April 2, 2014</h2>
   <div class = "minipost">
-    <h3><a href="/blog/5/"></a></h3>
-      &nbsp;&nbsp;<a class="rm" href="/blog/5/">read more&nbsp;&raquo;</a></p>
+    <h3><a href="/blog/5/"><codein>#map</codein> in Ruby</a></h3>
+    <p>The <codein>#map</codein> method in Ruby can used to transform arrays, hashes, and ranges by calling a block of code on each element and pushing each result to a new array. So, regardless of the class of the input (array, hash, or range), the output is a new array.
+    </p>
+
+    <code>
+        input.map { |item| block }
+        <em>=> output_array</em>
+    </code>
+    <p>You can interpret this syntax as follows.  &nbsp;&nbsp;<a class="rm" href="/blog/5/">read more&nbsp;&raquo;</a></p>
   </div>
   <h2>Friday, March 28, 2014</h2>
   <div class = "minipost">
-    <h3><a href="/blog/4/">Giving and Receiving Feedback</a></h3>
+    <h3><a href="/blog/4/">Pairing and Group Work</a></h3>
     <p>Sophomore year of college, I took a math class called "Analysis". I had already taken a course called "Intro to Analysis", but even so Analysis basically killed me. The problem sets were designed to be particularly challenging, so most of the class would gather in the math building several times a week to try to solve the problems together. It was pretty intense. One night we all brought sleeping bags (and donuts) and spent the night. Our professor found us all happily snuggled up on the classroom floor the following morning. It was actually pretty awesome. Don't lie; I know you are secretly jealous.
     </p>
     <p>Ever since that class, I have loved solving problems in a group. It is truly remarkable how far beyond my comfort zone I can be pushed when put under pressure with other people who are equally motivated to solve problems. I have found that discussing problems with people who approach them in completely different ways than I do is one of the most productive ways to make progress. Moreover, the moments of success are magnified because I get to share them with other people. Basically, everything about it rocks.  &nbsp;&nbsp;<a class="rm" href="/blog/4/">read more&nbsp;&raquo;</a></p>
@@ -87,7 +94,7 @@
     <p>There are many ways to loop in Ruby. Below are some of the more common options.</p>
     <ol>
         <li>
-            <codein>#each</codein>
+            <codein>#each</codein> 
             <code>
                 <grn>[collection]</grn>.each do |element|
                 <br/>&emsp;&emsp;
@@ -96,10 +103,10 @@
             <p>The
                 <codein>
                     <grn>[collection]</grn>
-                </codein>is often an array but can also be a range, e.g. (1..100), or a hash.  &nbsp;&nbsp;<a class="rm" href="/blog/3/">read more&nbsp;&raquo;</a></p>
+                </codein> is often an array but can also be a range, e.g. (1..100), or a hash.  &nbsp;&nbsp;<a class="rm" href="/blog/3/">read more&nbsp;&raquo;</a></p>
   </div>
 
-<div class="pagination"><a class="previous_page" rel="prev" href="/blog/?page=3">&#8592; Previous</a> <a rel="start" href="/blog/?page=1">1</a> <a href="/blog/?page=2">2</a> <a rel="prev" href="/blog/?page=3">3</a> <em class="current">4</em> <a rel="next" href="/blog/?page=5">5</a> <a class="next_page" rel="next" href="/blog/?page=5">Next &#8594;</a></div>
+<div class="pagination"><a class="previous_page" rel="prev" href="/blog/?page=3">&#8592; Previous</a> <a class="next_page" rel="next" href="/blog/?page=5">Next &#8594;</a></div>
 
 
     <footer>

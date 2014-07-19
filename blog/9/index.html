@@ -108,7 +108,7 @@
             <br/>
         </code>
         <p>On lines 1-27 above, each class has been defined and includes a
-            <codein>#perimeter</codein>method. On lines 28-30, variables have been assigned to an
+            <codein>#perimeter</codein> method. On lines 28-30, variables have been assigned to an
             <em>instance</em>of each class. And finally, on lines 31-33, the perimeter of each instance is calculated.</p>
         <p>Another way to find the perimeter of rectangles, circles, and triangles is to avoid classes altogether and write functions instead, as shown below:</p>
         <code>
@@ -159,50 +159,50 @@
             <span style="text-decoration: underline">Methods</p>
         <p>Methods belong to
             <em>instances of classes</em>. To understand what this means, recall line 31, which calls the method
-            <codein>#perimeter</codein>on the object
-            <codein>rect</codein>:</p>
+            <codein>#perimeter</codein> on the object
+            <codein>rect</codein> :</p>
         <code>
             <span class="grey">31</span>rect.perimeter</code>
         <p>When a program evaluates this line, it does the following:</p>
         <ol>
             <li>Find the
-                <codein>rect</codein>object. This object is an instance of the class Rectangle and has attributes and methods defined according to that class.</li>
+                <codein>rect</codein> object. This object is an instance of the class Rectangle and has attributes and methods defined according to that class.</li>
             <li>Find the
-                <codein>#perimeter</codein>method that belongs to the
-                <codein>rect</codein>object. This method has been passed
-                <codein>@width = 4</codein>and
+                <codein>#perimeter</codein> method that belongs to the
+                <codein>rect</codein> object. This method has been passed
+                <codein>@width = 4</codein> and
                 <codein>@length = 2</codein>.</li>
             <li>Return the result of the
-                <codein>#perimeter</codein>method that belongs to
+                <codein>#perimeter</codein> method that belongs to
                 <codein>rect</codein>.
         </ol>
         <p>Since methods belong to instances of classes, they can be passed information that is hidden within the class. Also note that since methods belong to instances of classes, if we were to define a second rectangle, say</p>
         <code>
             <span class="grey">46</span>rect2 = Rectangle.new(6, 3)</code>
         <p>then
-            <codein>rect2</codein>would NOT use the same
-            <codein>#perimeter</codein>method as
+            <codein>rect2</codein> would NOT use the same
+            <codein>#perimeter</codein> method as
             <codein>rect</codein>. Likewise, the
-            <codein>#perimeter</codein>methods that are called on lines 31, 32, and 33 are all distinct methods, even though they have the same name.</p>
+            <codein>#perimeter</codein> methods that are called on lines 31, 32, and 33 are all distinct methods, even though they have the same name.</p>
 
         <p>
             <span style="text-decoration: underline">Functions</p>
         <p>The primary difference between a method and a function is that a function does NOT belong to an instance of a class -- it is simply a function. Therefore, functions use only data (arguments) explicitly passed to them. In the example above, the functions
-            <codein>#rectangle_perimeter, #circle_perimeter,</codein>and
-            <codein>#triangle_perimeter</codein>are defined on lines 34-42 and are called on lines 43-45.</p>
+            <codein>#rectangle_perimeter, #circle_perimeter,</codein> and
+            <codein>#triangle_perimeter</codein> are defined on lines 34-42 and are called on lines 43-45.</p>
     </div>
     <h4>So what's the difference between object-oriented programming and functional programming?</h4>
     <div class="indent">
         <p>
             <span style="text-decoration: underline">Object-Oriented Programming</p>
         <p>In object-oriented programming, objects are grouped into classes. The classes encapsulate attributes (data such as
-            <codein>width, length, radius</codein>) and methods (operations such as
-            <codein>#perimeter</codein>). Attributes and methods can be hidden. Moreover, classes can be ordered in a hierarchy. For example, we might define a Shape class and put Rectangle, Circle, and Triangle classes inside it. The Shape class might have the attribute
-            <codein>color</codein>and
-            <codein>#define_color</codein>method, which would be inherited by the Rectangle, Circle, and Triangle subclasses. Objects in different classes can also interact with each other.</p>
+            <codein>width, length, radius</codein> ) and methods (operations such as
+            <codein>#perimeter</codein> ). Attributes and methods can be hidden. Moreover, classes can be ordered in a hierarchy. For example, we might define a Shape class and put Rectangle, Circle, and Triangle classes inside it. The Shape class might have the attribute
+            <codein>color</codein> and
+            <codein>#define_color</codein> method, which would be inherited by the Rectangle, Circle, and Triangle subclasses. Objects in different classes can also interact with each other.</p>
 
         <p>Object-oriented programming is centered around methods, not functions, and the results of the methods depend on the state of the program at the time they are called. To see what this means, let's add the following
-            <codein>#doubled_perim</codein>method to our Rectangle class. This method doubles both dimensions of an instance of the Rectangle class and returns the perimeter of the new rectangle.</p>
+            <codein>#doubled_perim</codein> method to our Rectangle class. This method doubles both dimensions of an instance of the Rectangle class and returns the perimeter of the new rectangle.</p>
         <code>
             <span class="grey">47</span>class Rectangle
             <br/>
@@ -220,10 +220,10 @@
             <br/>
         </code>
         <p>The
-            <codein>#doubled_perim</codein>method changes the state of the program -- in addition to returning the value of the perimeter when both dimensions of the rectangle are doubled, it has actually changed the values of
-            <codein>@width</codein>and
+            <codein>#doubled_perim</codein> method changes the state of the program -- in addition to returning the value of the perimeter when both dimensions of the rectangle are doubled, it has actually changed the values of
+            <codein>@width</codein> and
             <codein>@length</codein>. Consider what happens if we call
-            <codein>rect.doubled_perim</codein>multiple times:</p>
+            <codein>rect.doubled_perim</codein> multiple times:</p>
         <code>
             <span class="grey">54</span>rect.doubled_perim
             <em>=> 24</em>
@@ -233,11 +233,11 @@
         </code>
         <p>So, even though we called the same method on the same object in lines 54 and 55, we got different outputs. This because object-oriented programming languages implements something called
             <em>dynamic dispatch</em>, which means that the state of the object when the method is called (in this case, the values of
-            <codein>@width</codein>and
-            <codein>@length</codein>) determines the result of the method.</p>
+            <codein>@width</codein> and
+            <codein>@length</codein> ) determines the result of the method.</p>
         <!-- For example, on line 28 we defined <codein>rect</codein> as a Rectangle with length 2 and width 4.  However, later in the program you may decide that for some reason, it is more convenient for <codein>rect</codein> to be a circle with radius 5.  Then, you may redefine <codein>rect</codein> as follows:</p>
 					<code><span class = "grey">47</span> rect = Circle.new(5)</code>
-					<p>So what happens when you call <codein>rect.perimeter</codein>?  <em>It depends on where you call it.</em>  When the program gets to line 31, <codein>rect</codein> is a rectangle with length 2 and width 4, so <codein>rect.perimeter</codein> returns <codein>12</codein>.  However, if we add line 48:</p>
+					<p>So what happens when you call <codein>rect.perimeter</codein> ?  <em>It depends on where you call it.</em>  When the program gets to line 31, <codein>rect</codein> is a rectangle with length 2 and width 4, so <codein>rect.perimeter</codein> returns <codein>12</codein>.  However, if we add line 48:</p>
 					<code><span class = "grey">48</span> rect.perimeter</code>
 					<p>then this time, <codein>rect.perimeter</codein> will return <codein>31.4</codein>.  -->
 
@@ -246,10 +246,10 @@
         <p>Functional programming uses functions, not methods, to do stuff. The ideology behind FP is based on the <a href="http://en.wikipedia.org/wiki/Function_(mathematics)">mathematical definition</a> of a function: for each input (or set of inputs), there is at most one output. Functional programming does not package data and operations together into classes: they are separate entities in FP. Functions are called and data (arguments) is explicitly passed in.</p>
         <!-- <p>Therefore, while in OOP we can redefine <codein>rect</codein> to be a Circle on line 47, this is not permissible in functional programming.  Moreover, every time a function with the same inputs is called, the same output is given.  For example, the function called on line 43 will yield 12, no matter what line number it is on.</p> -->
         <p>Moreover, functions do not have "side-effects" that affect the state of the program. In the
-            <codein>#doubled_perim</codein>example on lines 47-53, the method not only returns a value for the perimeter but also changes the values of instance variables. This is called a side-effect--we get more than just the returned value; something about the state of the program changed. As a result, when we call
-            <codein>#doubled_perim</codein>twice, as on lines 54 and 55 above, we get different values in return. This never happens in functional programming. Functional programming implements static evaluation of functions, which means the value of a function does NOT depend on the state of the program. Just as a mathematical function will yield the same result every time it is a given a particular value, a function in an FP language will yield the same result every time it is given the same argument(s).</p>
+            <codein>#doubled_perim</codein> example on lines 47-53, the method not only returns a value for the perimeter but also changes the values of instance variables. This is called a side-effect--we get more than just the returned value; something about the state of the program changed. As a result, when we call
+            <codein>#doubled_perim</codein> twice, as on lines 54 and 55 above, we get different values in return. This never happens in functional programming. Functional programming implements static evaluation of functions, which means the value of a function does NOT depend on the state of the program. Just as a mathematical function will yield the same result every time it is a given a particular value, a function in an FP language will yield the same result every time it is given the same argument(s).</p>
         <p>The functional programming analog of the
-            <codein>#doubled_perim</codein>method on lines 47-53 might look something like this:</p>
+            <codein>#doubled_perim</codein> method on lines 47-53 might look something like this:</p>
         <code>
             <span class="grey">56</span>def doubled_perim_rect(width, length)
             <br/>
@@ -263,7 +263,7 @@
             <br/>
         </code>
         <p>No matter how many times we call
-            <codein>doubled_perim_rec(2,4)</codein>, the result will always be 24.
+            <codein>doubled_perim_rec(2,4)</codein> , the result will always be 24.
     </div>
     <h4>Sources</h4>
     <ul>

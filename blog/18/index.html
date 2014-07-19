@@ -45,9 +45,9 @@
 
     <h4>Regular Expressions</h4>
     <p>I wrote an earlier post on regular expressions that can be found <a href="/blog/15/">here</a>. This week, I learned much more about the
-        <codein>#gsub</codein>method and how to use it. The website <a href="http://rubular.com/">Rubular</a> is a great tool for testing regular expressions in Ruby.</p>
+        <codein>#gsub</codein> method and how to use it. The website <a href="http://rubular.com/">Rubular</a> is a great tool for testing regular expressions in Ruby.</p>
     <p>
-        <codein>#gsub</codein>is used to find and replace text using regular expressions. For example, suppose you have decided you want to change the format of all dates from MM-DD-YYYY to YYYY-MM-DD. The following code can be implemented on your text to make that substitution.</p>
+        <codein>#gsub</codein> is used to find and replace text using regular expressions. For example, suppose you have decided you want to change the format of all dates from MM-DD-YYYY to YYYY-MM-DD. The following code can be implemented on your text to make that substitution.</p>
     <code>
         text.gsub(/(\d{2})-(\d{2})-(\d{4})/,'\3-\1-\2')
     </code>

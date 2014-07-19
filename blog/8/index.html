@@ -31,30 +31,30 @@
   <h3>Classes in Ruby</h3>
   <p>
         <em>Classes</em>are a natural way to group similar types of objects in Ruby. For example,
-        <codein>Array</codein>is a class. There are two ways to define a new object in the class
-        <codein>Array</codein>:
+        <codein>Array</codein> is a class. There are two ways to define a new object in the class
+        <codein>Array</codein> :
         <code>
             arr_1 = Array.new</br>
             arr_1[0] = "Hello"</br>
             arr_1[1] = "world"</br>
             arr_2 = [1, 2, 3, 4]
         </code>
-        <codein>arr_1</codein>has been defined using constructor notation and
-        <codein>arr_2</codein>has been defined using literal notation, but both are the same type of object.
-        <codein>arr_1</codein>and
-        <codein>arr_2</codein>are called
+        <codein>arr_1</codein> has been defined using constructor notation and
+        <codein>arr_2</codein> has been defined using literal notation, but both are the same type of object.
+        <codein>arr_1</codein> and
+        <codein>arr_2</codein> are called
         <em>instances</em>of the class
         <codein>Array</codein>. So a class is a category, and an instance is a particular object that falls into that category. Other examples of classes are
-        <codein>String, Fixnum, Float,</codein>and
+        <codein>String, Fixnum, Float,</codein> and
         <codein>Hash</codein>.</p>
 
     <p>So why are classes helpful? Because we often want to know similar things or perform similar tasks on objects in the same class. Each class has associated
         <em>methods</em>that do something to an instance of the class. For example,
-        <codein>#length, #each,</codein>and
-        <codein>#sort</codein>are all methods associated with the class
+        <codein>#length, #each,</codein> and
+        <codein>#sort</codein> are all methods associated with the class
         <codein>Array</codein>. Similarly,
-        <codein>#length, #downcase,</codein>and
-        <codein>#each_char</codein>are all methods associated with the class
+        <codein>#length, #downcase,</codein> and
+        <codein>#each_char</codein> are all methods associated with the class
         <codein>String</codein>. Each of these methods can be called on any instance of the associated class. (Note that some methods are associated with more than one class.)</p>
 
 
@@ -62,7 +62,7 @@
         <em>instances</em>of that object and may want to perform the same tasks (i.e. call the same method) on those instances.</p>
 
     <p>For example, you may want to define the class
-        <codein>Rectangle</codein>:</p>
+        <codein>Rectangle</codein> :</p>
     <code>
         class Rectangle</br>
         &nbsp;&nbsp;def initialize(width, height)</br>
@@ -84,26 +84,26 @@
         rec = Rectangle.new(3, 4)
     </code>
     <p>Above,
-        <codein>rec</codein>is an instance of the class
+        <codein>rec</codein> is an instance of the class
         <codein>Rectangle</codein>.
         <p>It is natural to create a class for
-            <codein>Rectangle</codein>because there are many possible instances of the class that can now all use the same methods.</p>
+            <codein>Rectangle</codein> because there are many possible instances of the class that can now all use the same methods.</p>
         <p>The first method we have is
             <codein>#initialize</codein>. This method is run automatically every time you create a new instance of the class. In our
-            <codein>Rectangle</codein>example, all that the initialize method is doing is defining the
+            <codein>Rectangle</codein> example, all that the initialize method is doing is defining the
             <em>instance variables</em>
-            <codein>@width</codein>and
+            <codein>@width</codein> and
             <codein>@height</codein>. An instance variable is a variable associated with an instance of the object and always begins with
             <codein>@</codein>. Instance variables can be used in any method within the class in which they are defined. In
-            <codein>rec, @width = 3</codein>and
-            <codein>@height = 4</codein>, so any
-            <codein>Rectangle</codein>method that we call on
-            <codein>rec</codein>will use the values 3 and 4 for
-            <codein>@width</codein>and
-            <codein>@height</codein>, respectively.</p>
+            <codein>rec, @width = 3</codein> and
+            <codein>@height = 4</codein> , so any
+            <codein>Rectangle</codein> method that we call on
+            <codein>rec</codein> will use the values 3 and 4 for
+            <codein>@width</codein> and
+            <codein>@height</codein> , respectively.</p>
 
         <p>After
-            <codein>#initialize</codein>, we defined methods to find the perimeter and area of a rectangle. They can be called as follows:</p>
+            <codein>#initialize</codein> , we defined methods to find the perimeter and area of a rectangle. They can be called as follows:</p>
         <code>rec.perimeter
             <em>=> 14</em>
             </br>rec.area

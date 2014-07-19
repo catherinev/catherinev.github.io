@@ -46,12 +46,12 @@
     <li><a href="/blog/8/">Classes in Ruby</a></li>
     <li><a href="/blog/7/">Computer Science Education</a></li>
     <li><a href="/blog/6/">Dealing with Conflict</a></li>
-    <li><a href="/blog/5/"></a></li>
-    <li><a href="/blog/4/">Giving and Receiving Feedback</a></li>
+    <li><a href="/blog/5/"><codein>#map</codein> in Ruby</a></li>
+    <li><a href="/blog/4/">Pairing and Group Work</a></li>
     <li><a href="/blog/3/">What are the various ways to loop in Ruby and how can you decide which is best to use?</a></li>
     <li><a href="/blog/19/">Why is JavaScript so popular in web development?</a></li>
-    <li><a href="/blog/2/">Advice</a></li>
-    <li><a href="/blog/1/">Amazon</a></li>
+    <li><a href="/blog/2/">Some of my values</a></li>
+    <li><a href="/blog/1/">Serious Eats</a></li>
   </ul>
 </div>
 
@@ -159,7 +159,7 @@
             <br/>
         </code>
         <p>On lines 1-27 above, each class has been defined and includes a
-            <codein>#perimeter</codein>method. On lines 28-30, variables have been assigned to an
+            <codein>#perimeter</codein> method. On lines 28-30, variables have been assigned to an
             <em>instance</em>of each class. And finally, on lines 31-33, the perimeter of each instance is calculated.</p></div>  &nbsp;&nbsp;<a class="rm" href="/blog/9/">read more&nbsp;&raquo;</a></p>
   </div>
   <h2>Sunday, April 13, 2014</h2>
@@ -167,34 +167,34 @@
     <h3><a href="/blog/8/">Classes in Ruby</a></h3>
     <p>
         <em>Classes</em>are a natural way to group similar types of objects in Ruby. For example,
-        <codein>Array</codein>is a class. There are two ways to define a new object in the class
-        <codein>Array</codein>:
+        <codein>Array</codein> is a class. There are two ways to define a new object in the class
+        <codein>Array</codein> :
         <code>
             arr_1 = Array.new</br>
             arr_1[0] = "Hello"</br>
             arr_1[1] = "world"</br>
             arr_2 = [1, 2, 3, 4]
         </code>
-        <codein>arr_1</codein>has been defined using constructor notation and
-        <codein>arr_2</codein>has been defined using literal notation, but both are the same type of object.
-        <codein>arr_1</codein>and
-        <codein>arr_2</codein>are called
+        <codein>arr_1</codein> has been defined using constructor notation and
+        <codein>arr_2</codein> has been defined using literal notation, but both are the same type of object.
+        <codein>arr_1</codein> and
+        <codein>arr_2</codein> are called
         <em>instances</em>of the class
         <codein>Array</codein>. So a class is a category, and an instance is a particular object that falls into that category. Other examples of classes are
-        <codein>String, Fixnum, Float,</codein>and
+        <codein>String, Fixnum, Float,</codein> and
         <codein>Hash</codein>.</p>
 
     <p>So why are classes helpful? Because we often want to know similar things or perform similar tasks on objects in the same class. Each class has associated
         <em>methods</em>that do something to an instance of the class. For example,
-        <codein>#length, #each,</codein>and
-        <codein>#sort</codein>are all methods associated with the class
+        <codein>#length, #each,</codein> and
+        <codein>#sort</codein> are all methods associated with the class
         <codein>Array</codein>. Similarly,
-        <codein>#length, #downcase,</codein>and
-        <codein>#each_char</codein>are all methods associated with the class
+        <codein>#length, #downcase,</codein> and
+        <codein>#each_char</codein> are all methods associated with the class
         <codein>String</codein>. Each of these methods can be called on any instance of the associated class. (Note that some methods are associated with more than one class.)  &nbsp;&nbsp;<a class="rm" href="/blog/8/">read more&nbsp;&raquo;</a></p>
   </div>
 
-<div class="pagination"><a class="previous_page" rel="prev" href="/blog/?page=2">&#8592; Previous</a> <a rel="start" href="/blog/?page=1">1</a> <a rel="prev" href="/blog/?page=2">2</a> <em class="current">3</em> <a rel="next" href="/blog/?page=4">4</a> <a href="/blog/?page=5">5</a> <a class="next_page" rel="next" href="/blog/?page=4">Next &#8594;</a></div>
+<div class="pagination"><a class="previous_page" rel="prev" href="/blog/?page=2">&#8592; Previous</a> <a class="next_page" rel="next" href="/blog/?page=4">Next &#8594;</a></div>
 
 
     <footer>
