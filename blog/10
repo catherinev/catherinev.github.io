@@ -18,11 +18,11 @@
 <script src="/assets/application.js?body=1"></script>
 <div class = "nav">
   <button id = "menu-icon">menu</button>
-  <div><a href="http://localhost:3000/">Home</a></div>
-  <div><a href="http://localhost:3000/about.html">About</a></div>
-  <div><a href="http://localhost:3000/blog.html">Blog</a></div>
+  <div><a href="/">Home</a></div>
+  <div><a href="/about.html">About</a></div>
+  <div><a href="/blog.html">Blog</a></div>
   <div><a href="http://localhost:3000/experience.html">Experience</a></div>
-  <div><a href="http://localhost:3000/links.html">Links</a></div>
+  <div><a href="/links.html">Links</a></div>
 </div>
     
     <h2>Thursday, March 20, 2014</h2>
