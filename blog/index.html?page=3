@@ -29,77 +29,153 @@
     <div id = "sp">
   <h4>Recent Posts</h4>
   <ul>
+    <li><a href="/blog/6/">Some reflections on Phase 2</a></li>
+    <li><a href="/blog/5/">Group Projects</a></li>
+    <li><a href="/blog/4/">My First Rails App!</a></li>
+    <li><a href="/blog/8/">Reflections on Week 2</a></li>
+    <li><a href="/blog/7/">More Reflections on Week 1</a></li>
+    <li><a href="/blog/3/">Day 5</a></li>
+    <li><a href="/blog/2/">Day 1</a></li>
     <li><a href="/blog/24/">Regular Expressions</a></li>
     <li><a href="/blog/23/">Reflections on Feedback</a></li>
-    <li><a href="/blog/22/">Sorting</a></li>
     <li><a href="/blog/21/">Chefs in the Kitchen</a></li>
+    <li><a href="/blog/22/">Sorting</a></li>
     <li><a href="/blog/20/">SQL versus NoSQL</a></li>
     <li><a href="/blog/19/">Affirmation and Stereotype Threat</a></li>
     <li><a href="/blog/18/">Object-Oriented Programming versus Functional Programming</a></li>
     <li><a href="/blog/17/">Stereotype Threat</a></li>
-    <li><a href="/blog/16/">Classes in Ruby</a></li>
     <li><a href="/blog/15/">Computer Science Education</a></li>
-    <li><a href="/blog/14/"></a></li>
+    <li><a href="/blog/16/">Classes in Ruby</a></li>
     <li><a href="/blog/13/">Dealing with Conflict</a></li>
-    <li><a href="/blog/12/">What are the various ways to loop in Ruby and how can you decide which is best to use?</a></li>
+    <li><a href="/blog/14/"></a></li>
     <li><a href="/blog/11/">Giving and Receiving Feedback</a></li>
+    <li><a href="/blog/12/">What are the various ways to loop in Ruby and how can you decide which is best to use?</a></li>
     <li><a href="/blog/10/">Why is JavaScript so popular in web development?</a></li>
     <li><a href="/blog/9/">Advice</a></li>
-    <li><a href="/blog/8/">Reflections on Week 2</a></li>
-    <li><a href="/blog/7/">More Reflections on Week 1</a></li>
-    <li><a href="/blog/6/">Some reflections on Phase 2</a></li>
-    <li><a href="/blog/5/">Group Projects</a></li>
-    <li><a href="/blog/4/">My First Rails App!</a></li>
-    <li><a href="/blog/3/">Day 5</a></li>
-    <li><a href="/blog/2/">Day 1</a></li>
     <li><a href="/blog/1/">Amazon</a></li>
   </ul>
 </div>
 
 
-  <h2>Saturday, July 19, 2014</h2>
+  <h2>Sunday, May 4, 2014</h2>
   <div class = "minipost">
-    <h3><a href="/blog/14/"></a></h3>
-      &nbsp;&nbsp;<a class="rm" href="/blog/14/">read more&nbsp;&raquo;</a></p>
-  </div>
-  <h2>Saturday, July 19, 2014</h2>
-  <div class = "minipost">
-    <h3><a href="/blog/13/">Dealing with Conflict</a></h3>
-    <p>I have been a tutor for many years. A few years ago, there was an emotional conflict between me and a parent of one of my students. We will call the student Russell and the parent Jason.</p>
-    <p>I had a regular weekly tutoring appointment with Russell. However, one week he had a scheduling conflict so we rescheduled. That week, I arrived at the family's home at the time Jason and I had discussed. Upon arrival, it quickly became clear that Jason had forgotten about our appointment and that Russell was not home. I waited in the hallway for 15-20 minutes while Jason tried to get in touch with Russell. Eventually, Jason determined that Russell was still at school taking a history test, so he would not be able to meet for tutoring. Jason then asked if he would be charged for the tutoring session, and I told them they would be. Jason became extremely upset. I reminded him that that the office I work for has a 24-hour cancelation policy and that he was welcome to discuss any questions he had about the policy with the directors at the office. Jason was still upset and said something to the effect of "If I have to pay for your time, then I'm going to use that time. Teach me the lesson you had planned for Russell." So I did. About 45 minutes later, Russell got home and I spent the remaining part of our session teaching Russell.  &nbsp;&nbsp;<a class="rm" href="/blog/13/">read more&nbsp;&raquo;</a></p>
-  </div>
-  <h2>Saturday, July 19, 2014</h2>
-  <div class = "minipost">
-    <h3><a href="/blog/12/">What are the various ways to loop in Ruby and how can you decide which is best to use?</a></h3>
-    <p>There are many ways to loop in Ruby. Below are some of the more common options.</p>
+    <h3><a href="/blog/22/">Sorting</a></h3>
+    <p>Sorting is the ability to take a list (e.g., array, hash) and put the elements in order. While it is a simple concept, there are many different ways to go about doing it. If you were asked to manually order a list of randomly generated numbers, how would you do it? Perhaps you'd consider doing something like this:</p>
     <ol>
-        <li>
-            <codein>#each</codein>
-            <code>
-                <grn>[collection]</grn>.each do |element|
-                <br/>&emsp;&emsp;
-                <grn>[some code]</grn>
-                <br/>end</code>
-            <p>The
-                <codein>
-                    <grn>[collection]</grn>
-                </codein>is often an array but can also be a range, e.g. (1..100), or a hash.  &nbsp;&nbsp;<a class="rm" href="/blog/12/">read more&nbsp;&raquo;</a></p>
+        <li>Look at the first number. Since it's first, it is the smallest number so far. Remember this number and move to the next number in your list.</li>
+        <li>Is this number smaller than the number you have remembered? If so, this number is now the smallest; forget the number that used to be smallest and remember this number instead. Otherwise, just keep going.</li>
+        <li>Move to the next element in your list and repeat step 2. Continue until you reach the end of the list. By this time, you will have found the smallest number in your list.</li>
+        <li>Take the smallest number out of the list and add it to a new, ordered list.</li>
+        <li>Repeat steps 1-4 until your unordered list is empty.</li>
+    </ol>
+    <p>This will certainly work, but it's
+        <em>really inefficient</em>. For each number in your list, you have to go through the entire (remaining) list and then add it to the new list. Let's say you have a list of 10 numbers and it takes you 1 second to look at each element in the list (and decide if you should "remember" it). Then, this algorithm will take you 10 seconds to find the smallest number, 9 seconds to find the next smallest, 8 seconds to find the next...for a total of 10+9+8+7+6+5+4+3+2+1 = 55 seconds to put that list in order. (Note: this assumes that step 4 takes 0 seconds.)  &nbsp;&nbsp;<a class="rm" href="/blog/22/">read more&nbsp;&raquo;</a></p>
   </div>
-  <h2>Saturday, July 19, 2014</h2>
+  <h2>Sunday, April 27, 2014</h2>
   <div class = "minipost">
-    <h3><a href="/blog/11/">Giving and Receiving Feedback</a></h3>
-    <p>Sophomore year of college, I took a math class called "Analysis". I had already taken a course called "Intro to Analysis", but even so Analysis basically killed me. The problem sets were designed to be particularly challenging, so most of the class would gather in the math building several times a week to try to solve the problems together. It was pretty intense. One night we all brought sleeping bags (and donuts) and spent the night. Our professor found us all happily snuggled up on the classroom floor the following morning. It was actually pretty awesome. Don't lie; I know you are secretly jealous.
-    </p>
-    <p>Ever since that class, I have loved solving problems in a group. It is truly remarkable how far beyond my comfort zone I can be pushed when put under pressure with other people who are equally motivated to solve problems. I have found that discussing problems with people who approach them in completely different ways than I do is one of the most productive ways to make progress. Moreover, the moments of success are magnified because I get to share them with other people. Basically, everything about it rocks.  &nbsp;&nbsp;<a class="rm" href="/blog/11/">read more&nbsp;&raquo;</a></p>
+    <h3><a href="/blog/20/">SQL versus NoSQL</a></h3>
+    <h4>Relational Databases</h4>
+    <p>SQL has been around since the 1970s and is the language used to communicate with
+        <em>relational databases</em>. In a relational database, data is stored in tables that may be linked to each other. Each row (or record) of a table contains a data set representing a single item, and each column (or attribute) is a category that labels the elements in the rows. SQL is used to update and retrieve data in relational databases.</p>
+    <p>There are many advantages to using a relational database to store data. For one, relational databases and SQL have been around for decades, so the technology is mature and many people have significant experience working with them. They are also great for working with structured data (meaning that the attributes, or columns, being recorded aren't going to change) and datasets that aren't likely to suddenly expand. For instance, a patient or client management database, an HR database, and a library catalog can all be managed easily and effectively with a relational database.  &nbsp;&nbsp;<a class="rm" href="/blog/20/">read more&nbsp;&raquo;</a></p>
   </div>
-  <h2>Saturday, July 19, 2014</h2>
+  <h2>Tuesday, April 22, 2014</h2>
   <div class = "minipost">
-    <h3><a href="/blog/10/">Why is JavaScript so popular in web development?</a></h3>
-    <p>Before we talk about JavaScript, consider the following two questions.</p>
+    <h3><a href="/blog/19/">Affirmation and Stereotype Threat</a></h3>
+    <p>One reason I haven't felt particularly threatened by stereotypes is that I value personal achievement, improvement, and challenge above what other people think of me. Thus, it's easy to disregard stereotypes in favor of more objective measures of my ability and potential.</p>
+    <p>I also strongly value the close relationships I have with others. During times of stress, I find comfort in such relationships not because of any encouraging words or favorable opinions but rather because of the shared experiences, closeness, and comfort they provide. I have been able to work through some of my most trying moments by helping others work through their own challenges and achieve their own successes.  &nbsp;&nbsp;<a class="rm" href="/blog/19/">read more&nbsp;&raquo;</a></p>
+  </div>
+  <h2>Sunday, April 20, 2014</h2>
+  <div class = "minipost">
+    <h3><a href="/blog/18/">Object-Oriented Programming versus Functional Programming</a></h3>
+    <h4>An example in Ruby</h4>
     <div class="indent">
-        <h4><b>Who are web developers these days?</b>
-        </h4>
-        <p>Web developers can be, and are, just about anyone. Many are people who have simply had an idea for an application or website and are trying implement it. Such people come from an enormous variety of backgrounds. Some may have programming experience, but many don't.</p></div>  &nbsp;&nbsp;<a class="rm" href="/blog/10/">read more&nbsp;&raquo;</a></p>
+        <p>Before we talk about "object-oriented programming" versus "functional programming", let's look at an example. Suppose I'd like to be able to find the perimeter of rectangles, circles, and triangles. One way to acheive this is by using classes. I can make classes for Rectangles, Circles, and Triangles and include a method within each one that will evaluate the perimeter of a particular instance of that class:</p>
+        <code>
+            <span class="grey">1</span>&nbsp;class Rectangle
+            <br/>
+            <span class="grey">2</span>&nbsp;&nbsp;&nbsp;def initialize(length, width)
+            <br/>
+            <span class="grey">3</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@width = width
+            <br/>
+            <span class="grey">4</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@length = length
+            <br/>
+            <span class="grey">5</span>&nbsp;&nbsp;&nbsp;end
+            <br/>
+
+            <span class="grey">6</span>&nbsp;&nbsp;&nbsp;def perimeter
+            <br/>
+            <span class="grey">7</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2 * @width + 2 * @length
+            <br/>
+            <span class="grey">8</span>&nbsp;&nbsp;&nbsp;end
+            <br/>
+            <span class="grey">9</span>&nbsp;end
+            <br/>
+            <br/>
+            <span class="grey">10</span>class Circle
+            <br/>
+            <span class="grey">11</span>&nbsp;&nbsp;def initialize(radius)
+            <br/>
+            <span class="grey">12</span>&nbsp;&nbsp;&nbsp;&nbsp;@radius = radius
+            <br/>
+            <span class="grey">13</span>&nbsp;&nbsp;end
+            <br/>
+
+            <span class="grey">14</span>&nbsp;&nbsp;def perimeter
+            <br/>
+            <span class="grey">15</span>&nbsp;&nbsp;&nbsp;&nbsp;2 * 3.14 * @radius
+            <br/>
+            <span class="grey">16</span>&nbsp;&nbsp;end
+            <br/>
+            <span class="grey">17</span>end
+            <br/>
+            <br/>
+            <span class="grey">18</span>class Triangle
+            <br/>
+            <span class="grey">19</span>&nbsp;&nbsp;def initialize(side1, side2, side3)
+            <br/>
+            <span class="grey">20</span>&nbsp;&nbsp;&nbsp;&nbsp;@side1 = side1
+            <br/>
+            <span class="grey">21</span>&nbsp;&nbsp;&nbsp;&nbsp;@side2 = side2
+            <br/>
+            <span class="grey">22</span>&nbsp;&nbsp;&nbsp;&nbsp;@side3 = side3
+            <br/>
+            <span class="grey">23</span>&nbsp;&nbsp;end
+            <br/>
+
+            <span class="grey">24</span>&nbsp;&nbsp;def perimeter
+            <br/>
+            <span class="grey">25</span>&nbsp;&nbsp;&nbsp;&nbsp;@side1 + @side2 + @side3
+            <br/>
+            <span class="grey">26</span>&nbsp;&nbsp;end
+            <br/>
+            <span class="grey">27</span>end
+            <br/>
+            <br/>
+            <span class="grey">28</span>rect = Rectangle.new(2, 4)
+            <br/>
+            <span class="grey">29</span>circ = Circle.new(3)
+            <br/>
+            <span class="grey">30</span>tri = Triangle.new(1, 2, 3)
+            <br/>
+            <br/>
+            <span class="grey">31</span>rect.perimeter
+            <br/>
+            <span class="grey">32</span>circ.perimeter
+            <br/>
+            <span class="grey">33</span>tri.perimeter
+            <br/>
+        </code>
+        <p>On lines 1-27 above, each class has been defined and includes a
+            <codein>#perimeter</codein>method. On lines 28-30, variables have been assigned to an
+            <em>instance</em>of each class. And finally, on lines 31-33, the perimeter of each instance is calculated.</p></div>  &nbsp;&nbsp;<a class="rm" href="/blog/18/">read more&nbsp;&raquo;</a></p>
+  </div>
+  <h2>Sunday, April 20, 2014</h2>
+  <div class = "minipost">
+    <h3><a href="/blog/17/">Stereotype Threat</a></h3>
+    <p>As a girl who is (and always has been) reasonably good at math and science, I have always been aware of the corresponding stereotype. However, I can't think of a time it has affected my achievement, which may be one of the primary reasons I was able to earn undergraduate and graduate degrees in math. Throughout my schooling, it did upset me if someone prejudged my abilities because of my gender, but I've always focused on my own standards for myself and have been able to find people (both guys and girls) who were eager to work with me. I think I have a pretty good grasp of my own strengths and weaknesses, so I generally disregard someone's opinion of me unless they know me pretty well or have seen examples of my work.</p>
+
+    <p>Because I have seen the consequences of stereotype threat and also strive to be an empathetic and rational person, I actively try to not judge people. I feel comfortable judging the quality of someone's work after reviewing it, but that isn't necessarily a perfect reflection of an individual's abilities, and, regardless, any judgements are independent of any group the individual might fall into. When I hear others around me stereotyping a collegue or potential collegue, I try to guide the conversation in the direction of factual information about the individuals's work and ability and away from subjective and judgemental statements about the individual's identity. Such topics are irrelevant.  &nbsp;&nbsp;<a class="rm" href="/blog/17/">read more&nbsp;&raquo;</a></p>
   </div>
 
 <div class="pagination"><a class="previous_page" rel="prev" href="/blog/?page=2">&#8592; Previous</a> <a rel="start" href="/blog/?page=1">1</a> <a rel="prev" href="/blog/?page=2">2</a> <em class="current">3</em> <a rel="next" href="/blog/?page=4">4</a> <a href="/blog/?page=5">5</a> <a class="next_page" rel="next" href="/blog/?page=4">Next &#8594;</a></div>

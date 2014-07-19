@@ -29,169 +29,77 @@
     <div id = "sp">
   <h4>Recent Posts</h4>
   <ul>
+    <li><a href="/blog/6/">Some reflections on Phase 2</a></li>
+    <li><a href="/blog/5/">Group Projects</a></li>
+    <li><a href="/blog/4/">My First Rails App!</a></li>
+    <li><a href="/blog/8/">Reflections on Week 2</a></li>
+    <li><a href="/blog/7/">More Reflections on Week 1</a></li>
+    <li><a href="/blog/3/">Day 5</a></li>
+    <li><a href="/blog/2/">Day 1</a></li>
     <li><a href="/blog/24/">Regular Expressions</a></li>
     <li><a href="/blog/23/">Reflections on Feedback</a></li>
-    <li><a href="/blog/22/">Sorting</a></li>
     <li><a href="/blog/21/">Chefs in the Kitchen</a></li>
+    <li><a href="/blog/22/">Sorting</a></li>
     <li><a href="/blog/20/">SQL versus NoSQL</a></li>
     <li><a href="/blog/19/">Affirmation and Stereotype Threat</a></li>
     <li><a href="/blog/18/">Object-Oriented Programming versus Functional Programming</a></li>
     <li><a href="/blog/17/">Stereotype Threat</a></li>
-    <li><a href="/blog/16/">Classes in Ruby</a></li>
     <li><a href="/blog/15/">Computer Science Education</a></li>
-    <li><a href="/blog/14/"></a></li>
+    <li><a href="/blog/16/">Classes in Ruby</a></li>
     <li><a href="/blog/13/">Dealing with Conflict</a></li>
-    <li><a href="/blog/12/">What are the various ways to loop in Ruby and how can you decide which is best to use?</a></li>
+    <li><a href="/blog/14/"></a></li>
     <li><a href="/blog/11/">Giving and Receiving Feedback</a></li>
+    <li><a href="/blog/12/">What are the various ways to loop in Ruby and how can you decide which is best to use?</a></li>
     <li><a href="/blog/10/">Why is JavaScript so popular in web development?</a></li>
     <li><a href="/blog/9/">Advice</a></li>
-    <li><a href="/blog/8/">Reflections on Week 2</a></li>
-    <li><a href="/blog/7/">More Reflections on Week 1</a></li>
-    <li><a href="/blog/6/">Some reflections on Phase 2</a></li>
-    <li><a href="/blog/5/">Group Projects</a></li>
-    <li><a href="/blog/4/">My First Rails App!</a></li>
-    <li><a href="/blog/3/">Day 5</a></li>
-    <li><a href="/blog/2/">Day 1</a></li>
     <li><a href="/blog/1/">Amazon</a></li>
   </ul>
 </div>
 
 
-  <h2>Saturday, July 19, 2014</h2>
+  <h2>Friday, May 16, 2014</h2>
   <div class = "minipost">
-    <h3><a href="/blog/19/">Affirmation and Stereotype Threat</a></h3>
-    <p>One reason I haven't felt particularly threatened by stereotypes is that I value personal achievement, improvement, and challenge above what other people think of me. Thus, it's easy to disregard stereotypes in favor of more objective measures of my ability and potential.</p>
-    <p>I also strongly value the close relationships I have with others. During times of stress, I find comfort in such relationships not because of any encouraging words or favorable opinions but rather because of the shared experiences, closeness, and comfort they provide. I have been able to work through some of my most trying moments by helping others work through their own challenges and achieve their own successes.  &nbsp;&nbsp;<a class="rm" href="/blog/19/">read more&nbsp;&raquo;</a></p>
+    <h3><a href="/blog/3/">Day 5</a></h3>
+    <p>It's the end of the first week, and I made it through! The week has been a bit of a roller coaster. It started out great, but I got really stuck on Wednesday night and had a hard time getting started on Thursday morning. On Thursday I also spent a large portion of the day working on projects independently--this is unusual for DBC since all other days of the week we are required to pair program on all challenges. The independent work was pretty good, but we had some tough problems to work on in the afternoon and I got stuck. To give my mind a break, I walked around to see what other people were working on, which was incredibly helpful and gave me the opportunity to talk with some of the members of my cohort I haven't worked with yet. For the rest of the night, I worked with Tyler on the remaining projects, and I think we did an awesome job.</p>
+    <p>We started really diving into rspec this week, which is a powerful tool but I don't feel that I have a full grasp on its capabilities. We also covered recursion on Wednesday, which was totally awesome and super fun. Today we are writing a program to solve Sudoku. All the more advanced cohorts have warned us we'll be working on it for pretty much the whole weekend.  &nbsp;&nbsp;<a class="rm" href="/blog/3/">read more&nbsp;&raquo;</a></p>
   </div>
-  <h2>Saturday, July 19, 2014</h2>
+  <h2>Monday, May 12, 2014</h2>
   <div class = "minipost">
-    <h3><a href="/blog/18/">Object-Oriented Programming versus Functional Programming</a></h3>
-    <h4>An example in Ruby</h4>
-    <div class="indent">
-        <p>Before we talk about "object-oriented programming" versus "functional programming", let's look at an example. Suppose I'd like to be able to find the perimeter of rectangles, circles, and triangles. One way to acheive this is by using classes. I can make classes for Rectangles, Circles, and Triangles and include a method within each one that will evaluate the perimeter of a particular instance of that class:</p>
-        <code>
-            <span class="grey">1</span>&nbsp;class Rectangle
-            <br/>
-            <span class="grey">2</span>&nbsp;&nbsp;&nbsp;def initialize(length, width)
-            <br/>
-            <span class="grey">3</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@width = width
-            <br/>
-            <span class="grey">4</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@length = length
-            <br/>
-            <span class="grey">5</span>&nbsp;&nbsp;&nbsp;end
-            <br/>
-
-            <span class="grey">6</span>&nbsp;&nbsp;&nbsp;def perimeter
-            <br/>
-            <span class="grey">7</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2 * @width + 2 * @length
-            <br/>
-            <span class="grey">8</span>&nbsp;&nbsp;&nbsp;end
-            <br/>
-            <span class="grey">9</span>&nbsp;end
-            <br/>
-            <br/>
-            <span class="grey">10</span>class Circle
-            <br/>
-            <span class="grey">11</span>&nbsp;&nbsp;def initialize(radius)
-            <br/>
-            <span class="grey">12</span>&nbsp;&nbsp;&nbsp;&nbsp;@radius = radius
-            <br/>
-            <span class="grey">13</span>&nbsp;&nbsp;end
-            <br/>
-
-            <span class="grey">14</span>&nbsp;&nbsp;def perimeter
-            <br/>
-            <span class="grey">15</span>&nbsp;&nbsp;&nbsp;&nbsp;2 * 3.14 * @radius
-            <br/>
-            <span class="grey">16</span>&nbsp;&nbsp;end
-            <br/>
-            <span class="grey">17</span>end
-            <br/>
-            <br/>
-            <span class="grey">18</span>class Triangle
-            <br/>
-            <span class="grey">19</span>&nbsp;&nbsp;def initialize(side1, side2, side3)
-            <br/>
-            <span class="grey">20</span>&nbsp;&nbsp;&nbsp;&nbsp;@side1 = side1
-            <br/>
-            <span class="grey">21</span>&nbsp;&nbsp;&nbsp;&nbsp;@side2 = side2
-            <br/>
-            <span class="grey">22</span>&nbsp;&nbsp;&nbsp;&nbsp;@side3 = side3
-            <br/>
-            <span class="grey">23</span>&nbsp;&nbsp;end
-            <br/>
-
-            <span class="grey">24</span>&nbsp;&nbsp;def perimeter
-            <br/>
-            <span class="grey">25</span>&nbsp;&nbsp;&nbsp;&nbsp;@side1 + @side2 + @side3
-            <br/>
-            <span class="grey">26</span>&nbsp;&nbsp;end
-            <br/>
-            <span class="grey">27</span>end
-            <br/>
-            <br/>
-            <span class="grey">28</span>rect = Rectangle.new(2, 4)
-            <br/>
-            <span class="grey">29</span>circ = Circle.new(3)
-            <br/>
-            <span class="grey">30</span>tri = Triangle.new(1, 2, 3)
-            <br/>
-            <br/>
-            <span class="grey">31</span>rect.perimeter
-            <br/>
-            <span class="grey">32</span>circ.perimeter
-            <br/>
-            <span class="grey">33</span>tri.perimeter
-            <br/>
-        </code>
-        <p>On lines 1-27 above, each class has been defined and includes a
-            <codein>#perimeter</codein>method. On lines 28-30, variables have been assigned to an
-            <em>instance</em>of each class. And finally, on lines 31-33, the perimeter of each instance is calculated.</p></div>  &nbsp;&nbsp;<a class="rm" href="/blog/18/">read more&nbsp;&raquo;</a></p>
+    <h3><a href="/blog/2/">Day 1</a></h3>
+    <p>Great first day at DBC. Here's a highlight. High five Lana!</p>
+    <img src="/assets/day1.png" style="width: 100%">
+  &nbsp;&nbsp;<a class="rm" href="/blog/2/">read more&nbsp;&raquo;</a></p>
   </div>
-  <h2>Saturday, July 19, 2014</h2>
+  <h2>Sunday, May 11, 2014</h2>
   <div class = "minipost">
-    <h3><a href="/blog/17/">Stereotype Threat</a></h3>
-    <p>As a girl who is (and always has been) reasonably good at math and science, I have always been aware of the corresponding stereotype. However, I can't think of a time it has affected my achievement, which may be one of the primary reasons I was able to earn undergraduate and graduate degrees in math. Throughout my schooling, it did upset me if someone prejudged my abilities because of my gender, but I've always focused on my own standards for myself and have been able to find people (both guys and girls) who were eager to work with me. I think I have a pretty good grasp of my own strengths and weaknesses, so I generally disregard someone's opinion of me unless they know me pretty well or have seen examples of my work.</p>
+    <h3><a href="/blog/24/">Regular Expressions</a></h3>
+    <h4>What are regular expressions?</h4>
+    <p>Regular expressions, or RegExp, are used to search a string for a particular pattern of characters. The search can be simple ("does the string contain 'Maru'?") or somewhat more complex ("does the string contain a 0 or 1 followed by any sequence of four numbers followed by lower-case letters?").</p>
 
-    <p>Because I have seen the consequences of stereotype threat and also strive to be an empathetic and rational person, I actively try to not judge people. I feel comfortable judging the quality of someone's work after reviewing it, but that isn't necessarily a perfect reflection of an individual's abilities, and, regardless, any judgements are independent of any group the individual might fall into. When I hear others around me stereotyping a collegue or potential collegue, I try to guide the conversation in the direction of factual information about the individuals's work and ability and away from subjective and judgemental statements about the individual's identity. Such topics are irrelevant.  &nbsp;&nbsp;<a class="rm" href="/blog/17/">read more&nbsp;&raquo;</a></p>
+    <h4>A simple example in Ruby</h4>
+    <p>Suppose we want to know if a particular string contains 'Maru':  &nbsp;&nbsp;<a class="rm" href="/blog/24/">read more&nbsp;&raquo;</a></p>
   </div>
-  <h2>Saturday, July 19, 2014</h2>
+  <h2>Friday, May 9, 2014</h2>
   <div class = "minipost">
-    <h3><a href="/blog/16/">Classes in Ruby</a></h3>
-    <p>
-        <em>Classes</em>are a natural way to group similar types of objects in Ruby. For example,
-        <codein>Array</codein>is a class. There are two ways to define a new object in the class
-        <codein>Array</codein>:
-        <code>
-            arr_1 = Array.new</br>
-            arr_1[0] = "Hello"</br>
-            arr_1[1] = "world"</br>
-            arr_2 = [1, 2, 3, 4]
-        </code>
-        <codein>arr_1</codein>has been defined using constructor notation and
-        <codein>arr_2</codein>has been defined using literal notation, but both are the same type of object.
-        <codein>arr_1</codein>and
-        <codein>arr_2</codein>are called
-        <em>instances</em>of the class
-        <codein>Array</codein>. So a class is a category, and an instance is a particular object that falls into that category. Other examples of classes are
-        <codein>String, Fixnum, Float,</codein>and
-        <codein>Hash</codein>.</p>
-
-    <p>So why are classes helpful? Because we often want to know similar things or perform similar tasks on objects in the same class. Each class has associated
-        <em>methods</em>that do something to an instance of the class. For example,
-        <codein>#length, #each,</codein>and
-        <codein>#sort</codein>are all methods associated with the class
-        <codein>Array</codein>. Similarly,
-        <codein>#length, #downcase,</codein>and
-        <codein>#each_char</codein>are all methods associated with the class
-        <codein>String</codein>. Each of these methods can be called on any instance of the associated class. (Note that some methods are associated with more than one class.)  &nbsp;&nbsp;<a class="rm" href="/blog/16/">read more&nbsp;&raquo;</a></p>
+    <h3><a href="/blog/23/">Reflections on Feedback</a></h3>
+    <p>One aspect of DBC is that we regularly give and receive peer feedback after pair programming. How well did we work together? What could each of us have done differently to facilitate better communication and more effective collaboration? What should we each be focusing on in the future?</p>
+    <p>When I first started receiving feedback after pair programming sessions, I assumed that the most useful feedback I'd receive would be critical. However, it has surprised me that some of the positive feedback I've received has also been quite valuable. For example, the comment
+        <em>"You said that you thought that you might talk to [sic] much during the sessions, but it made it easier to know when we both had a full understanding of the problem because of the conversation it created"</em>is helpful because it alleviates a concern I had about my working style. Similarly,
+        <em>"I love that you were always testing things in irb"</em>is helpful because it highlights an aspect of my work that I should continue doing. The key to both of these comments is that they are specific and actionable.  &nbsp;&nbsp;<a class="rm" href="/blog/23/">read more&nbsp;&raquo;</a></p>
   </div>
-  <h2>Saturday, July 19, 2014</h2>
+  <h2>Sunday, May 4, 2014</h2>
   <div class = "minipost">
-    <h3><a href="/blog/15/">Computer Science Education</a></h3>
-    <p>It is not an exaggeration to say that the state of computer science and technology in K-12 education is somewhat alarming. As more jobs are created and exciting innovations are made in computer science and technology, surprisingly few states are providing an adequate education for their students. Only 17 states and the District of Columbia allow computer science courses to count towards core graduation requirements in either math or science. NPR reports that only 10% of K-12 schools teach computer science. And yet, ACM chair of Education Policy Committee Bobby Schnabel reports that by 2020, half of the jobs in STEM (science, technology, engineering, and mathematics) disciplines will be in computing. It is predicted that within the next 10 years there will be approximately 1 million more jobs in the technology sector than there are computer science graduates. How is that possible? What is being done to address this gap?</p>
-
-    <p>There are programs throughout the country that aim to address this problem, but the change needs to come at a state and national level. Current state standards are unacceptably lax. While some states do have standards related explicitly to computer science, most have either too few or none at all. And no state requires a computer science course as a condition of graduation.  &nbsp;&nbsp;<a class="rm" href="/blog/15/">read more&nbsp;&raquo;</a></p>
+    <h3><a href="/blog/22/">Sorting</a></h3>
+    <p>Sorting is the ability to take a list (e.g., array, hash) and put the elements in order. While it is a simple concept, there are many different ways to go about doing it. If you were asked to manually order a list of randomly generated numbers, how would you do it? Perhaps you'd consider doing something like this:</p>
+    <ol>
+        <li>Look at the first number. Since it's first, it is the smallest number so far. Remember this number and move to the next number in your list.</li>
+        <li>Is this number smaller than the number you have remembered? If so, this number is now the smallest; forget the number that used to be smallest and remember this number instead. Otherwise, just keep going.</li>
+        <li>Move to the next element in your list and repeat step 2. Continue until you reach the end of the list. By this time, you will have found the smallest number in your list.</li>
+        <li>Take the smallest number out of the list and add it to a new, ordered list.</li>
+        <li>Repeat steps 1-4 until your unordered list is empty.</li>
+    </ol>
+    <p>This will certainly work, but it's
+        <em>really inefficient</em>. For each number in your list, you have to go through the entire (remaining) list and then add it to the new list. Let's say you have a list of 10 numbers and it takes you 1 second to look at each element in the list (and decide if you should "remember" it). Then, this algorithm will take you 10 seconds to find the smallest number, 9 seconds to find the next smallest, 8 seconds to find the next...for a total of 10+9+8+7+6+5+4+3+2+1 = 55 seconds to put that list in order. (Note: this assumes that step 4 takes 0 seconds.)  &nbsp;&nbsp;<a class="rm" href="/blog/22/">read more&nbsp;&raquo;</a></p>
   </div>
 
 <div class="pagination"><a class="previous_page" rel="prev start" href="/blog/?page=1">&#8592; Previous</a> <a rel="prev start" href="/blog/?page=1">1</a> <em class="current">2</em> <a rel="next" href="/blog/?page=3">3</a> <a href="/blog/?page=4">4</a> <a href="/blog/?page=5">5</a> <a class="next_page" rel="next" href="/blog/?page=3">Next &#8594;</a></div>
