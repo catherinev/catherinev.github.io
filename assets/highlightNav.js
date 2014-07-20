@@ -4,10 +4,16 @@ $(document).ready(function(){
 
 function highlightCurrentPage(){
   var currentUrl = document.URL;
-
-  var regex = /http:\/\/(.+)\.com\/(\w*)\//;
-  var baseUrl = currentUrl.replace(regex, "$2")
+  var baseUrl;
+  if (currentUrl === "http://www.catherinev.com/"){
+    baseUrl = ""
+  }
+  else {
+    var regex = /http:\/\/(.+)\.com\/(\w*?\/).*/;
+    baseUrl = currentUrl.replace(regex, "$2")
+  }
+ 
   console.log(baseUrl)
-  $('a[href="/' + baseUrl + '/"]').addClass("current_page")
+  $('a[href="/' + baseUrl + '"]').addClass("current_page")
 }
 ;
