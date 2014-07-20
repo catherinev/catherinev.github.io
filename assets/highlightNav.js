@@ -5,9 +5,9 @@ $(document).ready(function(){
 function highlightCurrentPage(){
   var currentUrl = document.URL;
 
-  var regex = /http:\/\/(.+)\.com\/(.*)/;
+  var regex = /http:\/\/(.+)\.com\/(.*?)\//;
   var baseUrl = currentUrl.replace(regex, "$2")
-
-  $('a[href="/' + baseUrl + '"]').addClass("current_page")
+  console.log(baseUrl)
+  $('a[href="/' + baseUrl + '/"]').addClass("current_page")
 }
 ;
