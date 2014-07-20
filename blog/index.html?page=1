@@ -133,7 +133,7 @@
         <codein>#gsub</codein> is used to find and replace text using regular expressions. For example, suppose you have decided you want to change the format of all dates from MM-DD-YYYY to YYYY-MM-DD. The following code can be implemented on your text to make that substitution.  &nbsp;&nbsp;<a class="rm" href="/blog/18/">read more&nbsp;&raquo;</a></p>
   </div>
 
-<div class="pagination"><span class="previous_page disabled">&#8592; Previous</span> <a class="next_page" rel="next" href="/blog/?page=2">Next &#8594;</a></div>
+<div class="pagination"><span class="previous_page disabled">&#8592; Previous</span> <a class="next_page" rel="next" href="/blog?page=2">Next &#8594;</a></div>
 
 
     <footer>
