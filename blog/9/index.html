@@ -229,16 +229,10 @@
             <em>dynamic dispatch</em>, which means that the state of the object when the method is called (in this case, the values of
             <codein>@width</codein> and
             <codein>@length</codein> ) determines the result of the method.</p>
-        <!-- For example, on line 28 we defined <codein>rect</codein> as a Rectangle with length 2 and width 4.  However, later in the program you may decide that for some reason, it is more convenient for <codein>rect</codein> to be a circle with radius 5.  Then, you may redefine <codein>rect</codein> as follows:</p>
-					<code><span class = "grey">47</span> rect = Circle.new(5)</code>
-					<p>So what happens when you call <codein>rect.perimeter</codein> ?  <em>It depends on where you call it.</em>  When the program gets to line 31, <codein>rect</codein> is a rectangle with length 2 and width 4, so <codein>rect.perimeter</codein> returns <codein>12</codein>.  However, if we add line 48:</p>
-					<code><span class = "grey">48</span> rect.perimeter</code>
-					<p>then this time, <codein>rect.perimeter</codein> will return <codein>31.4</codein>.  -->
 
         <p>
             <span style="text-decoration: underline">Functional Programming</p>
         <p>Functional programming uses functions, not methods, to do stuff. The ideology behind FP is based on the <a href="http://en.wikipedia.org/wiki/Function_(mathematics)">mathematical definition</a> of a function: for each input (or set of inputs), there is at most one output. Functional programming does not package data and operations together into classes: they are separate entities in FP. Functions are called and data (arguments) is explicitly passed in.</p>
-        <!-- <p>Therefore, while in OOP we can redefine <codein>rect</codein> to be a Circle on line 47, this is not permissible in functional programming.  Moreover, every time a function with the same inputs is called, the same output is given.  For example, the function called on line 43 will yield 12, no matter what line number it is on.</p> -->
         <p>Moreover, functions do not have "side-effects" that affect the state of the program. In the
             <codein>#doubled_perim</codein> example on lines 47-53, the method not only returns a value for the perimeter but also changes the values of instance variables. This is called a side-effect--we get more than just the returned value; something about the state of the program changed. As a result, when we call
             <codein>#doubled_perim</codein> twice, as on lines 54 and 55 above, we get different values in return. This never happens in functional programming. Functional programming implements static evaluation of functions, which means the value of a function does NOT depend on the state of the program. Just as a mathematical function will yield the same result every time it is a given a particular value, a function in an FP language will yield the same result every time it is given the same argument(s).</p>
