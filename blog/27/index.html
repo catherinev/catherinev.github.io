@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Catherine V</title>
+    <link data-turbolinks-track="true" href="/assets/application.css" media="all" rel="stylesheet" />
+    <link href='http://fonts.googleapis.com/css?family=Gafata' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:300italic,300,500' rel='stylesheet' type='text/css'>
+  </head>
+
+  <body>
+    <h1>Catherine Vongsathorn</h1>
+    <script src="/assets/application.js"></script>
+<div class = "nav">
+  <button id = "menu-icon">menu</button>
+  <div><a href="/">Home</a></div>
+  <div><a href="/about/">About</a></div>
+  <div><a href="/blog/">Blog</a></div>
+  <div><a href="/experience/">Experience</a></div>
+  <div><a href="/links/">Links</a></div>
+</div>
+
+    
+    <h2>Monday, September 8, 2014</h2>
+<div class = "post">
+  <h3>Using LyX to Display Code: Intro</h3>
+  <h4>What is LyX?</h4>
+  <p>Before we talk about LyX, let's talk briefly about <a href = "http://www.latex-project.org/">LaTeX</a>, which is a widely used markup language that is especially popular in math and the sciences.  I first fell in love with LaTeX when I was writing my math thesis in college.  Then I went to math grad school and wrote basically everything in TeX.  It just makes things look so pretty.</p>
+  <p>Anyways, a few years ago a friend of mine introduced me to LyX.  <a href = "http://www.lyx.org/">LyX</a> is <a href = "http://en.wikipedia.org/wiki/WYSIWYM">WYSIWYM</a> interface for LaTeX.  Even though LyX code still needs to be compiled, its interface reflects the compiled document much more closely than outright code does.  To be perfectly honest, I was happy with LaTeX just the way it was; I don't mind the fact that it's not WYSIWYG.  But it has a few distinct downsides:</p>
+  <ul>
+    <li>LaTeX is compiled, which means you have to recompile to see any formatting changes.  Most of the time, this isn't a big deal.  But sometimes a document takes a little while to compile, which is annoying.</li>
+    <li>Tables.  To me, tables are one of the most annoying things to work with in any sort of programming/typesetting language.  They are distinctly unreadable until they are compiled.</li>
+    <li>Page breaks.  Who knows where those will be.</li>
+    <li>Math.  In LaTeX, math equations look a bit like gibberish (although you do learn to read that gibberish, to some degree).</li>
+    <li>There is a lot of code you don't need to see all the time.  For example, once you've formatted some text, you don't need to see the code that controls the formatting.  This makes the document difficult to read and even more difficult to scan.</li>
+    <li>It's got its own language.  This didn't matter to me since I already knew the language, but it's something to consider for those of you who don't already know LaTeX.</li>
+  </ul>
+  <p>LyX solves most of these problems (I still can't tell where the page breaks are going to be).  Most importantly, it makes uncompiled documents much more readable, which is important for documents that I'm <em>creating for myself</em>.  Big difference between that and something I'm going to be publishing.  If it's just for me, that means it's probably some sort of reference, and I put pretty high value on being able to peruse it quickly.</p>
+  <p>Bottom line: there is a place for LyX in my life.</p>
+  <h4>Why is LyX relevant to people who code?</h4>
+  <p>It might not be.  On the other hand, it might be.  Any type of document that would be a pain to write with Microsoft Office is probably pretty easy to write with LyX/LaTeX.  For me, that includes any document with math and also many documents that include code.</p>
+  <h4>The Problem</h4>
+  <p>I know Ruby pretty well and am in the process of learning Python.  Yesterday, I decided it would be a useful exercise to create a table comparing Ruby to Python.  Since tables are much easier to implement in LyX than in LaTeX, I opened a LyX document and got started.</p>
+  <p>I knew this document was going to have code samples in it, and pretty quickly I decided I wanted the code to look nice.  Specifically, I wanted the code to look a lot like it does in my text editor, where keywords are highlighted in different colors.</p>
+
+  
+  <h4>The solution</h4>
+  <p>LyX is open source, which means I can actually edit the source code.  This is glorious; it means that if I don't like some aspect of LyX or think of some feature I'd like it to have, <em>I can change it</em>.  In other words, <em>I can add a custom environment that automatically formats Python code.</em></p>
+  <p>So, the solution we are after is the following: <b>To create a custom environment in LyX that displays code prettily</b>.  What does that mean?  LaTeX has <em>environments</em> such as section, subsection, quote, itemize, title, etc.  Each environment has predefined style settings that can be adjusted (if you are familiar with HTML/CSS, this should sound very familiar).  We want to create our own custom LaTeX environment with exactly the styling we want and then export that environment to LyX so that it is easy to use.  This is the result:</p>
+  <figure style = "width: 70%; margin: auto">
+    <img src="/assets/lyx.png" style="width: 100%">
+    <figcaption>A sample LyX document: note "PythonCode" in the top left corner.</figcaption>
+  </figure>
+  <br>
+  <figure style = "width: 70%; margin: auto">
+    <img src="/assets/lyxpdf.png" style="width: 100%">
+    <figcaption>The compiled PDF output.</figcaption>
+  </figure>
+  <br>
+  <p>Now how to do it?  It took me much more effort than I would have expected, in part because the documentation on LyX isn't super awesome.  But I am happy with the result, so I'm sharing how I did it with the world.</p>
+  <h4>The tutorial</h4>
+  <p>The tutorial will be broken into several parts and posted over the course of the next few days.</p>
+  <ol>
+    <li><a href="/blog/28/">Prerequisites</a>.</li>
+    <li><a href="/blog/29/">Install <codein>minted</codein> and get it working in LaTeX.</a></li>
+    <li><a href="/blog/30/">Get <codein>minted</codein> working in LyX.</a></li>
+  </ol>
+  <h4>Disclaimer</h4>
+  <p>I am not a LyX expert.  The tutorial I present is simply one way to accomplish the task at hand.  I make no claim that it is the best; simply that it works.</p>
+
+</div>
+
+
+    <footer>
+  <div id = "left">Contact me: <a href="mailto:cvong47@gmail.com">Email</a></div>
+  <div id = "right">&copy;2014 Catherine Vongsathorn</div>
+</footer>
+
+
+  </body>
+</html>

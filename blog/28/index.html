@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Catherine V</title>
+    <link data-turbolinks-track="true" href="/assets/application.css" media="all" rel="stylesheet" />
+    <link href='http://fonts.googleapis.com/css?family=Gafata' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:300italic,300,500' rel='stylesheet' type='text/css'>
+  </head>
+
+  <body>
+    <h1>Catherine Vongsathorn</h1>
+    <script src="/assets/application.js"></script>
+<div class = "nav">
+  <button id = "menu-icon">menu</button>
+  <div><a href="/">Home</a></div>
+  <div><a href="/about/">About</a></div>
+  <div><a href="/blog/">Blog</a></div>
+  <div><a href="/experience/">Experience</a></div>
+  <div><a href="/links/">Links</a></div>
+</div>
+
+    
+    <h2>Tuesday, September 9, 2014</h2>
+<div class = "post">
+  <h3>Using LyX to Display Code: Part 1</h3>
+  <p><em>Note: the introduction to this tutorial can be found <a href="/blog/27/">here</a>.</em></p>
+  <h4>Prerequisites</h4>
+  <h5>1. LaTeX</h5>
+  <p>You need to have LaTeX install on your computer.  I strongly recommend downloading <a href = "https://www.tug.org/texlive/">TeXLive</a> or <a href = "https://tug.org/mactex/">MacTeX</a>.  The package we will be using, <codein>minted</codein>, requires several packages that are included in both of these distributions of LaTeX.  However, they are not all included in more basic versions and could make the rest of the installation process much more challenging.</p>
+  <h5>2. LyX</h5>
+  <p>LyX can be found at this website: <a href = "http://www.lyx.org/">http://www.lyx.org/</a></p>
+  <h5>3. Python</h5>
+  <p><codein>minted</codein> requires Python.  If you just downloaded LyX, you should be in good shape (it ships with a recent version of Python).  However, if you are using an old version of LyX, make sure you are running at least Python 2.6.  If you need to update, check out this site:  <a href = "https://www.python.org/">https://www.python.org/"</a>
+  <h5>4. Pygments</h5>
+  <p><codein>minted</codein> also requires Pygments, which can be installed with the following command:</p>
+  <code>
+    sudo easy_install Pygments
+  </code>
+  <p>If you already have Pygments, make sure you have at least version 1.2.</p>
+
+  <h5><a href="/blog/29/">Next: Install <codein>minted</codein> and get it working in LaTeX.</a></h5>
+
+
+</div>
+
+
+    <footer>
+  <div id = "left">Contact me: <a href="mailto:cvong47@gmail.com">Email</a></div>
+  <div id = "right">&copy;2014 Catherine Vongsathorn</div>
+</footer>
+
+
+  </body>
+</html>
