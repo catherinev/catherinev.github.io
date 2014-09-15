@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Catherine V</title>
+    <link data-turbolinks-track="true" href="/assets/application.css" media="all" rel="stylesheet" />
+    <link href='http://fonts.googleapis.com/css?family=Gafata' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:300italic,300,500' rel='stylesheet' type='text/css'>
+  </head>
+
+  <body>
+    <h1>Catherine Vongsathorn</h1>
+    <script src="/assets/application.js"></script>
+<div class = "nav">
+  <button id = "menu-icon">menu</button>
+  <div><a href="/">Home</a></div>
+  <div><a href="/about/">About</a></div>
+  <div><a href="/blog/">Blog</a></div>
+  <div><a href="/experience/">Experience</a></div>
+  <div><a href="/links/">Links</a></div>
+</div>
+
+    
+    <h2>Friday, September 12, 2014</h2>
+<div class = "post">
+  <h3>Using LyX to Display Code: Part 2</h3>
+  <h5 style="font-weight:bold">Set up <codein>minted</codein> in LaTeX</h5>
+  <aside><em>Note: part 1 of this tutorial can be found <a href="/blog/28/">here</a>.</em></aside><br/>
+  <h4>0. Install <codein>minted</codein> on your computer</h4>
+  <p>If you have TeXLive 2014 (included in the MacTeX installation I recommended), <codein>minted</codein> is already installed on your machine.</p>
+  <p>If not, see the instructions at this link: <a href ="http://get-software.net/macros/latex/contrib/minted/minted.pdf">installation instructions</a>.</p>
+
+  <h4>1. Make a sample LaTeX file using <codein>minted</codein></h4>
+  <p>Open TeXShop and create a new LaTeX file.  Copy-paste the following code into your empty LaTeX document.</p>
+  <code>
+    \documentclass[11pt, oneside]{article}<br>
+    \usepackage{geometry}<br><br>
+    \geometry{letterpaper}<br>
+    \usepackage{graphicx}<br>
+    \usepackage{amssymb}<br>
+    \usepackage{minted}<br><br>
+
+    \usepackage{minted}<br>
+    \definecolor{bg}{rgb}{0.95,0.95,0.95}<br>
+    \newminted{python}{bgcolor=bg}<br><br>
+
+
+    \title{Is minted working?}<br><br>
+
+
+    \begin{document}<br>
+    \maketitle<br>
+
+    \begin{pythoncode}<br>
+    import random<br><br>
+
+    def say_hello(name):<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;print "hello %s" % name<br><br>
+
+    \end{pythoncode}<br><br>
+
+
+    \end{document} <br> 
+  </code>
+  <p>In the terminal, navigate to the folder you have created the LaTeX document in.  Then run the following command, replacing &lt;your-filename&gt; with the name of your file, including the .tex extension:</p>
+  <code>
+    pdflatex -shell-escape &lt;your-filename&gt; <br><br>
+    # for example:<br>
+    pdflatex -shell-escape test_file.tex
+  </code>
+  <p>If this doesn't throw any errors, you are good to go!  That means that <codein>minted</codein> is working fine on your computer, and you can skip ahead to <a href="/blog/30/">part 3</a> of this tutorial.  If you'd like to see the output, open the PDF file that was created (your-filename.pdf).</p>
+
+  <h4>What to do if you got error messages</h4>
+  <p>As always, when you get an error message you <em>must</em> start by reading the error message.  Did you copy-paste the code correctly?  Is there a bracket missing somewhere?  In essence, start by looking for errors that are easy to make (and easy to correct).</p>
+  <p>If there are no syntax errors, then double check you followed <em>exactly</em> the procedure I outlined.  Did you run the pdflatex command from the command-line?  You CANNOT just click "Typeset" from within TeXShop because of the extra flag <codein>-shell-escape</codein>.  This is really important and <codein>minted</codein> will not compile without the flag.</p>
+  <p>If there are no syntax errors and you ran the correct command in the terminal, then return to the error messgage.  What does it say?  If there is a problem with <codein>minted</codein>, that may mean that you don't have it installed correctly on your machine.  If there is a problem with a different LaTeX package (e.g. <codein>ifplatform</codein> or <codein>ifthen</codein>), then chances are that package isn't installed correctly on your machine.  In this case, I implore you to download TeX Live 2014 (which is included in MacTeX).  It is by far the easiest solution, although it may take some time to download and will take up almost 5 GB of space on your computer.  However, if you really want to troubleshoot without installing TeX Live 2014, here are some resources:</p>
+  <ul>
+    <li><a href="http://mirrors.ibiblio.org/CTAN/macros/latex/contrib/minted/minted.pdf"><codein>minted</codein> documentation</a></li>
+    <li><a href="http://en.wikibooks.org/wiki/LaTeX/Installing_Extra_Packages">Installing new LaTeX packages</a></li>
+  </ul>
+  <p>It is also possible there is an issue with <a href="http://pygments.org/">Pygments</a> or <a href="https://www.python.org/">Python</a>, in which case you should make sure you have up-to-date versions of both.</p>
+  <h4>A brief explanation of what we did</h4>
+  <aside>Note: It is not necessary for you to understand this section to continue the tutorial.</aside>
+  <p>If you are familiar with LaTeX, the only part of the given code that may be unfamiliar is <codein>\newminted{python}{bgcolor=bg}</codein>.  This is <codein>minted</codein>'s way of defining shortcuts.  Without this command, you can use <codein>minted</codein> as follows:
+    <code>
+      \begin{minted}{python}<br>
+      print "hello world"<br>
+      \end{minted}<br>
+    </code>
+  <codein>\newminted{python}{bgcolor=bg}</codein> creates an alias for the <codein>minted</codein> environment.</p>
+  <p>More details, including other options <codein>minted</codein> provides, can be found in its <a href="http://mirrors.ibiblio.org/CTAN/macros/latex/contrib/minted/minted.pdf">documentation</a>.</p>
+
+  <h5><a href="/blog/30/">Next: Set up a custom environment in LyX.</a></h5>
+
+</div>
+
+
+    <footer>
+  <div id = "left">Contact me: <a href="mailto:cvong47@gmail.com">Email</a></div>
+  <div id = "right">&copy;2014 Catherine Vongsathorn</div>
+</footer>
+
+
+  </body>
+</html>

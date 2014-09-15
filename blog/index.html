@@ -23,6 +23,8 @@
     <div id = "sp">
   <h4>Recent Posts</h4>
   <ul>
+    <li><a href="/blog/30/">Using LyX to Display Code: Part 3</a></li>
+    <li><a href="/blog/29/">Using LyX to Display Code: Part 2</a></li>
     <li><a href="/blog/28/">Using LyX to Display Code: Part 1</a></li>
     <li><a href="/blog/27/">Using LyX to Display Code: Intro</a></li>
     <li><a href="/blog/26/">Don't Park There Chicago: the design</a></li>
@@ -55,15 +57,37 @@
 </div>
 
 
+  <h2>Saturday, September 13, 2014</h2>
+  <div class = "minipost">
+    <h3><a href="/blog/30/">Using LyX to Display Code: Part 3</a></h3>
+    <h5 style="font-weight:bold">Set up a custom environment in LyX</h5>
+  <aside><em>Note: part 2 of this tutorial can be found <a href="/blog/29/">here</a>.</em></aside><br/>
+  
+  <h4>0. Make sure <codein>minted</codein> is working in LaTeX and familiarize yourself with LyX</h4>
+  <p>In other words, start by doing <a href="/blog/29/">part 2</a> of this tutorial.  Then, if you have not already used LyX, you should probably play around with it for a bit.  See what it can do.  Use different environments; generate a PDF of your document; change the font style; insert some math; maybe even insert a table (and see if you can customize it).  </p>
+
+  <h4>1. Find the LyX source code files we are going to modify</h4>
+  <p>We are going to add a new environment to the <codein>stdlayouts.inc</codein> file.  On a Mac, this file can be found at the following path: <codein>/Applications/LyX.app/Contents/Resources/layouts</codein>.  From the Finder, you can access this by first opening the Applications folder, then right clicking LyX and selecting "Show Package Contents".  From there, select Contents then Resources then layouts, and you should find the desired file.  &nbsp;&nbsp;<a class="rm" href="/blog/30/">read more&nbsp;&raquo;</a></p>
+  </div>
+  <h2>Friday, September 12, 2014</h2>
+  <div class = "minipost">
+    <h3><a href="/blog/29/">Using LyX to Display Code: Part 2</a></h3>
+    <h5 style="font-weight:bold">Set up <codein>minted</codein> in LaTeX</h5>
+  <aside><em>Note: part 1 of this tutorial can be found <a href="/blog/28/">here</a>.</em></aside><br/>
+  <h4>0. Install <codein>minted</codein> on your computer</h4>
+  <p>If you have TeXLive 2014 (included in the MacTeX installation I recommended), <codein>minted</codein> is already installed on your machine.</p>
+  <p>If not, see the instructions at this link: <a href ="http://get-software.net/macros/latex/contrib/minted/minted.pdf">installation instructions</a>.  &nbsp;&nbsp;<a class="rm" href="/blog/29/">read more&nbsp;&raquo;</a></p>
+  </div>
   <h2>Tuesday, September 9, 2014</h2>
   <div class = "minipost">
     <h3><a href="/blog/28/">Using LyX to Display Code: Part 1</a></h3>
-    <aside><em>Note: the introduction to this tutorial can be found <a href="/blog/27/">here</a>.</em></aside>
-  <h4>Prerequisites</h4>
-  <h5>0. Not Windows?</h5>
-  <p>It's possible this tutorial can be easily adapted for Windows, but proceed with caution.  We will be using a LaTeX package called <codein>minted</codein>, and its documentation claims that "Windows support is sketchy / untested".</p>
-  <h5>1. LaTeX</h5>
-  <p>You need to have LaTeX install on your computer.  I strongly recommend downloading <a href = "https://www.tug.org/texlive/">TeXLive</a> or <a href = "https://tug.org/mactex/">MacTeX</a>.  The package we will be using, <codein>minted</codein>, requires several packages that are included in both of these distributions of LaTeX.  However, they are not all included in more basic versions and could make the rest of the installation process much more challenging.  &nbsp;&nbsp;<a class="rm" href="/blog/28/">read more&nbsp;&raquo;</a></p>
+    <h5 style="font-weight:bold">Prerequisites</h5>
+  <aside><em>Note: the introduction to this tutorial can be found <a href="/blog/27/">here</a>.</em></aside><br>
+  
+  <h4>0. Mac OS X</h4>
+  <p>As I mentioned in the intro, I have a Mac, so this tutorial will be specifically aimed at Mac OS X.  However, it is may be be not to hard to modify it for Linux (and possibly Windows), especially if you are familiar with LaTeX and how it is configured on your machine.</p>
+  <h4>1. LaTeX</h4>
+  <p>You need to have LaTeX install on your computer.  I strongly recommend downloading <a href = "https://tug.org/mactex/">MacTeX</a>, although other distributions are available.  The package we will be using, <codein>minted</codein>, requires several packages that are included MacTeX, as well as the editor TeXShop.  These are not all included in more basic distributions of TeX and could make the rest of the installation process much more challenging.  &nbsp;&nbsp;<a class="rm" href="/blog/28/">read more&nbsp;&raquo;</a></p>
   </div>
   <h2>Monday, September 8, 2014</h2>
   <div class = "minipost">
@@ -80,21 +104,6 @@
   <h4 style = "text-align:center">Design 1</h4>
   <img src="/assets/dptc1.png" style="width: 70%; margin: 0 15% 2% 15%">
   <p>It's pretty snazzy looking.  However, it had a few problems.  The first was that the background picture was a large file that took a while to load.  We could probably have decreased the size of the file, but there was a bigger problem: the design impeded the functionality of the site.  At the bottom of the page was a super cool map and more information about street sweeping -- information that is valuable to many users.  Users must either scroll down or click the down arrow button to get that information.  But user testing revealed that almost no one scrolled or clicked the button.  We needed to redesign the site with functionality in mind.  &nbsp;&nbsp;<a class="rm" href="/blog/26/">read more&nbsp;&raquo;</a></p>
-  </div>
-  <h2>Sunday, July 20, 2014</h2>
-  <div class = "minipost">
-    <h3><a href="/blog/25/">Don't Park There Chicago: the database</a></h3>
-    <h4>See <a href = "/blog/24/">this post</a> for more background on the Don't Park There Chicago</h4>
-
-  <p>The data that backs <a href = "http://dontparkthere.herokuapp.com">Don't Park There Chicago</a> is available in the City of Chicago Data Portal, specifically at <a href ="https://data.cityofchicago.org/Sanitation/Map-Street-Sweeping-2014/czxu-ejis">this</a> site. The dataset includes all the information we needed to make the site -- geospatial encoding of each street sweeping region and the corresponding street sweeping dates for 2014.  Before our app could do anything useful, we had to figure out how to harness the data from the data portal. After doing some research, we decided to store the data into a PostgreSQL database supported by PostGIS, an extension that allows PostgreSQL to store geospatial data and provides query support for that data.  Although we hadn't used PostGIS before, the documentation was great, so we were able to figure out how to use it pretty quickly.</p>
-
-  <p>However, getting the data from the data portal to our own database did not go smoothly.  The data portal provides several different options for the format of the data: Shapefile, KML, and KMZ.  Theoretically, it should have been easy to import the Shapefile directly into our database.  However, when we imported the Shapefile, none of the geospatial queries yielded the expected results.  Part of the issue was that the data in our database was encoded, so it was difficult to tell why the queries weren't behaving as expected.  &nbsp;&nbsp;<a class="rm" href="/blog/25/">read more&nbsp;&raquo;</a></p>
-  </div>
-  <h2>Saturday, July 19, 2014</h2>
-  <div class = "minipost">
-    <h3><a href="/blog/24/">Don't Park There Chicago</a></h3>
-    <p>I officially graduated from DBC just over a week ago.  It was so exciting!</p>
-  <p>For the last 8 days of bootcamp, everyone works on a final project.  I was part of a team with 5 awesome people, and we built an app that I think came out pretty great: <a href = "http://dontparkthere.herokuapp.com">Don't Park There Chicago</a>.  The app informs users of street sweeping dates in their areas and uses geospatial data about Chicago's 888 street sweeping regions to render an interactive Leaflet map.  Users may also sign up for email notifications (powered by Mandrill) or text notifications (powered by Twilio) to avoid being ticketed.  &nbsp;&nbsp;<a class="rm" href="/blog/24/">read more&nbsp;&raquo;</a></p>
   </div>
 
 <div class="pagination"><span class="previous_page disabled">&laquo; Newer posts</span> <a class="next_page" rel="next" href="/blog/page=2">Older posts &raquo;</a></div>
